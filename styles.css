@@ -105,7 +105,7 @@ body {
 
 .cover-meta {
   position: absolute;
-  top: 62%;
+  top: 55%;
   left: 76%;
   transform: translateX(-50%);
   display: grid;
