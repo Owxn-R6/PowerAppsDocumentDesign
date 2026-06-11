@@ -72,7 +72,6 @@ body {
   pointer-events: none;
 }
 
-.cover-title,
 .cover-customer,
 .cover-meta {
   color: white;
@@ -89,6 +88,7 @@ body {
   font-family: Avenir Next LT Pro Demi (Headings);
   width: 80%;
   white-space: nowrap;
+  color: black;
 }
 
 .cover-customer {
@@ -133,10 +133,24 @@ body {
   color: white;
   font-weight: 500;
 }
+/* ===== PAGE CONTENT ===== */
+
+.page-content .content-title {
+  font-size: 24px;
+  font-weight: 600;
+  margin-bottom: 16px;
+  color: black;
+} 
 
 /* ===== PREVIEW MODE ===== */
-.preview .preview-active {
+/* Only apply white text to cover page preview elements */
+.preview .cover-content .preview-active {
   color: white;
+}
+
+/* All other content remains black in preview mode */
+.preview .page-content .preview-active {
+  color: black;
 }
 
 /* ===== PRINT SUPPORT ===== */
