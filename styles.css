@@ -24,7 +24,7 @@ body {
   height: 297mm;
   position: relative;
 
-  background-image: url('Images/Background.png');
+  background-image: url('Images/Background2.png');
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -74,8 +74,8 @@ body {
 /* META GRID */
 .cover-meta {
   position: absolute;
-  bottom: 60px;
-  left: 60px;
+  bottom: 350px;
+  left: 150px;
 
   display: grid;
   grid-template-columns: auto auto;
