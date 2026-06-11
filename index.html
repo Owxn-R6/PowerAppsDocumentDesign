@@ -10,23 +10,22 @@
 
 <!-- ✅ ENABLE PREVIEW MODE HERE -->
 <body class="preview">
+  <div class="document">
+    <div class="a4-page cover-page">
+      <div class="cover-content">
 
-  <div class="a4-page">
+        <!-- TITLE -->
+        <div class="cover-title" data-field="document_title" data-preview="Snow Atlas Health Check">
+          {{document_title}}
+        </div>
 
-    <div class="cover-content">
+        <!-- CUSTOMER -->
+        <div class="cover-customer" data-field="customer_name" data-preview="Contoso Ltd">
+          {{customer_name}}
+        </div>
 
-      <!-- TITLE -->
-      <div class="cover-title" data-field="document_title" data-preview="Snow Atlas Health Check">
-        {{document_title}}
-      </div>
-
-      <!-- CUSTOMER -->
-      <div class="cover-customer" data-field="customer_name" data-preview="Contoso Ltd">
-        {{customer_name}}
-      </div>
-
-      <!-- METADATA GRID -->
-      <div class="cover-meta">
+        <!-- METADATA GRID -->
+        <div class="cover-meta">
 
         <div class="meta-item">
           <div class="meta-label">Author</div>
@@ -58,10 +57,18 @@
 
       </div>
 
+      </div>
     </div>
 
+    <div class="a4-page white-page">
+      <div class="page-header">
+        <img class="logo-header" src="Images/Logo.png" alt="Document Logo Header" />
+      </div>
+      <div class="page-content">
+        <!-- Add page content here -->
+      </div>
+    </div>
   </div>
-
 </body>
 </html>
 ``

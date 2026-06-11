@@ -1,10 +1,13 @@
+/* ===== RESET ===== */
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
-html, body {
+/* ===== BASE LAYOUT ===== */
+html,
+body {
   width: 100%;
   height: 100%;
   background-color: #f5f5f5;
@@ -18,98 +21,125 @@ body {
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Helvetica Neue", sans-serif;
 }
 
-/* A4 PAGE */
+.document {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+/* ===== A4 PAGE ===== */
 .a4-page {
   width: 210mm;
   height: 297mm;
   position: relative;
-
-  background-image: url('Images/Background2.png');
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-
+  background-color: white;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
   overflow: hidden;
 }
 
-/* COVER CONTENT CONTAINER */
+.cover-page {
+  background-image: url('Images/Background2.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.white-page {
+  background-color: white;
+}
+
+/* ===== PAGE HEADER ===== */
+.page-header {
+  padding: 24px 30px 0;
+}
+
+.logo-header {
+  width: 4.8cm;
+  height: 1.49cm;
+  object-fit: contain;
+  display: block;
+}
+
+.page-content {
+  padding: 24px 30px 30px;
+  min-height: calc(297mm - 80px);
+}
+
+/* ===== COVER CONTENT ===== */
 .cover-content {
   position: absolute;
   inset: 0;
   pointer-events: none;
 }
 
-/* CUSTOMER */
-.cover-customer {
-  position: absolute;
-  top: 41%;
-  left: 52%;
-  transform: translateX(-50%);
-
-  text-align: right;
-  font-size: 36px;
-  font-weight: 600;
-  font-family: Avenir Next LT Pro Demi (Headings);
+.cover-title,
+.cover-customer,
+.cover-meta {
   color: white;
-  width: 80%;
 }
 
-/* TITLE */
 .cover-title {
   position: absolute;
   top: 48%;
   left: 52%;
   transform: translate(-50%, -50%);
-
-  text-align: Right;
+  text-align: right;
   font-size: 36px;
   font-weight: 600;
   font-family: Avenir Next LT Pro Demi (Headings);
-  color: white;
   width: 80%;
   white-space: nowrap;
 }
 
-/* META GRID */
+.cover-customer {
+  position: absolute;
+  top: 41%;
+  left: 52%;
+  transform: translateX(-50%);
+  text-align: right;
+  font-size: 36px;
+  font-weight: 600;
+  font-family: Avenir Next LT Pro Demi (Headings);
+  width: 80%;
+}
+
 .cover-meta {
   position: absolute;
-  bottom: 350px;
-  left: 150px;
-
+  top: 62%;
+  left: 76%;
+  transform: translateX(-50%);
   display: grid;
   grid-template-columns: auto auto;
   gap: 12px 30px;
   min-width: 250px;
+  text-align: right;
 }
 
-/* META ITEM */
 .meta-item {
   display: grid;
   gap: 4px;
+  align-items: end;
 }
 
-/* META LABEL */
 .meta-label {
   font-size: 0.75rem;
   text-transform: uppercase;
   letter-spacing: 0.08em;
-  color: rgba(255,255,255,0.7);
+  color: rgba(255, 255, 255, 0.7);
 }
 
-/* META VALUE */
 .meta-value {
   font-size: 1rem;
   color: white;
   font-weight: 500;
 }
 
-/* PREVIEW MODE */
-/* Preview text is applied by JavaScript when placeholders are still present. */
+/* ===== PREVIEW MODE ===== */
 .preview .preview-active {
   color: white;
 }
-/* PRINT SUPPORT */
+
+/* ===== PRINT SUPPORT ===== */
 @media print {
   body {
     padding: 0;
