@@ -140,7 +140,28 @@ body {
   font-weight: 600;
   margin-bottom: 16px;
   color: black;
-} 
+}
+
+.page-content .content-paragraph {
+  margin-bottom: 16px;
+}
+
+.Server-Table {
+  margin-top: 16px;
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.Server-Table th,
+.Server-Table td {
+  padding: 8px;
+  border: 1px solid #ddd;
+  text-align: left;
+}
+
+.Server-Table thead {
+  background-color: #f9f9f9;
+}
 
 /* ===== PREVIEW MODE ===== */
 /* Only apply white text to cover page preview elements */
