@@ -1,0 +1,124 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body {
+  width: 100%;
+  height: 100%;
+  background-color: #f5f5f5;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 20px;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Helvetica Neue", sans-serif;
+}
+
+/* A4 PAGE */
+.a4-page {
+  width: 210mm;
+  height: 297mm;
+  position: relative;
+
+  background-image: url('Images/Background.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+}
+
+/* COVER CONTENT CONTAINER */
+.cover-content {
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+}
+
+/* CUSTOMER */
+.cover-customer {
+  position: absolute;
+  top: 41%;
+  left: 52%;
+  transform: translateX(-50%);
+
+  text-align: right;
+  font-size: 36px;
+  font-weight: 600;
+  font-family: Avenir Next LT Pro Demi (Headings);
+  color: white;
+  width: 80%;
+}
+
+/* TITLE */
+.cover-title {
+  position: absolute;
+  top: 48%;
+  left: 52%;
+  transform: translate(-50%, -50%);
+
+  text-align: Right;
+  font-size: 36px;
+  font-weight: 600;
+  font-family: Avenir Next LT Pro Demi (Headings);
+  color: white;
+  width: 80%;
+  white-space: nowrap;
+}
+
+/* META GRID */
+.cover-meta {
+  position: absolute;
+  bottom: 60px;
+  left: 60px;
+
+  display: grid;
+  grid-template-columns: auto auto;
+  gap: 12px 30px;
+  min-width: 250px;
+}
+
+/* META ITEM */
+.meta-item {
+  display: grid;
+  gap: 4px;
+}
+
+/* META LABEL */
+.meta-label {
+  font-size: 0.75rem;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: rgba(255,255,255,0.7);
+}
+
+/* META VALUE */
+.meta-value {
+  font-size: 1rem;
+  color: white;
+  font-weight: 500;
+}
+
+/* PREVIEW MODE */
+/* Preview text is applied by JavaScript when placeholders are still present. */
+.preview .preview-active {
+  color: white;
+}
+/* PRINT SUPPORT */
+@media print {
+  body {
+    padding: 0;
+    background: white;
+  }
+
+  .a4-page {
+    width: 100%;
+    height: 100%;
+    box-shadow: none;
+  }
+}

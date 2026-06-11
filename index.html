@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Document</title>
+  <link rel="stylesheet" href="styles.css" />
+  <script src="script.js" defer></script>
+</head>
+
+<!-- ✅ ENABLE PREVIEW MODE HERE -->
+<body class="preview">
+
+  <div class="a4-page">
+
+    <div class="cover-content">
+
+      <!-- TITLE -->
+      <div class="cover-title" data-field="document_title" data-preview="Snow Atlas Health Check">
+        {{document_title}}
+      </div>
+
+      <!-- CUSTOMER -->
+      <div class="cover-customer" data-field="customer_name" data-preview="Contoso Ltd">
+        {{customer_name}}
+      </div>
+
+      <!-- METADATA GRID -->
+      <div class="cover-meta">
+
+        <div class="meta-item">
+          <div class="meta-label">Author</div>
+          <div class="meta-value" data-field="consultant_name" data-preview="Owen Harrison">
+            {{consultant_name}}
+          </div>
+        </div>
+
+        <div class="meta-item">
+          <div class="meta-label">Date</div>
+          <div class="meta-value" data-field="document_date" data-preview="11/06/2026">
+            {{document_date}}
+          </div>
+        </div>
+
+        <div class="meta-item">
+          <div class="meta-label">Version</div>
+          <div class="meta-value" data-field="document_version" data-preview="2.0">
+            {{document_version}}
+          </div>
+        </div>
+
+        <div class="meta-item">
+          <div class="meta-label">Sensitivity</div>
+          <div class="meta-value" data-field="document_sensitivity" data-preview="External">
+            {{document_sensitivity}}
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+
+  </div>
+
+</body>
+</html>
+``
