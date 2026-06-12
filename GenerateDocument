@@ -1,0 +1,32 @@
+function generateDocument(primaryControl) {
+
+    var formContext = primaryControl;
+    var recordId = formContext.data.entity.getId();
+
+    // Remove curly braces from GUID
+    recordId = recordId.replace("{", "").replace("}", "");
+
+    var flowUrl = "https://4eb31ccf2e21e4ccb0fe5f9dcf2a60.ae.environment.api.powerplatform.com:443/powerautomate/automations/direct/workflows/b242bc57a2f5406490532c5c2787539e/triggers/manual/paths/invoke?api-version=1 ";
+
+    var payload = {
+        record_id: recordId
+    };
+
+    var req = new XMLHttpRequest();
+    req.open("POST", flowUrl, true);
+    req.setRequestHeader("Content-Type", "application/json");
+
+    req.onreadystatechange = function () {
+        if (req.readyState === 4) {
+            req.onreadystatechange = null;
+
+            if (req.status === 200 || req.status === 202) {
+                Xrm.Navigation.openAlertDialog({ text: "Document generation started." });
+            } else {
+                Xrm.Navigation.openErrorDialog({ message: "Error generating document." });
+            }
+        }
+    };
+
+    req.send(JSON.stringify(payload));
+}

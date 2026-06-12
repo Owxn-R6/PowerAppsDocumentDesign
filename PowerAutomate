@@ -1,0 +1,13 @@
+
+{
+  "{{document_title}}": "@{outputs('GetDocumentDetails')?['document_title']}",
+  "{{customer_name}}": "@{outputs('GetDocumentDetails')?['_oh_customer_value@OData.Community.Display.V1.FormattedValue']}",
+  "{{consultant_name}}": "@{outputs('GetDocumentDetails')?['_oh_consultant_value@OData.Community.Display.V1.FormattedValue']}",
+  "{{document_date}}": "@{outputs('GetDocumentDetails')?['oh_documentdate@OData.Community.Display.V1.FormattedValue']}",
+  "{{document_version}}": "@{outputs('GetDocumentDetails')?['document_version']}",
+  "{{document_sensitivity}}": "@{outputs('GetDocumentDetails')?['document_sensitivity']}",
+  "{{section_1_title}}": "@{outputs('GetDocumentDetails')?['section1title']}",
+  "{{section_1_paragraph}}": "@{outputs('GetDocumentDetails')?['section1paragraph']}"
+}
+
+concat(outputs('GetDocumentDetails')?['body/_oh_customer_value@OData.Community.Display.V1.FormattedValue'], ' ', outputs('GetDocumentDetails')?['body/oh_documentdate@OData.Community.Display.V1.FormattedValue'])
