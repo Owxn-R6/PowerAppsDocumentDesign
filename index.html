@@ -77,6 +77,8 @@
       position: absolute;
       inset: 0;
       pointer-events: none;
+      color: white;
+      font-family: Avenir Next LT Pro Demi (Headings);
     }
 
     .cover-customer,
@@ -95,7 +97,7 @@
       font-family: Avenir Next LT Pro Demi (Headings);
       width: 80%;
       white-space: nowrap;
-      color: black;
+      color: white;
     }
 
     .cover-customer {
@@ -113,7 +115,7 @@
     .cover-meta {
       position: absolute;
       top: 55%;
-      left: 76%;
+      left: 70%;
       transform: translateX(-50%);
       display: grid;
       grid-template-columns: auto auto;
@@ -170,17 +172,6 @@
       background-color: #f9f9f9;
     }
 
-    /* ===== PREVIEW MODE ===== */
-    /* Only apply white text to cover page preview elements */
-    .preview .cover-content .preview-active {
-      color: white;
-    }
-
-    /* All other content remains black in preview mode */
-    .preview .page-content .preview-active {
-      color: black;
-    }
-
     /* ===== PRINT SUPPORT ===== */
     @media print {
       body {
@@ -198,19 +189,18 @@
   <!-- <script src="script.js" defer></script> -->
 </head>
 
-<!-- ✅ ENABLE PREVIEW MODE HERE -->
-<body class="preview">
+<body>
   <div class="document">
     <div class="a4-page cover-page">
       <div class="cover-content">
 
         <!-- TITLE -->
-        <div class="cover-title" data-field="document_title" data-preview="Snow Atlas Health Check">
+        <div class="cover-title" data-field="document_title">
           {{document_title}}
         </div>
 
         <!-- CUSTOMER -->
-        <div class="cover-customer" data-field="customer_name" data-preview="Contoso Ltd">
+        <div class="cover-customer" data-field="customer_name">
           {{customer_name}}
         </div>
 
@@ -219,28 +209,28 @@
 
         <div class="meta-item">
           <div class="meta-label">Author</div>
-          <div class="meta-value" data-field="consultant_name" data-preview="Owen Harrison">
+          <div class="meta-value" data-field="consultant_name">
             {{consultant_name}}
           </div>
         </div>
 
         <div class="meta-item">
           <div class="meta-label">Date</div>
-          <div class="meta-value" data-field="document_date" data-preview="11/06/2026">
+          <div class="meta-value" data-field="document_date">
             {{document_date}}
           </div>
         </div>
 
         <div class="meta-item">
           <div class="meta-label">Version</div>
-          <div class="meta-value" data-field="document_version" data-preview="2.0">
+          <div class="meta-value" data-field="document_version">
             {{document_version}}
           </div>
         </div>
 
         <div class="meta-item">
           <div class="meta-label">Sensitivity</div>
-          <div class="meta-value" data-field="document_sensitivity" data-preview="External">
+          <div class="meta-value" data-field="document_sensitivity">
             {{document_sensitivity}}
           </div>
         </div>
@@ -255,10 +245,10 @@
         <img class="logo-header" src="data:image/png;base64,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" alt="Document Logo Header" />
       </div>
       <div class="page-content">
-          <h1 class="content-title" data-field="section_1_title" data-preview="Section 1: Executive Summary">
+          <h1 class="content-title" data-field="section_1_title">
             {{section_1_title}}
           </h1>
-          <p class="content-paragraph" data-field="section_1_paragraph" data-preview="This is the executive summary paragraph. It provides a brief overview of the document's key findings and recommendations.">
+          <p class="content-paragraph" data-field="section_1_paragraph">
             {{section_1_paragraph}}
           </p>
           <table class="Server-Table">
