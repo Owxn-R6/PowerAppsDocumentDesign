@@ -1,4 +1,4 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
@@ -209,14 +209,13 @@
       font-family: Avenir Next LT Pro Regular (Body);
     }
 
-    .TableContents-title,
-    .Introduction-title,
-    .Project-Checklist-title {
-      color: #6b3f6b !important;
-      font-size: 18px;
+    .Project-Checklist  .content-title {
+      font-size: 12px;
+      font-weight: 400;
+      margin-bottom: 16px;
+      color: purple;
+      font-family: Avenir Next LT Pro Demi (Headings);
     }
-
-
   </style>
   <!-- <script src="script.js" defer></script> -->
 </head>
@@ -306,7 +305,7 @@
         </div>
 
         <div class="Introduction" data-field="section_2">
-          <h1 class="Introduction-title" data-field="section_2_title" style="padding-bottom: 10px;">
+          <h1 class="Introduction-title" data-field="section_2_title">
             Introduction
           </h1>
           <p data-field="Introduction_text">
@@ -315,9 +314,13 @@
         </div>
 
         <div class="Project-Checklist" data-field="section_2">
-          <h1 class="Project-Checklist-title" data-field="section_2_title" style="padding-bottom: 10px;">
+          <h1 class="Project-Checklist-title" data-field="section_2_title">
             Project Checklist
           </h1>
+          <p data-field="Introduction_text">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed non risus. Suspendisse lectus tortor, dignissim sit amet, adipiscing nec, ultricies sed, dolor. Cras elementum ultrices diam. Maecenas ligula massa, varius a, semper congue, euismod non, mi.
+          </p>
+
           <table style="width:100%; border-collapse:collapse; font-size:13px;">
           <!-- Title Row -->
           <tr>
