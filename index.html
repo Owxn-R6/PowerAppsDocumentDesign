@@ -323,7 +323,9 @@
 										style="padding-bottom: 10px">
 										Introduction
 									</h1>
-									<p data-field="Introduction_text">
+									<p
+										data-field="Introduction_text"
+										style="padding-bottom: 10px">
 										Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed
 										non risus. Suspendisse lectus tortor, dignissim sit amet,
 										adipiscing nec, ultricies sed, dolor. Cras elementum
@@ -331,7 +333,140 @@
 										congue, euismod non, mi.
 									</p>
 								</div>
+								<div class="Customer-Overview" data-field="section_2">
+									<h1
+										class="Project-Checklist-title"
+										data-field="section_2_title"
+										style="padding-bottom: 10px">
+										{{Customer_Name}} Overview
+									</h1>
+									<table
+										style="
+											width: 100%;
+											border-collapse: collapse;
+											font-size: 13px;
+										">
+										<tr>
+											<th
+												style="
+													background-color: #6b3f6b;
+													color: white;
+													padding: 8px;
+													text-align: center;
+													width: 70%;
+												">
+												Componenets/Services
+											</th>
+											<th
+												style="
+													background-color: #6b3f6b;
+													color: white;
+													padding: 8px;
+													text-align: center;
+													width: 30%;
+												">
+												State
+											</th>
+										</tr>
+										<tr>
+											<td style="padding: 6px; border: 1px solid Black">
+												{{Platform_Type}} Snow for {{Device_Count}} endpoints
+											</td>
+											<td style="border: 1px solid Black">Active</td>
+										</tr>
+										<tr>
+											<td style="padding: 6px; border: 1px solid Black">
+												{{Product}}
+											</td>
+											<td style="border: 1px solid Black">{{Product_State}}</td>
+										</tr>
+										<tr>
+											<th
+												colspan="2"
+												style="
+													background-color: #6b3f6b;
+													color: white;
+													padding: 8px;
+													text-align: center;
+												">
+												Quick Stats
+											</th>
+										</tr>
 
+										<tr>
+											<td
+												style="
+													padding: 6px;
+													border: 1px solid Black;
+													width: 50%;
+												">
+												Renewal Date
+											</td>
+											<td
+												style="
+													padding: 6px;
+													border: 1px solid Black;
+													width: 50%;
+												">
+												XX/XX/XX
+											</td>
+										</tr>
+										<tr>
+											<td
+												style="
+													padding: 6px;
+													border: 1px solid Black;
+													width: 50%;
+												">
+												Licensed Devices / Inventoried Devices
+											</td>
+											<td
+												style="
+													padding: 6px;
+													border: 1px solid Black;
+													width: 50%;
+												">
+												XXXX/XXXX
+											</td>
+										</tr>
+										<tr>
+											<td
+												style="
+													padding: 6px;
+													border: 1px solid Black;
+													width: 50%;
+												">
+												License Completeness (%)
+											</td>
+											<td
+												style="
+													padding: 6px;
+													border: 1px solid Black;
+													width: 50%;
+												">
+												Table?
+											</td>
+										</tr>
+										<tr>
+											<td
+												style="
+													padding: 6px;
+													border: 1px solid Black;
+													width: 50%;
+												">
+												Support Cases Raised in 12 Months
+											</td>
+											<td
+												style="
+													padding: 6px;
+													border: 1px solid Black;
+													width: 50%;
+												">
+												XX
+											</td>
+										</tr>
+									</table>
+								</div>
 								<div class="Project-Checklist" data-field="section_2">
 									<div class="Project-Checklist-table">
 										<h1
@@ -1979,6 +2114,7 @@
 											border-collapse: collapse;
 											font-size: 13px;
 											margin-top: 16px;
+											margin-bottom: 16px;
 											border: 1px solid Black;
 										">
 										<tr>
@@ -2411,6 +2547,897 @@
 												"></td>
 										</tr>
 									</table>
+
+									<table
+										style="
+											width: 100%;
+											border-collapse: collapse;
+											font-family: Arial, sans-serif;
+											font-size: 13px;
+											border: 1px solid black;
+											margin-bottom: 24px;
+										">
+										<tr>
+											<th
+												colspan="4"
+												style="
+													background-color: #633965;
+													color: white;
+													padding: 10px;
+													text-align: center;
+													font-size: 16px;
+													border: 1px solid black;
+												">
+												Settings in SMACC
+											</th>
+										</tr>
+
+										<tr>
+											<td
+												colspan="4"
+												style="
+													background-color: white;
+													padding: 10px;
+													text-align: center;
+													font-size: 12px;
+													border: 1px solid black;
+												">
+												This table shows platform configurations found in the
+												Snow Management & Configuration Center, these are set as
+												default as part of this project unless changed manually.
+											</td>
+										</tr>
+
+										<tr>
+											<th
+												colspan="2"
+												style="
+													background-color: #633965;
+													color: white;
+													padding: 8px;
+													text-align: center;
+													border: 1px solid black;
+													font-size: 14px;
+												">
+												Setting name
+											</th>
+											<th
+												style="
+													width: 20%;
+													background-color: #633965;
+													color: white;
+													padding: 8px;
+													text-align: center;
+													border: 1px solid black;
+													font-size: 14px;
+												">
+												Setting value
+											</th>
+											<th
+												style="
+													width: 20%;
+													background-color: #633965;
+													color: white;
+													padding: 8px;
+													text-align: center;
+													border: 1px solid black;
+													font-size: 14px;
+												">
+												Suggested value
+											</th>
+										</tr>
+
+										<tr>
+											<td
+												style="
+													width: 20px;
+													background-color: #ff7e00;
+													border: 1px solid black;
+												"></td>
+											<td
+												style="
+													padding: 6px;
+													border: 1px solid black;
+													font-weight: bold;
+												">
+												SLM Portal URL:
+											</td>
+											<td
+												style="
+													padding: 6px;
+													border: 1px solid black;
+													text-align: center;
+													color: #666;
+												">
+												Choose an item.
+											</td>
+											<td
+												style="
+													padding: 6px;
+													border: 1px solid black;
+													text-align: center;
+													font-weight: bold;
+												">
+												N/A
+											</td>
+										</tr>
+										<tr>
+											<td
+												colspan="4"
+												style="
+													padding: 4px 6px;
+													border: 1px solid black;
+													background-color: white;
+												">
+												<strong>Comment:</strong><br />This
+											</td>
+										</tr>
+
+										<tr>
+											<td
+												style="
+													background-color: #ff7e00;
+													border: 1px solid black;
+												"></td>
+											<td
+												style="
+													padding: 6px;
+													border: 1px solid black;
+													font-weight: bold;
+												">
+												Portal Authentication Method:
+											</td>
+											<td
+												style="
+													padding: 6px;
+													border: 1px solid black;
+													text-align: center;
+													color: #666;
+												">
+												Choose an item.
+											</td>
+											<td
+												style="
+													padding: 6px;
+													border: 1px solid black;
+													text-align: center;
+													font-weight: bold;
+												">
+												N/A
+											</td>
+										</tr>
+										<tr>
+											<td
+												colspan="4"
+												style="
+													padding: 4px 6px;
+													border: 1px solid black;
+													background-color: white;
+												">
+												<strong>Comment:</strong><br />This
+											</td>
+										</tr>
+
+										<tr>
+											<td
+												style="
+													background-color: #32cd32;
+													border: 1px solid black;
+												"></td>
+											<td
+												style="
+													padding: 6px;
+													border: 1px solid black;
+													font-weight: bold;
+												">
+												AD Discovery Period:
+											</td>
+											<td
+												style="
+													padding: 6px;
+													border: 1px solid black;
+													text-align: center;
+												"></td>
+											<td
+												style="
+													padding: 6px;
+													border: 1px solid black;
+													text-align: center;
+													font-weight: bold;
+												"></td>
+										</tr>
+										<tr>
+											<td
+												colspan="4"
+												style="
+													padding: 4px 6px;
+													border: 1px solid black;
+													background-color: white;
+												">
+												<strong>Comment:</strong><br />This
+											</td>
+										</tr>
+
+										<tr>
+											<td
+												style="
+													background-color: #ff7e00;
+													border: 1px solid black;
+												"></td>
+											<td
+												style="
+													padding: 6px;
+													border: 1px solid black;
+													font-weight: bold;
+												">
+												Cloud Metering Enabled:
+											</td>
+											<td
+												style="
+													padding: 6px;
+													border: 1px solid black;
+													text-align: center;
+												"></td>
+											<td
+												style="
+													padding: 6px;
+													border: 1px solid black;
+													text-align: center;
+													font-weight: bold;
+												"></td>
+										</tr>
+										<tr>
+											<td
+												colspan="4"
+												style="
+													padding: 4px 6px;
+													border: 1px solid black;
+													background-color: white;
+												">
+												<strong>Comment:</strong><br />This
+											</td>
+										</tr>
+
+										<tr>
+											<td
+												style="
+													background-color: #32cd32;
+													border: 1px solid black;
+												"></td>
+											<td
+												style="
+													padding: 6px;
+													border: 1px solid black;
+													font-weight: bold;
+												">
+												Compliance Cleanup Active:
+											</td>
+											<td
+												style="
+													padding: 6px;
+													border: 1px solid black;
+													text-align: center;
+												"></td>
+											<td
+												style="
+													padding: 6px;
+													border: 1px solid black;
+													text-align: center;
+													font-weight: bold;
+												"></td>
+										</tr>
+										<tr>
+											<td
+												colspan="4"
+												style="
+													padding: 4px 6px;
+													border: 1px solid black;
+													background-color: white;
+												">
+												<strong>Comment:</strong><br />This
+											</td>
+										</tr>
+
+										<tr>
+											<td
+												style="
+													background-color: #ff7e00;
+													border: 1px solid black;
+												"></td>
+											<td
+												style="
+													padding: 6px;
+													border: 1px solid black;
+													font-weight: bold;
+												">
+												Compliance Cleanup Months:
+											</td>
+											<td
+												style="
+													padding: 6px;
+													border: 1px solid black;
+													text-align: center;
+												"></td>
+											<td
+												style="
+													padding: 6px;
+													border: 1px solid black;
+													text-align: center;
+													font-weight: bold;
+												"></td>
+										</tr>
+										<tr>
+											<td
+												colspan="4"
+												style="
+													padding: 4px 6px;
+													border: 1px solid black;
+													background-color: white;
+												">
+												<strong>Comment:</strong><br />This
+											</td>
+										</tr>
+
+										<tr>
+											<td
+												style="
+													background-color: #32cd32;
+													border: 1px solid black;
+												"></td>
+											<td
+												style="
+													padding: 6px;
+													border: 1px solid black;
+													font-weight: bold;
+												">
+												Currency Management:
+											</td>
+											<td
+												style="
+													padding: 6px;
+													border: 1px solid black;
+													text-align: center;
+												"></td>
+											<td
+												style="
+													padding: 6px;
+													border: 1px solid black;
+													text-align: center;
+													font-weight: bold;
+												"></td>
+										</tr>
+										<tr>
+											<td
+												colspan="4"
+												style="
+													padding: 4px 6px;
+													border: 1px solid black;
+													background-color: white;
+												">
+												<strong>Comment:</strong><br />This
+											</td>
+										</tr>
+
+										<tr>
+											<td
+												style="
+													background-color: #ff7e00;
+													border: 1px solid black;
+												"></td>
+											<td
+												style="
+													padding: 6px;
+													border: 1px solid black;
+													font-weight: bold;
+												">
+												Device Quarantine Active:
+											</td>
+											<td
+												style="
+													padding: 6px;
+													border: 1px solid black;
+													text-align: center;
+												"></td>
+											<td
+												style="
+													padding: 6px;
+													border: 1px solid black;
+													text-align: center;
+													font-weight: bold;
+												"></td>
+										</tr>
+										<tr>
+											<td
+												colspan="4"
+												style="
+													padding: 4px 6px;
+													border: 1px solid black;
+													background-color: white;
+												">
+												<strong>Comment:</strong><br />This
+											</td>
+										</tr>
+
+										<tr>
+											<td
+												style="
+													background-color: #32cd32;
+													border: 1px solid black;
+												"></td>
+											<td
+												style="
+													padding: 6px;
+													border: 1px solid black;
+													font-weight: bold;
+												">
+												Device Quarantine Days:
+											</td>
+											<td
+												style="
+													padding: 6px;
+													border: 1px solid black;
+													text-align: center;
+												"></td>
+											<td
+												style="
+													padding: 6px;
+													border: 1px solid black;
+													text-align: center;
+													font-weight: bold;
+												"></td>
+										</tr>
+										<tr>
+											<td
+												colspan="4"
+												style="
+													padding: 4px 6px;
+													border: 1px solid black;
+													background-color: white;
+												">
+												<strong>Comment:</strong><br />This
+											</td>
+										</tr>
+
+										<tr>
+											<td
+												style="
+													background-color: #ff7e00;
+													border: 1px solid black;
+												"></td>
+											<td
+												style="
+													padding: 6px;
+													border: 1px solid black;
+													font-weight: bold;
+												">
+												Device Quarantine Delete Active:
+											</td>
+											<td
+												style="
+													padding: 6px;
+													border: 1px solid black;
+													text-align: center;
+												"></td>
+											<td
+												style="
+													padding: 6px;
+													border: 1px solid black;
+													text-align: center;
+													font-weight: bold;
+												"></td>
+										</tr>
+										<tr>
+											<td
+												colspan="4"
+												style="
+													padding: 4px 6px;
+													border: 1px solid black;
+													background-color: white;
+												">
+												<strong>Comment:</strong><br />This
+											</td>
+										</tr>
+
+										<tr>
+											<td
+												style="
+													background-color: #32cd32;
+													border: 1px solid black;
+												"></td>
+											<td
+												style="
+													padding: 6px;
+													border: 1px solid black;
+													font-weight: bold;
+												">
+												Device Quarantine Delete Days:
+											</td>
+											<td
+												style="
+													padding: 6px;
+													border: 1px solid black;
+													text-align: center;
+												"></td>
+											<td
+												style="
+													padding: 6px;
+													border: 1px solid black;
+													text-align: center;
+													font-weight: bold;
+												"></td>
+										</tr>
+										<tr>
+											<td
+												colspan="4"
+												style="
+													padding: 4px 6px;
+													border: 1px solid black;
+													background-color: white;
+												">
+												<strong>Comment:</strong><br />This
+											</td>
+										</tr>
+
+										<tr>
+											<td
+												style="
+													background-color: #ff7e00;
+													border: 1px solid black;
+												"></td>
+											<td
+												style="
+													padding: 6px;
+													border: 1px solid black;
+													font-weight: bold;
+												">
+												Quarantine Active:
+											</td>
+											<td
+												style="
+													padding: 6px;
+													border: 1px solid black;
+													text-align: center;
+												"></td>
+											<td
+												style="
+													padding: 6px;
+													border: 1px solid black;
+													text-align: center;
+													font-weight: bold;
+												"></td>
+										</tr>
+										<tr>
+											<td
+												colspan="4"
+												style="
+													padding: 4px 6px;
+													border: 1px solid black;
+													background-color: white;
+												">
+												<strong>Comment:</strong><br />This
+											</td>
+										</tr>
+
+										<tr>
+											<td
+												style="
+													background-color: #32cd32;
+													border: 1px solid black;
+												"></td>
+											<td
+												style="
+													padding: 6px;
+													border: 1px solid black;
+													font-weight: bold;
+												">
+												Quarantine Days:
+											</td>
+											<td
+												style="
+													padding: 6px;
+													border: 1px solid black;
+													text-align: center;
+												"></td>
+											<td
+												style="
+													padding: 6px;
+													border: 1px solid black;
+													text-align: center;
+													font-weight: bold;
+												"></td>
+										</tr>
+										<tr>
+											<td
+												colspan="4"
+												style="
+													padding: 4px 6px;
+													border: 1px solid black;
+													background-color: white;
+												">
+												<strong>Comment:</strong><br />This
+											</td>
+										</tr>
+
+										<tr>
+											<td
+												style="
+													background-color: #ff7e00;
+													border: 1px solid black;
+												"></td>
+											<td
+												style="
+													padding: 6px;
+													border: 1px solid black;
+													font-weight: bold;
+												">
+												Quarantine Delete Active:
+											</td>
+											<td
+												style="
+													padding: 6px;
+													border: 1px solid black;
+													text-align: center;
+												"></td>
+											<td
+												style="
+													padding: 6px;
+													border: 1px solid black;
+													text-align: center;
+													font-weight: bold;
+												"></td>
+										</tr>
+										<tr>
+											<td
+												colspan="4"
+												style="
+													padding: 4px 6px;
+													border: 1px solid black;
+													background-color: white;
+												">
+												<strong>Comment:</strong><br />This
+											</td>
+										</tr>
+
+										<tr>
+											<td
+												style="
+													background-color: #32cd32;
+													border: 1px solid black;
+												"></td>
+											<td
+												style="
+													padding: 6px;
+													border: 1px solid black;
+													font-weight: bold;
+												">
+												Quarantine Delete Action:
+											</td>
+											<td
+												style="
+													padding: 6px;
+													border: 1px solid black;
+													text-align: center;
+												"></td>
+											<td
+												style="
+													padding: 6px;
+													border: 1px solid black;
+													text-align: center;
+													font-weight: bold;
+												"></td>
+										</tr>
+										<tr>
+											<td
+												colspan="4"
+												style="
+													padding: 4px 6px;
+													border: 1px solid black;
+													background-color: white;
+												">
+												<strong>Comment:</strong><br />This
+											</td>
+										</tr>
+
+										<tr>
+											<td
+												style="
+													background-color: #ff7e00;
+													border: 1px solid black;
+												"></td>
+											<td
+												style="
+													padding: 6px;
+													border: 1px solid black;
+													font-weight: bold;
+												">
+												Quarantine Delete Days:
+											</td>
+											<td
+												style="
+													padding: 6px;
+													border: 1px solid black;
+													text-align: center;
+												"></td>
+											<td
+												style="
+													padding: 6px;
+													border: 1px solid black;
+													text-align: center;
+													font-weight: bold;
+												"></td>
+										</tr>
+										<tr>
+											<td
+												colspan="4"
+												style="
+													padding: 4px 6px;
+													border: 1px solid black;
+													background-color: white;
+												">
+												<strong>Comment:</strong><br />This
+											</td>
+										</tr>
+
+										<tr>
+											<td
+												style="
+													background-color: #32cd32;
+													border: 1px solid black;
+												"></td>
+											<td
+												style="
+													padding: 6px;
+													border: 1px solid black;
+													font-weight: bold;
+												">
+												User Quarantine Active:
+											</td>
+											<td
+												style="
+													padding: 6px;
+													border: 1px solid black;
+													text-align: center;
+												"></td>
+											<td
+												style="
+													padding: 6px;
+													border: 1px solid black;
+													text-align: center;
+													font-weight: bold;
+												"></td>
+										</tr>
+										<tr>
+											<td
+												colspan="4"
+												style="
+													padding: 4px 6px;
+													border: 1px solid black;
+													background-color: white;
+												">
+												<strong>Comment:</strong><br />This
+											</td>
+										</tr>
+
+										<tr>
+											<td
+												style="
+													background-color: #ff7e00;
+													border: 1px solid black;
+												"></td>
+											<td
+												style="
+													padding: 6px;
+													border: 1px solid black;
+													font-weight: bold;
+												">
+												User Quarantine Days:
+											</td>
+											<td
+												style="
+													padding: 6px;
+													border: 1px solid black;
+													text-align: center;
+												"></td>
+											<td
+												style="
+													padding: 6px;
+													border: 1px solid black;
+													text-align: center;
+													font-weight: bold;
+												"></td>
+										</tr>
+										<tr>
+											<td
+												colspan="4"
+												style="
+													padding: 4px 6px;
+													border: 1px solid black;
+													background-color: white;
+												">
+												<strong>Comment:</strong><br />This
+											</td>
+										</tr>
+
+										<tr>
+											<td
+												style="
+													background-color: #32cd32;
+													border: 1px solid black;
+												"></td>
+											<td
+												style="
+													padding: 6px;
+													border: 1px solid black;
+													font-weight: bold;
+												">
+												User Quarantine Delete Active:
+											</td>
+											<td
+												style="
+													padding: 6px;
+													border: 1px solid black;
+													text-align: center;
+												"></td>
+											<td
+												style="
+													padding: 6px;
+													border: 1px solid black;
+													text-align: center;
+													font-weight: bold;
+												"></td>
+										</tr>
+										<tr>
+											<td
+												colspan="4"
+												style="
+													padding: 4px 6px;
+													border: 1px solid black;
+													background-color: white;
+												">
+												<strong>Comment:</strong><br />This
+											</td>
+										</tr>
+
+										<tr>
+											<td
+												style="
+													background-color: #ff7e00;
+													border: 1px solid black;
+												"></td>
+											<td
+												style="
+													padding: 6px;
+													border: 1px solid black;
+													font-weight: bold;
+												">
+												User Quarantine Delete Days:
+											</td>
+											<td
+												style="
+													padding: 6px;
+													border: 1px solid black;
+													text-align: center;
+												"></td>
+											<td
+												style="
+													padding: 6px;
+													border: 1px solid black;
+													text-align: center;
+													font-weight: bold;
+												"></td>
+										</tr>
+										<tr>
+											<td
+												colspan="4"
+												style="
+													padding: 4px 6px;
+													border: 1px solid black;
+													background-color: white;
+												">
+												<strong>Comment:</strong><br />This
+											</td>
+										</tr>
+									</table>
 								</div>
 								<div
 									class="Snow-Atlas-Platform-Configurations"
@@ -2428,13 +3455,14 @@
 										">
 										SNOW Atlas Platform Configurations:
 									</h1>
-
+									<!-- for buildsheet -->
 									<table
 										style="
 											width: 100%;
 											border-collapse: collapse;
 											font-size: 13px;
 											margin-top: 16px;
+											margin-bottom: 16px;
 											border: 1px solid Black;
 										">
 										<tr>
@@ -2987,6 +4015,1372 @@
 												"></td>
 										</tr>
 									</table>
+									<!-- For Healthcheck-->
+									<table
+										style="
+											width: 100%;
+											border-collapse: collapse;
+											font-family: Arial, sans-serif;
+											font-size: 13px;
+											margin-bottom: 16px;
+											border: 1px solid black;
+										">
+										<tr>
+											<th
+												colspan="4"
+												style="
+													background-color: #633965;
+													color: white;
+													padding: 10px;
+													text-align: center;
+													font-size: 16px;
+													border: 1px solid black;
+												">
+												Settings in Snow Atlas
+											</th>
+										</tr>
+
+										<tr>
+											<td
+												colspan="4"
+												style="
+													background-color: white;
+													padding: 10px;
+													text-align: center;
+													font-size: 12px;
+													border: 1px solid black;
+												">
+												This table shows platform configurations found in the
+												Snow Atlas settings, these are set as default as part of
+												this project unless changed manually.
+											</td>
+										</tr>
+
+										<tr>
+											<th
+												colspan="2"
+												style="
+													background-color: #633965;
+													color: white;
+													padding: 8px;
+													text-align: center;
+													border: 1px solid black;
+													font-size: 14px;
+												">
+												Setting name
+											</th>
+											<th
+												style="
+													width: 20%;
+													background-color: #633965;
+													color: white;
+													padding: 8px;
+													text-align: center;
+													border: 1px solid black;
+													font-size: 14px;
+												">
+												Setting value
+											</th>
+											<th
+												style="
+													width: 20%;
+													background-color: #633965;
+													color: white;
+													padding: 8px;
+													text-align: center;
+													border: 1px solid black;
+													font-size: 14px;
+												">
+												Suggested value
+											</th>
+										</tr>
+
+										<tr>
+											<td
+												style="
+													width: 20px;
+													background-color: #ff7e00;
+													border: 1px solid black;
+												"></td>
+											<td
+												style="
+													padding: 6px;
+													border: 1px solid black;
+													font-weight: bold;
+												">
+												Portal Authentication Method
+											</td>
+											<td
+												style="
+													padding: 6px;
+													border: 1px solid black;
+													text-align: center;
+													color: #666;
+												">
+												Choose an item.
+											</td>
+											<td
+												style="
+													padding: 6px;
+													border: 1px solid black;
+													text-align: center;
+													font-weight: bold;
+												">
+												N/A
+											</td>
+										</tr>
+										<tr>
+											<td
+												colspan="4"
+												style="
+													padding: 4px 6px;
+													border: 1px solid black;
+													background-color: white;
+												">
+												<strong>Comment:</strong><br />This
+											</td>
+										</tr>
+
+										<tr>
+											<td
+												style="
+													background-color: #ff7e00;
+													border: 1px solid black;
+												"></td>
+											<td
+												style="
+													padding: 6px;
+													border: 1px solid black;
+													font-weight: bold;
+												">
+												External Access Enabled
+											</td>
+											<td
+												style="
+													padding: 6px;
+													border: 1px solid black;
+													text-align: center;
+													color: #666;
+												">
+												Choose an item.
+											</td>
+											<td
+												style="
+													padding: 6px;
+													border: 1px solid black;
+													text-align: center;
+													font-weight: bold;
+												">
+												N/A
+											</td>
+										</tr>
+										<tr>
+											<td
+												colspan="4"
+												style="
+													padding: 4px 6px;
+													border: 1px solid black;
+													background-color: white;
+												">
+												<strong>Comment:</strong><br />This
+											</td>
+										</tr>
+
+										<tr>
+											<td
+												style="
+													background-color: #ff7e00;
+													border: 1px solid black;
+												"></td>
+											<td
+												style="
+													padding: 6px;
+													border: 1px solid black;
+													font-weight: bold;
+												">
+												Save Incomplete Licenses
+											</td>
+											<td
+												style="
+													padding: 6px;
+													border: 1px solid black;
+													text-align: center;
+												"></td>
+											<td
+												style="
+													padding: 6px;
+													border: 1px solid black;
+													text-align: center;
+													font-weight: bold;
+												"></td>
+										</tr>
+										<tr>
+											<td
+												colspan="4"
+												style="
+													padding: 4px 6px;
+													border: 1px solid black;
+													background-color: white;
+												">
+												<strong>Comment:</strong><br />This
+											</td>
+										</tr>
+
+										<tr>
+											<td
+												style="
+													background-color: #32cd32;
+													border: 1px solid black;
+												"></td>
+											<td
+												style="
+													padding: 6px;
+													border: 1px solid black;
+													font-weight: bold;
+												">
+												Check if External License ID is Unique
+											</td>
+											<td
+												style="
+													padding: 6px;
+													border: 1px solid black;
+													text-align: center;
+												"></td>
+											<td
+												style="
+													padding: 6px;
+													border: 1px solid black;
+													text-align: center;
+													font-weight: bold;
+												"></td>
+										</tr>
+										<tr>
+											<td
+												colspan="4"
+												style="
+													padding: 4px 6px;
+													border: 1px solid black;
+													background-color: white;
+												">
+												<strong>Comment:</strong><br />This
+											</td>
+										</tr>
+
+										<tr>
+											<td
+												style="
+													background-color: #32cd32;
+													border: 1px solid black;
+												"></td>
+											<td
+												style="
+													padding: 6px;
+													border: 1px solid black;
+													font-weight: bold;
+												">
+												Allowlist File Extensions
+											</td>
+											<td
+												style="
+													padding: 6px;
+													border: 1px solid black;
+													text-align: center;
+												"></td>
+											<td
+												style="
+													padding: 6px;
+													border: 1px solid black;
+													text-align: center;
+													font-weight: bold;
+												"></td>
+										</tr>
+										<tr>
+											<td
+												colspan="4"
+												style="
+													padding: 4px 6px;
+													border: 1px solid black;
+													background-color: white;
+												">
+												<strong>Comment:</strong><br />This
+											</td>
+										</tr>
+
+										<tr>
+											<td
+												style="
+													background-color: #ff7e00;
+													border: 1px solid black;
+												"></td>
+											<td
+												style="
+													padding: 6px;
+													border: 1px solid black;
+													font-weight: bold;
+												">
+												Denylist File Extensions
+											</td>
+											<td
+												style="
+													padding: 6px;
+													border: 1px solid black;
+													text-align: center;
+												"></td>
+											<td
+												style="
+													padding: 6px;
+													border: 1px solid black;
+													text-align: center;
+													font-weight: bold;
+												"></td>
+										</tr>
+										<tr>
+											<td
+												colspan="4"
+												style="
+													padding: 4px 6px;
+													border: 1px solid black;
+													background-color: white;
+												">
+												<strong>Comment:</strong><br />This
+											</td>
+										</tr>
+
+										<tr>
+											<td
+												style="
+													background-color: #32cd32;
+													border: 1px solid black;
+												"></td>
+											<td
+												style="
+													padding: 6px;
+													border: 1px solid black;
+													font-weight: bold;
+												">
+												Enable AllowList Applications
+											</td>
+											<td
+												style="
+													padding: 6px;
+													border: 1px solid black;
+													text-align: center;
+												"></td>
+											<td
+												style="
+													padding: 6px;
+													border: 1px solid black;
+													text-align: center;
+													font-weight: bold;
+												"></td>
+										</tr>
+										<tr>
+											<td
+												colspan="4"
+												style="
+													padding: 4px 6px;
+													border: 1px solid black;
+													background-color: white;
+												">
+												<strong>Comment:</strong><br />This
+											</td>
+										</tr>
+
+										<tr>
+											<td
+												style="
+													background-color: #ff7e00;
+													border: 1px solid black;
+												"></td>
+											<td
+												style="
+													padding: 6px;
+													border: 1px solid black;
+													font-weight: bold;
+												">
+												User Account Exclusions
+											</td>
+											<td
+												style="
+													padding: 6px;
+													border: 1px solid black;
+													text-align: center;
+												"></td>
+											<td
+												style="
+													padding: 6px;
+													border: 1px solid black;
+													text-align: center;
+													font-weight: bold;
+												"></td>
+										</tr>
+										<tr>
+											<td
+												colspan="4"
+												style="
+													padding: 4px 6px;
+													border: 1px solid black;
+													background-color: white;
+												">
+												<strong>Comment:</strong><br />This
+											</td>
+										</tr>
+
+										<tr>
+											<td
+												style="
+													background-color: #32cd32;
+													border: 1px solid black;
+												"></td>
+											<td
+												style="
+													padding: 6px;
+													border: 1px solid black;
+													font-weight: bold;
+												">
+												AD Discovery Period
+											</td>
+											<td
+												style="
+													padding: 6px;
+													border: 1px solid black;
+													text-align: center;
+												"></td>
+											<td
+												style="
+													padding: 6px;
+													border: 1px solid black;
+													text-align: center;
+													font-weight: bold;
+												"></td>
+										</tr>
+										<tr>
+											<td
+												colspan="4"
+												style="
+													padding: 4px 6px;
+													border: 1px solid black;
+													background-color: white;
+												">
+												<strong>Comment:</strong><br />This
+											</td>
+										</tr>
+
+										<tr>
+											<td
+												style="
+													background-color: #ff7e00;
+													border: 1px solid black;
+												"></td>
+											<td
+												style="
+													padding: 6px;
+													border: 1px solid black;
+													font-weight: bold;
+												">
+												Enable Anonymous User Management
+											</td>
+											<td
+												style="
+													padding: 6px;
+													border: 1px solid black;
+													text-align: center;
+												"></td>
+											<td
+												style="
+													padding: 6px;
+													border: 1px solid black;
+													text-align: center;
+													font-weight: bold;
+												"></td>
+										</tr>
+										<tr>
+											<td
+												colspan="4"
+												style="
+													padding: 4px 6px;
+													border: 1px solid black;
+													background-color: white;
+												">
+												<strong>Comment:</strong><br />This
+											</td>
+										</tr>
+
+										<tr>
+											<td
+												style="
+													background-color: #32cd32;
+													border: 1px solid black;
+												"></td>
+											<td
+												style="
+													padding: 6px;
+													border: 1px solid black;
+													font-weight: bold;
+												">
+												Device Quarantine Days
+											</td>
+											<td
+												style="
+													padding: 6px;
+													border: 1px solid black;
+													text-align: center;
+												"></td>
+											<td
+												style="
+													padding: 6px;
+													border: 1px solid black;
+													text-align: center;
+													font-weight: bold;
+												"></td>
+										</tr>
+										<tr>
+											<td
+												colspan="4"
+												style="
+													padding: 4px 6px;
+													border: 1px solid black;
+													background-color: white;
+												">
+												<strong>Comment:</strong><br />This
+											</td>
+										</tr>
+
+										<tr>
+											<td
+												style="
+													background-color: #ff7e00;
+													border: 1px solid black;
+												"></td>
+											<td
+												style="
+													padding: 6px;
+													border: 1px solid black;
+													font-weight: bold;
+												">
+												Device Quarantine Delete Days
+											</td>
+											<td
+												style="
+													padding: 6px;
+													border: 1px solid black;
+													text-align: center;
+												"></td>
+											<td
+												style="
+													padding: 6px;
+													border: 1px solid black;
+													text-align: center;
+													font-weight: bold;
+												"></td>
+										</tr>
+										<tr>
+											<td
+												colspan="4"
+												style="
+													padding: 4px 6px;
+													border: 1px solid black;
+													background-color: white;
+												">
+												<strong>Comment:</strong><br />This
+											</td>
+										</tr>
+
+										<tr>
+											<td
+												style="
+													background-color: #32cd32;
+													border: 1px solid black;
+												"></td>
+											<td
+												style="
+													padding: 6px;
+													border: 1px solid black;
+													font-weight: bold;
+												">
+												Device Quarantine Delete Action
+											</td>
+											<td
+												style="
+													padding: 6px;
+													border: 1px solid black;
+													text-align: center;
+												"></td>
+											<td
+												style="
+													padding: 6px;
+													border: 1px solid black;
+													text-align: center;
+													font-weight: bold;
+												"></td>
+										</tr>
+										<tr>
+											<td
+												colspan="4"
+												style="
+													padding: 4px 6px;
+													border: 1px solid black;
+													background-color: white;
+												">
+												<strong>Comment:</strong><br />This
+											</td>
+										</tr>
+
+										<tr>
+											<td
+												style="
+													background-color: #ff7e00;
+													border: 1px solid black;
+												"></td>
+											<td
+												style="
+													padding: 6px;
+													border: 1px solid black;
+													font-weight: bold;
+												">
+												Device Quarantine Delete Active
+											</td>
+											<td
+												style="
+													padding: 6px;
+													border: 1px solid black;
+													text-align: center;
+												"></td>
+											<td
+												style="
+													padding: 6px;
+													border: 1px solid black;
+													text-align: center;
+													font-weight: bold;
+												"></td>
+										</tr>
+										<tr>
+											<td
+												colspan="4"
+												style="
+													padding: 4px 6px;
+													border: 1px solid black;
+													background-color: white;
+												">
+												<strong>Comment:</strong><br />This
+											</td>
+										</tr>
+
+										<tr>
+											<td
+												style="
+													background-color: #32cd32;
+													border: 1px solid black;
+												"></td>
+											<td
+												style="
+													padding: 6px;
+													border: 1px solid black;
+													font-weight: bold;
+												">
+												Days before removing inactive datacenters
+											</td>
+											<td
+												style="
+													padding: 6px;
+													border: 1px solid black;
+													text-align: center;
+												"></td>
+											<td
+												style="
+													padding: 6px;
+													border: 1px solid black;
+													text-align: center;
+													font-weight: bold;
+												"></td>
+										</tr>
+										<tr>
+											<td
+												colspan="4"
+												style="
+													padding: 4px 6px;
+													border: 1px solid black;
+													background-color: white;
+												">
+												<strong>Comment:</strong><br />This
+											</td>
+										</tr>
+
+										<tr>
+											<td
+												style="
+													background-color: #ff7e00;
+													border: 1px solid black;
+												"></td>
+											<td
+												style="
+													padding: 6px;
+													border: 1px solid black;
+													font-weight: bold;
+												">
+												Data Visibilty based on organization structure
+											</td>
+											<td
+												style="
+													padding: 6px;
+													border: 1px solid black;
+													text-align: center;
+												"></td>
+											<td
+												style="
+													padding: 6px;
+													border: 1px solid black;
+													text-align: center;
+													font-weight: bold;
+												"></td>
+										</tr>
+										<tr>
+											<td
+												colspan="4"
+												style="
+													padding: 4px 6px;
+													border: 1px solid black;
+													background-color: white;
+												">
+												<strong>Comment:</strong><br />This
+											</td>
+										</tr>
+
+										<tr>
+											<td
+												style="
+													background-color: #32cd32;
+													border: 1px solid black;
+												"></td>
+											<td
+												style="
+													padding: 6px;
+													border: 1px solid black;
+													font-weight: bold;
+												">
+												Remote Device Quarantine days
+											</td>
+											<td
+												style="
+													padding: 6px;
+													border: 1px solid black;
+													text-align: center;
+												"></td>
+											<td
+												style="
+													padding: 6px;
+													border: 1px solid black;
+													text-align: center;
+													font-weight: bold;
+												"></td>
+										</tr>
+										<tr>
+											<td
+												colspan="4"
+												style="
+													padding: 4px 6px;
+													border: 1px solid black;
+													background-color: white;
+												">
+												<strong>Comment:</strong><br />This
+											</td>
+										</tr>
+
+										<tr>
+											<td
+												style="
+													background-color: #ff7e00;
+													border: 1px solid black;
+												"></td>
+											<td
+												style="
+													padding: 6px;
+													border: 1px solid black;
+													font-weight: bold;
+												">
+												Remote Device Delete Days
+											</td>
+											<td
+												style="
+													padding: 6px;
+													border: 1px solid black;
+													text-align: center;
+												"></td>
+											<td
+												style="
+													padding: 6px;
+													border: 1px solid black;
+													text-align: center;
+													font-weight: bold;
+												"></td>
+										</tr>
+										<tr>
+											<td
+												colspan="4"
+												style="
+													padding: 4px 6px;
+													border: 1px solid black;
+													background-color: white;
+												">
+												<strong>Comment:</strong><br />This
+											</td>
+										</tr>
+
+										<tr>
+											<td
+												style="
+													background-color: #32cd32;
+													border: 1px solid black;
+												"></td>
+											<td
+												style="
+													padding: 6px;
+													border: 1px solid black;
+													font-weight: bold;
+												">
+												Remote Device Quarantine Delete
+											</td>
+											<td
+												style="
+													padding: 6px;
+													border: 1px solid black;
+													text-align: center;
+												"></td>
+											<td
+												style="
+													padding: 6px;
+													border: 1px solid black;
+													text-align: center;
+													font-weight: bold;
+												"></td>
+										</tr>
+										<tr>
+											<td
+												colspan="4"
+												style="
+													padding: 4px 6px;
+													border: 1px solid black;
+													background-color: white;
+												">
+												<strong>Comment:</strong><br />This
+											</td>
+										</tr>
+
+										<tr>
+											<td
+												style="
+													background-color: #ff7e00;
+													border: 1px solid black;
+												"></td>
+											<td
+												style="
+													padding: 6px;
+													border: 1px solid black;
+													font-weight: bold;
+												">
+												Historic Software Usage Metering
+											</td>
+											<td
+												style="
+													padding: 6px;
+													border: 1px solid black;
+													text-align: center;
+												"></td>
+											<td
+												style="
+													padding: 6px;
+													border: 1px solid black;
+													text-align: center;
+													font-weight: bold;
+												"></td>
+										</tr>
+										<tr>
+											<td
+												colspan="4"
+												style="
+													padding: 4px 6px;
+													border: 1px solid black;
+													background-color: white;
+												">
+												<strong>Comment:</strong><br />This
+											</td>
+										</tr>
+
+										<tr>
+											<td
+												style="
+													background-color: #32cd32;
+													border: 1px solid black;
+												"></td>
+											<td
+												style="
+													padding: 6px;
+													border: 1px solid black;
+													font-weight: bold;
+												">
+												Exclude Most Recent User
+											</td>
+											<td
+												style="
+													padding: 6px;
+													border: 1px solid black;
+													text-align: center;
+												"></td>
+											<td
+												style="
+													padding: 6px;
+													border: 1px solid black;
+													text-align: center;
+													font-weight: bold;
+												"></td>
+										</tr>
+										<tr>
+											<td
+												colspan="4"
+												style="
+													padding: 4px 6px;
+													border: 1px solid black;
+													background-color: white;
+												">
+												<strong>Comment:</strong><br />This
+											</td>
+										</tr>
+
+										<tr>
+											<td
+												style="
+													background-color: #ff7e00;
+													border: 1px solid black;
+												"></td>
+											<td
+												style="
+													padding: 6px;
+													border: 1px solid black;
+													font-weight: bold;
+												">
+												Exclude most frequent user
+											</td>
+											<td
+												style="
+													padding: 6px;
+													border: 1px solid black;
+													text-align: center;
+												"></td>
+											<td
+												style="
+													padding: 6px;
+													border: 1px solid black;
+													text-align: center;
+													font-weight: bold;
+												"></td>
+										</tr>
+										<tr>
+											<td
+												colspan="4"
+												style="
+													padding: 4px 6px;
+													border: 1px solid black;
+													background-color: white;
+												">
+												<strong>Comment:</strong><br />This
+											</td>
+										</tr>
+
+										<tr>
+											<td
+												style="
+													background-color: #32cd32;
+													border: 1px solid black;
+												"></td>
+											<td
+												style="
+													padding: 6px;
+													border: 1px solid black;
+													font-weight: bold;
+												">
+												Historic user login data retention period (days)
+											</td>
+											<td
+												style="
+													padding: 6px;
+													border: 1px solid black;
+													text-align: center;
+												"></td>
+											<td
+												style="
+													padding: 6px;
+													border: 1px solid black;
+													text-align: center;
+													font-weight: bold;
+												"></td>
+										</tr>
+										<tr>
+											<td
+												colspan="4"
+												style="
+													padding: 4px 6px;
+													border: 1px solid black;
+													background-color: white;
+												">
+												<strong>Comment:</strong><br />This
+											</td>
+										</tr>
+
+										<tr>
+											<td
+												style="
+													background-color: #ff7e00;
+													border: 1px solid black;
+												"></td>
+											<td
+												style="
+													padding: 6px;
+													border: 1px solid black;
+													font-weight: bold;
+												">
+												User Quarantine Days
+											</td>
+											<td
+												style="
+													padding: 6px;
+													border: 1px solid black;
+													text-align: center;
+												"></td>
+											<td
+												style="
+													padding: 6px;
+													border: 1px solid black;
+													text-align: center;
+													font-weight: bold;
+												"></td>
+										</tr>
+										<tr>
+											<td
+												colspan="4"
+												style="
+													padding: 4px 6px;
+													border: 1px solid black;
+													background-color: white;
+												">
+												<strong>Comment:</strong><br />This
+											</td>
+										</tr>
+
+										<tr>
+											<td
+												style="
+													background-color: #32cd32;
+													border: 1px solid black;
+												"></td>
+											<td
+												style="
+													padding: 6px;
+													border: 1px solid black;
+													font-weight: bold;
+												">
+												User Quarantine Delete Days
+											</td>
+											<td
+												style="
+													padding: 6px;
+													border: 1px solid black;
+													text-align: center;
+												"></td>
+											<td
+												style="
+													padding: 6px;
+													border: 1px solid black;
+													text-align: center;
+													font-weight: bold;
+												"></td>
+										</tr>
+										<tr>
+											<td
+												colspan="4"
+												style="
+													padding: 4px 6px;
+													border: 1px solid black;
+													background-color: white;
+												">
+												<strong>Comment:</strong><br />This
+											</td>
+										</tr>
+
+										<tr>
+											<td
+												style="
+													background-color: #ff7e00;
+													border: 1px solid black;
+												"></td>
+											<td
+												style="
+													padding: 6px;
+													border: 1px solid black;
+													font-weight: bold;
+												">
+												User Quarantine Delete Active
+											</td>
+											<td
+												style="
+													padding: 6px;
+													border: 1px solid black;
+													text-align: center;
+												"></td>
+											<td
+												style="
+													padding: 6px;
+													border: 1px solid black;
+													text-align: center;
+													font-weight: bold;
+												"></td>
+										</tr>
+										<tr>
+											<td
+												colspan="4"
+												style="
+													padding: 4px 6px;
+													border: 1px solid black;
+													background-color: white;
+												">
+												<strong>Comment:</strong><br />This
+											</td>
+										</tr>
+									</table>
+								</div>
+								<div
+									class="Snow-Currency"
+									data-field="section_2"
+									style="font-family: Avenir Next LT Pro Regular (Body)">
+									<!-- For Healthcheck -->
+									<table
+										style="
+											width: 100%;
+											border-collapse: collapse;
+											font-family: Arial, sans-serif;
+											font-size: 14px;
+											border: 1px solid #000000;
+											text-align: center;
+											margin-bottom: 16px;
+										">
+										<thead>
+											<tr
+												style="
+													background-color: #633263;
+													color: #ffffff;
+													font-weight: bold;
+													font-size: 16px;
+												">
+												<th
+													colspan="5"
+													style="padding: 10px; border: 1px solid #000000">
+													Snow platform currency management
+												</th>
+											</tr>
+											<tr style="background-color: #ffffff; color: #000000">
+												<td
+													colspan="5"
+													style="
+														padding: 10px;
+														border: 1px solid #000000;
+														font-size: 13px;
+														line-height: 1.4;
+													">
+													This table details the currency configured within your
+													platform. Snow allows for various currencies to be
+													used when logging costs associated with
+													Devices/Agreements &amp; Licenses.
+												</td>
+											</tr>
+											<tr
+												style="
+													background-color: #633263;
+													color: #ffffff;
+													font-weight: bold;
+												">
+												<td
+													colspan="2"
+													style="
+														width: 30%;
+														padding: 8px;
+														border: 1px solid #000000;
+													">
+													Currency name
+												</td>
+												<td
+													style="
+														width: 35%;
+														padding: 8px;
+														border: 1px solid #000000;
+													">
+													Description
+												</td>
+												<td
+													style="
+														width: 17%;
+														padding: 8px;
+														border: 1px solid #000000;
+													">
+													Currency rate
+												</td>
+												<td
+													style="
+														width: 18%;
+														padding: 8px;
+														border: 1px solid #000000;
+													">
+													Base currency
+												</td>
+											</tr>
+										</thead>
+										<tbody>
+											<tr style="background-color: #ffffff">
+												<td
+													style="
+														width: 10px;
+														background-color: #1ed700;
+														border: 1px solid #000000;
+														padding: 0;
+													"></td>
+												<td
+													style="
+														padding: 8px;
+														border: 1px solid #000000;
+														text-align: left;
+													">
+													GBP
+												</td>
+												<td
+													style="
+														padding: 8px;
+														border: 1px solid #000000;
+														text-align: left;
+													">
+													Great British Pounds
+												</td>
+												<td
+													style="padding: 8px; border: 1px solid #000000"></td>
+												<td
+													style="
+														padding: 8px;
+														border: 1px solid #000000;
+														font-weight: bold;
+													">
+													Yes
+												</td>
+											</tr>
+										</tbody>
+									</table>
+
+									<!-- For BuildSheet-->
+									<table
+										style="
+											width: 100%;
+											border-collapse: collapse;
+											font-family: Arial, sans-serif;
+											font-size: 14px;
+											border: 1px solid #000000;
+											text-align: center;
+										">
+										<thead>
+											<tr
+												style="
+													background-color: #633263;
+													color: #ffffff;
+													font-weight: bold;
+													font-size: 16px;
+												">
+												<th
+													colspan="4"
+													style="padding: 10px; border: 1px solid #000000">
+													Snow platform currency management
+												</th>
+											</tr>
+											<tr style="background-color: #ffffff; color: #000000">
+												<td
+													colspan="4"
+													style="
+														padding: 10px;
+														border: 1px solid #000000;
+														font-size: 13px;
+														line-height: 1.4;
+													">
+													This table details the currency configured within your
+													platform. Snow allows for various currencies to be
+													used when logging costs associated with
+													Devices/Agreements &amp; Licenses.
+												</td>
+											</tr>
+											<tr
+												style="
+													background-color: #633263;
+													color: #ffffff;
+													font-weight: bold;
+												">
+												<td
+													style="
+														width: 30%;
+														padding: 8px;
+														border: 1px solid #000000;
+													">
+													Currency name
+												</td>
+												<td
+													style="
+														width: 35%;
+														padding: 8px;
+														border: 1px solid #000000;
+													">
+													Description
+												</td>
+												<td
+													style="
+														width: 17%;
+														padding: 8px;
+														border: 1px solid #000000;
+													">
+													Currency rate
+												</td>
+												<td
+													style="
+														width: 18%;
+														padding: 8px;
+														border: 1px solid #000000;
+													">
+													Base currency
+												</td>
+											</tr>
+										</thead>
+										<tbody>
+											<tr style="background-color: #ffffff">
+												<td
+													style="
+														padding: 8px;
+														border: 1px solid #000000;
+														text-align: left;
+													">
+													GBP
+												</td>
+												<td
+													style="
+														padding: 8px;
+														border: 1px solid #000000;
+														text-align: left;
+													">
+													Great British Pounds
+												</td>
+												<td
+													style="padding: 8px; border: 1px solid #000000"></td>
+												<td
+													style="
+														padding: 8px;
+														border: 1px solid #000000;
+														font-weight: bold;
+													">
+													Yes
+												</td>
+											</tr>
+										</tbody>
+									</table>
 								</div>
 								<div
 									class="Snow-Platform-Users"
@@ -3223,6 +5617,1253 @@
 												<strong>Comment:</strong>
 											</td>
 										</tr>
+									</table>
+								</div>
+								<div
+									style="
+										width: 100%;
+										border-collapse: collapse;
+										font-family: Arial, sans-serif;
+										font-size: 14px;
+										text-align: center;
+										padding-top: 10px;
+									">
+									<table
+										style="
+											width: 100%;
+											border-collapse: collapse;
+											font-size: 13px;
+											border: 1px solid #000000;
+										">
+										<thead>
+											<tr
+												style="
+													background-color: #633263;
+													color: #ffffff;
+													font-weight: bold;
+													font-size: 16px;
+													text-align: center;
+												">
+												<th
+													colspan="4"
+													style="
+														padding: 12px;
+														border: 1px solid #000000;
+														letter-spacing: 0.3px;
+													">
+													Snow product utilisation
+												</th>
+											</tr>
+											<tr
+												style="
+													background-color: #ffffff;
+													color: #000000;
+													text-align: center;
+												">
+												<td
+													colspan="4"
+													style="
+														padding: 12px;
+														border: 1px solid #000000;
+														font-size: 14px;
+													">
+													This table documents elements within the Snow product
+													that we believe are beneficial for data integrity and
+													time savings.
+												</td>
+											</tr>
+											<tr
+												style="
+													background-color: #633263;
+													color: #ffffff;
+													font-weight: bold;
+													text-align: center;
+													font-size: 14px;
+												">
+												<td
+													colspan="2"
+													style="
+														width: 68%;
+														padding: 10px;
+														border: 1px solid #000000;
+													">
+													Product element
+												</td>
+												<td
+													style="
+														width: 16%;
+														padding: 10px;
+														border: 1px solid #000000;
+													">
+													Usage
+												</td>
+												<td
+													style="
+														width: 16%;
+														padding: 10px;
+														border: 1px solid #000000;
+													">
+													Usage count
+												</td>
+											</tr>
+										</thead>
+										<tbody>
+											<tr>
+												<td
+													style="
+														width: 25px;
+														background-color: #ff7c00;
+														border: 1px solid #000000;
+														padding: 0;
+													"></td>
+												<td
+													style="
+														padding: 10px;
+														border: 1px solid #000000;
+														background-color: #ffffff;
+														text-align: left;
+													">
+													<strong
+														style="
+															font-size: 14px;
+															display: block;
+															margin-bottom: 3px;
+														"
+														>Allowlisted applications</strong
+													>
+													<span style="color: #333333; font-size: 11px"
+														>Allows for flagging of applications you have
+														approved for usage across the organisation.</span
+													>
+												</td>
+												<td
+													style="
+														padding: 10px;
+														border: 1px solid #000000;
+														background-color: #ffffff;
+														color: #757575;
+														text-align: center;
+														font-size: 14px;
+													">
+													Choose an item.
+												</td>
+												<td
+													style="
+														padding: 10px;
+														border: 1px solid #000000;
+														background-color: #ffffff;
+													"></td>
+											</tr>
+											<tr>
+												<td
+													style="
+														background-color: #ff7c00;
+														border: 1px solid #000000;
+														padding: 0;
+													"></td>
+												<td
+													style="
+														padding: 10px;
+														border: 1px solid #000000;
+														background-color: #ffffff;
+														text-align: left;
+													">
+													<strong
+														style="
+															font-size: 14px;
+															display: block;
+															margin-bottom: 3px;
+														"
+														>Denylisted applications</strong
+													>
+													<span style="color: #333333; font-size: 11px"
+														>Allows for flagging of applications or application
+														types you do not wish to be deployed on devices for
+														example games or non-compliant applications.</span
+													>
+												</td>
+												<td
+													style="
+														padding: 10px;
+														border: 1px solid #000000;
+														background-color: #ffffff;
+														color: #757575;
+														text-align: center;
+														font-size: 14px;
+													">
+													Choose an item.
+												</td>
+												<td
+													style="
+														padding: 10px;
+														border: 1px solid #000000;
+														background-color: #ffffff;
+													"></td>
+											</tr>
+											<tr>
+												<td
+													style="
+														background-color: #ff7c00;
+														border: 1px solid #000000;
+														padding: 0;
+													"></td>
+												<td
+													style="
+														padding: 10px;
+														border: 1px solid #000000;
+														background-color: #ffffff;
+														text-align: left;
+													">
+													<strong
+														style="
+															font-size: 14px;
+															display: block;
+															margin-bottom: 3px;
+														"
+														>Custom fields</strong
+													>
+													<span style="color: #333333; font-size: 11px"
+														>Allows you to create fields within agreement,
+														application, computer/mobile device, license, and
+														user, where bespoke information can be manually
+														stored or imported into the platform.</span
+													>
+												</td>
+												<td
+													style="
+														padding: 10px;
+														border: 1px solid #000000;
+														background-color: #ffffff;
+														color: #757575;
+														text-align: center;
+														font-size: 14px;
+													">
+													Choose an item.
+												</td>
+												<td
+													style="
+														padding: 10px;
+														border: 1px solid #000000;
+														background-color: #ffffff;
+													"></td>
+											</tr>
+											<tr>
+												<td
+													style="
+														background-color: #ff7c00;
+														border: 1px solid #000000;
+														padding: 0;
+													"></td>
+												<td
+													style="
+														padding: 10px;
+														border: 1px solid #000000;
+														background-color: #ffffff;
+														text-align: left;
+													">
+													<strong
+														style="
+															font-size: 14px;
+															display: block;
+															margin-bottom: 3px;
+														"
+														>Custom objects</strong
+													>
+													<span style="color: #333333; font-size: 11px"
+														>Allows creation of assets which cannot be
+														inventoried, such as projectors, monitors or other
+														peripherals.</span
+													>
+												</td>
+												<td
+													style="
+														padding: 10px;
+														border: 1px solid #000000;
+														background-color: #ffffff;
+														color: #757575;
+														text-align: center;
+														font-size: 14px;
+													">
+													Choose an item.
+												</td>
+												<td
+													style="
+														padding: 10px;
+														border: 1px solid #000000;
+														background-color: #ffffff;
+													"></td>
+											</tr>
+											<tr>
+												<td
+													style="
+														background-color: #ff7c00;
+														border: 1px solid #000000;
+														padding: 0;
+													"></td>
+												<td
+													style="
+														padding: 10px;
+														border: 1px solid #000000;
+														background-color: #ffffff;
+														text-align: left;
+													">
+													<strong
+														style="
+															font-size: 14px;
+															display: block;
+															margin-bottom: 3px;
+														"
+														>Custom compare values</strong
+													>
+													<span style="color: #333333; font-size: 11px"
+														>Creation of comparison values for performing
+														license compliance calculations for applications
+														where pre-defined metrics are not applicable.</span
+													>
+												</td>
+												<td
+													style="
+														padding: 10px;
+														border: 1px solid #000000;
+														background-color: #ffffff;
+														color: #757575;
+														text-align: center;
+														font-size: 14px;
+													">
+													Choose an item.
+												</td>
+												<td
+													style="
+														padding: 10px;
+														border: 1px solid #000000;
+														background-color: #ffffff;
+													"></td>
+											</tr>
+											<tr>
+												<td
+													style="
+														background-color: #ff7c00;
+														border: 1px solid #000000;
+														padding: 0;
+													"></td>
+												<td
+													style="
+														padding: 10px;
+														border: 1px solid #000000;
+														background-color: #ffffff;
+														text-align: left;
+													">
+													<strong
+														style="
+															font-size: 14px;
+															display: block;
+															margin-bottom: 3px;
+														"
+														>Notifications</strong
+													>
+													<span style="color: #333333; font-size: 11px"
+														>Configure email notifications for alerts and system
+														events, such as added licenses or agreements nearing
+														expiration.</span
+													>
+												</td>
+												<td
+													style="
+														padding: 10px;
+														border: 1px solid #000000;
+														background-color: #ffffff;
+														color: #757575;
+														text-align: center;
+														font-size: 14px;
+													">
+													Choose an item.
+												</td>
+												<td
+													style="
+														padding: 10px;
+														border: 1px solid #000000;
+														background-color: #ffffff;
+													"></td>
+											</tr>
+											<tr>
+												<td
+													style="
+														background-color: #ff7c00;
+														border: 1px solid #000000;
+														padding: 0;
+													"></td>
+												<td
+													style="
+														padding: 10px;
+														border: 1px solid #000000;
+														background-color: #ffffff;
+														text-align: left;
+													">
+													<strong
+														style="
+															font-size: 14px;
+															display: block;
+															margin-bottom: 3px;
+														"
+														>Cloud application metering</strong
+													>
+													<span style="color: #333333; font-size: 11px"
+														>Captures web-based application usage on devices
+														which have the Inventory extension installed.</span
+													>
+												</td>
+												<td
+													style="
+														padding: 10px;
+														border: 1px solid #000000;
+														background-color: #ffffff;
+														color: #757575;
+														text-align: center;
+														font-size: 14px;
+													">
+													Choose an item.
+												</td>
+												<td
+													style="
+														padding: 10px;
+														border: 1px solid #000000;
+														background-color: #ffffff;
+													"></td>
+											</tr>
+										</tbody>
+									</table>
+								</div>
+								<div
+									style="
+										width: 100%;
+										border-collapse: collapse;
+										font-family: Arial, sans-serif;
+										font-size: 14px;
+										padding-top: 10px;
+									">
+									<h2
+										style="
+											color: #633263;
+											font-size: 20px;
+											font-weight: bold;
+											text-transform: uppercase;
+											margin-bottom: 25px;
+											letter-spacing: 0.5px;
+										">
+										SNOW APPLICATIONS, LICENSES AND AGREEMENTS
+									</h2>
+
+									<table
+										style="
+											width: 100%;
+											border-collapse: collapse;
+											font-size: 14px;
+											border: 1px solid #000000;
+											margin-bottom: 40px;
+										">
+										<thead>
+											<tr
+												style="
+													background-color: #633263;
+													color: #ffffff;
+													font-weight: bold;
+													font-size: 15px;
+													text-align: center;
+												">
+												<th
+													colspan="3"
+													style="padding: 12px; border: 1px solid #000000">
+													Snow application overview
+												</th>
+											</tr>
+											<tr
+												style="
+													background-color: #ffffff;
+													color: #000000;
+													text-align: center;
+													font-size: 13px;
+												">
+												<td
+													colspan="3"
+													style="
+														padding: 10px;
+														border: 1px solid #000000;
+														line-height: 1.4;
+													">
+													This table details the number of applications you have
+													reporting into the platform along with if they
+													populate within the deny list or there compliance
+													state.
+												</td>
+											</tr>
+											<tr
+												style="
+													background-color: #633263;
+													color: #ffffff;
+													font-weight: bold;
+													text-align: center;
+												">
+												<td
+													colspan="2"
+													style="
+														width: 65%;
+														padding: 10px;
+														border: 1px solid #000000;
+													">
+													Product component
+												</td>
+												<td
+													style="
+														width: 35%;
+														padding: 10px;
+														border: 1px solid #000000;
+													">
+													Value
+												</td>
+											</tr>
+										</thead>
+										<tbody>
+											<tr>
+												<td
+													style="
+														width: 25px;
+														background-color: #1ed700;
+														border: 1px solid #000000;
+														padding: 0;
+													"></td>
+												<td
+													style="
+														padding: 10px;
+														border: 1px solid #000000;
+														background-color: #ffffff;
+													">
+													Applications shown within portal
+												</td>
+												<td
+													style="
+														padding: 10px;
+														border: 1px solid #000000;
+														background-color: #ffffff;
+													"></td>
+											</tr>
+											<tr>
+												<td
+													style="
+														background-color: #1ed700;
+														border: 1px solid #000000;
+														padding: 0;
+													"></td>
+												<td
+													style="
+														padding: 10px;
+														border: 1px solid #000000;
+														background-color: #ffffff;
+													">
+													Cloud-based applications
+												</td>
+												<td
+													style="
+														padding: 10px;
+														border: 1px solid #000000;
+														background-color: #ffffff;
+													"></td>
+											</tr>
+											<tr>
+												<td
+													style="
+														background-color: #1ed700;
+														border: 1px solid #000000;
+														padding: 0;
+													"></td>
+												<td
+													style="
+														padding: 10px;
+														border: 1px solid #000000;
+														background-color: #ffffff;
+													">
+													Applications installed on denylist
+												</td>
+												<td
+													style="
+														padding: 10px;
+														border: 1px solid #000000;
+														background-color: #ffffff;
+													"></td>
+											</tr>
+											<tr>
+												<td
+													style="
+														background-color: #1ed700;
+														border: 1px solid #000000;
+														padding: 0;
+													"></td>
+												<td
+													style="
+														padding: 10px;
+														border: 1px solid #000000;
+														background-color: #ffffff;
+													">
+													Compliant applications
+												</td>
+												<td
+													style="
+														padding: 10px;
+														border: 1px solid #000000;
+														background-color: #ffffff;
+													"></td>
+											</tr>
+											<tr>
+												<td
+													style="
+														background-color: #1ed700;
+														border: 1px solid #000000;
+														padding: 0;
+													"></td>
+												<td
+													style="
+														padding: 10px;
+														border: 1px solid #000000;
+														background-color: #ffffff;
+													">
+													Over-licensed applications
+												</td>
+												<td
+													style="
+														padding: 10px;
+														border: 1px solid #000000;
+														background-color: #ffffff;
+													"></td>
+											</tr>
+											<tr>
+												<td
+													style="
+														background-color: #1ed700;
+														border: 1px solid #000000;
+														padding: 0;
+													"></td>
+												<td
+													style="
+														padding: 10px;
+														border: 1px solid #000000;
+														background-color: #ffffff;
+													">
+													Under-licensed applications
+												</td>
+												<td
+													style="
+														padding: 10px;
+														border: 1px solid #000000;
+														background-color: #ffffff;
+													"></td>
+											</tr>
+										</tbody>
+									</table>
+
+									<table
+										style="
+											width: 100%;
+											border-collapse: collapse;
+											font-size: 14px;
+											border: 1px solid #000000;
+										">
+										<thead>
+											<tr
+												style="
+													background-color: #633263;
+													color: #ffffff;
+													font-weight: bold;
+													font-size: 15px;
+													text-align: center;
+												">
+												<th
+													colspan="3"
+													style="padding: 12px; border: 1px solid #000000">
+													Snow license &amp; agreement overview
+												</th>
+											</tr>
+											<tr
+												style="
+													background-color: #633263;
+													color: #ffffff;
+													font-weight: bold;
+													text-align: center;
+												">
+												<td
+													colspan="2"
+													style="
+														width: 65%;
+														padding: 10px;
+														border: 1px solid #000000;
+													">
+													Product component
+												</td>
+												<td
+													style="
+														width: 35%;
+														padding: 10px;
+														border: 1px solid #000000;
+													">
+													Value
+												</td>
+											</tr>
+										</thead>
+										<tbody>
+											<tr>
+												<td
+													style="
+														width: 25px;
+														background-color: #1ed700;
+														border: 1px solid #000000;
+														padding: 0;
+													"></td>
+												<td
+													style="
+														padding: 10px;
+														border: 1px solid #000000;
+														background-color: #ffffff;
+													">
+													Number of unique licenses
+												</td>
+												<td
+													style="
+														padding: 10px;
+														border: 1px solid #000000;
+														background-color: #ffffff;
+													"></td>
+											</tr>
+											<tr>
+												<td
+													style="
+														background-color: #1ed700;
+														border: 1px solid #000000;
+														padding: 0;
+													"></td>
+												<td
+													style="
+														padding: 10px;
+														border: 1px solid #000000;
+														background-color: #ffffff;
+													">
+													Number of unique agreements
+												</td>
+												<td
+													style="
+														padding: 10px;
+														border: 1px solid #000000;
+														background-color: #ffffff;
+													"></td>
+											</tr>
+											<tr>
+												<td
+													style="
+														background-color: #1ed700;
+														border: 1px solid #000000;
+														padding: 0;
+													"></td>
+												<td
+													style="
+														padding: 10px;
+														border: 1px solid #000000;
+														background-color: #ffffff;
+													">
+													Number of expired agreements?
+												</td>
+												<td
+													style="
+														padding: 10px;
+														border: 1px solid #000000;
+														background-color: #ffffff;
+													"></td>
+											</tr>
+										</tbody>
+									</table>
+								</div>
+								<div
+									class="Snow-Agent-Overview"
+									data-field="section_2"
+									style="font-family: Avenir Next LT Pro Regular (Body)">
+									<h1
+										class="Snow-Agent-title"
+										data-field="section_2_title"
+										style="
+											padding-bottom: 10px;
+											padding-top: 16px;
+											font-size: 18px;
+											color: #6b3f6b !important;
+											font-family: Avenir Next LT Pro Demi (Headings);
+										">
+										SNOW DEVICES, DATACENTRES AND VM’S:
+									</h1>
+									<table
+										style="
+											width: 100%;
+											border-collapse: collapse;
+											font-size: 13px;
+											margin-top: 16px;
+											border: 1px solid Black;
+											table-layout: fixed;
+											font-family:
+												-apple-system, BlinkMacSystemFont, &quot;Segoe UI&quot;,
+												sans-serif;
+										">
+										<tr style="height: 0; line-height: 0; visibility: collapse">
+											<td style="width: 4%; padding: 0; border: none"></td>
+											<td style="width: 61%; padding: 0; border: none"></td>
+											<td style="width: 35%; padding: 0; border: none"></td>
+										</tr>
+
+										<tr>
+											<th
+												colspan="3"
+												style="
+													background-color: #6b3f6b;
+													color: white;
+													padding: 10px;
+													text-align: center;
+													font-size: 16px;
+													font-weight: bold;
+													border-bottom: 1px solid Black;
+												">
+												Snow inventoried device overview
+											</th>
+										</tr>
+										<tr>
+											<td
+												colspan="3"
+												style="
+													background-color: white;
+													padding: 8px 10px;
+													text-align: center;
+													font-size: 12px;
+													border: 1px solid Black;
+													line-height: 1.4;
+												">
+												This table notes the number of devices, data centres,
+												and virtual machines you have either inventoried or not
+												inventoried on the platform. All environments must have
+												a Snow agent installed to ensure that the usage and
+												license requirement for the software is accurately
+												captured.
+											</td>
+										</tr>
+
+										<tr>
+											<td
+												colspan="2"
+												style="
+													background-color: #6b3f6b;
+													color: white;
+													padding: 6px 10px;
+													text-align: center;
+													font-size: 14px;
+													font-weight: bold;
+													border-right: 1px solid Black;
+													border-bottom: 1px solid Black;
+												">
+												Product component
+											</td>
+											<td
+												style="
+													background-color: #6b3f6b;
+													color: white;
+													padding: 6px 10px;
+													text-align: center;
+													font-size: 14px;
+													font-weight: bold;
+													border-bottom: 1px solid Black;
+												">
+												Value
+											</td>
+										</tr>
+
+										<tr>
+											<td
+												style="
+													background-color: #00cc00;
+													border: 1px solid Black;
+													padding: 4px 0;
+												"></td>
+											<td
+												style="
+													padding: 4px 10px;
+													font-size: 13px;
+													border: 1px solid Black;
+													vertical-align: middle;
+													line-height: 1.3;
+												">
+												<span
+													style="
+														font-weight: bold;
+														display: block;
+														margin-bottom: 2px;
+													"
+													>Number of inventoried devices</span
+												>
+												<span
+													style="
+														font-size: 11px;
+														color: #555555;
+														display: block;
+													"
+													>Devices which have a Snow agent installed and have
+													reported into the platform.</span
+												>
+											</td>
+											<td
+												style="
+													padding: 4px 10px;
+													font-size: 13px;
+													border: 1px solid Black;
+													text-align: center;
+													vertical-align: middle;
+												"></td>
+										</tr>
+
+										<tr>
+											<td
+												style="
+													background-color: #00cc00;
+													border: 1px solid Black;
+													padding: 4px 0;
+												"></td>
+											<td
+												style="
+													padding: 4px 10px;
+													font-size: 13px;
+													border: 1px solid Black;
+													vertical-align: middle;
+													line-height: 1.3;
+												">
+												<span
+													style="
+														font-weight: bold;
+														display: block;
+														margin-bottom: 2px;
+													"
+													>Number of non-inventoried devices</span
+												>
+												<span
+													style="
+														font-size: 11px;
+														color: #555555;
+														display: block;
+													"
+													>Devices which have been detected but do not have a
+													Snow agent installed. The data is sourced via AD
+													discovery, network discovery and connectors.</span
+												>
+											</td>
+											<td
+												style="
+													padding: 4px 10px;
+													font-size: 13px;
+													border: 1px solid Black;
+													text-align: center;
+													vertical-align: middle;
+												"></td>
+										</tr>
+
+										<tr>
+											<td
+												style="
+													background-color: #00cc00;
+													border: 1px solid Black;
+													padding: 4px 0;
+												"></td>
+											<td
+												style="
+													padding: 4px 10px;
+													font-size: 13px;
+													border: 1px solid Black;
+													vertical-align: middle;
+													line-height: 1.3;
+												">
+												<span
+													style="
+														font-weight: bold;
+														display: block;
+														margin-bottom: 2px;
+													"
+													>Number of inventoried data centres</span
+												>
+												<span
+													style="
+														font-size: 11px;
+														color: #555555;
+														display: block;
+													"
+													>Data centres which are auto or manually generated and
+													reporting into the platform.</span
+												>
+											</td>
+											<td
+												style="
+													padding: 4px 10px;
+													font-size: 13px;
+													border: 1px solid Black;
+													text-align: center;
+													vertical-align: middle;
+												"></td>
+										</tr>
+
+										<tr>
+											<td
+												style="
+													background-color: #00cc00;
+													border: 1px solid Black;
+													padding: 4px 0;
+												"></td>
+											<td
+												style="
+													padding: 4px 10px;
+													font-size: 13px;
+													border: 1px solid Black;
+													vertical-align: middle;
+													line-height: 1.3;
+												">
+												<span
+													style="
+														font-weight: bold;
+														display: block;
+														margin-bottom: 2px;
+													"
+													>Number of inventoried virtual machines</span
+												>
+												<span
+													style="
+														font-size: 11px;
+														color: #555555;
+														display: block;
+													"
+													>Virtual machines with either a Snow agent installed
+													or send data via a connector.</span
+												>
+											</td>
+											<td
+												style="
+													padding: 4px 10px;
+													font-size: 13px;
+													border: 1px solid Black;
+													text-align: center;
+													vertical-align: middle;
+												"></td>
+										</tr>
+
+										<tr>
+											<td
+												style="
+													background-color: #00cc00;
+													border: 1px solid Black;
+													padding: 4px 0;
+												"></td>
+											<td
+												style="
+													padding: 4px 10px;
+													font-size: 13px;
+													border: 1px solid Black;
+													vertical-align: middle;
+													line-height: 1.3;
+												">
+												<span style="font-weight: bold; display: block"
+													>Number of not inventoried virtual machines</span
+												>
+											</td>
+											<td
+												style="
+													padding: 4px 10px;
+													font-size: 13px;
+													border: 1px solid Black;
+													text-align: center;
+													vertical-align: middle;
+												"></td>
+										</tr>
+
+										<tr>
+											<td
+												style="
+													background-color: #00cc00;
+													border: 1px solid Black;
+													padding: 4px 0;
+												"></td>
+											<td
+												style="
+													padding: 4px 10px;
+													font-size: 13px;
+													border: 1px solid Black;
+													vertical-align: middle;
+													line-height: 1.3;
+												">
+												<span style="font-weight: bold; display: block"
+													>Number of devices on out of support operating
+													systems</span
+												>
+											</td>
+											<td
+												style="
+													padding: 4px 10px;
+													font-size: 13px;
+													border: 1px solid Black;
+													text-align: center;
+													vertical-align: middle;
+												"></td>
+										</tr>
+									</table>
+									<table
+										style="
+											width: 100%;
+											border-collapse: collapse;
+											font-family: Arial, sans-serif;
+											font-size: 14px;
+											border: 1px solid #000000;
+											text-align: center;
+											padding-top: 10px;
+										">
+										<thead>
+											<tr
+												style="
+													background-color: #633263;
+													color: #ffffff;
+													font-weight: bold;
+													font-size: 16px;
+												">
+												<th
+													colspan="3"
+													style="padding: 10px; border: 1px solid #000000">
+													Snow agent version overview
+												</th>
+											</tr>
+											<tr style="background-color: #ffffff; color: #000000">
+												<td
+													colspan="3"
+													style="
+														padding: 10px;
+														border: 1px solid #000000;
+														font-size: 13px;
+													">
+													This table displays the versions of the Snow Inventory
+													agent deployed across your estate, along with if they
+													are or are not out of support.
+												</td>
+											</tr>
+											<tr
+												style="
+													background-color: #633263;
+													color: #ffffff;
+													font-weight: bold;
+													font-size: 16px;
+												">
+												<th
+													colspan="3"
+													style="padding: 10px; border: 1px solid #000000">
+													Latest releases of Snow agents
+												</th>
+											</tr>
+											<tr
+												style="
+													background-color: #633263;
+													color: #ffffff;
+													font-weight: bold;
+												">
+												<td
+													style="
+														width: 55%;
+														padding: 8px;
+														border: 1px solid #000000;
+													">
+													Agent
+												</td>
+												<td
+													style="
+														width: 20%;
+														padding: 8px;
+														border: 1px solid #000000;
+													">
+													Version
+												</td>
+												<td
+													style="
+														width: 25%;
+														padding: 8px;
+														border: 1px solid #000000;
+													">
+													Release Date
+												</td>
+											</tr>
+										</thead>
+										<tbody>
+											<tr style="height: 30px; background-color: #ffffff">
+												<td style="border: 1px solid #000000"></td>
+												<td style="border: 1px solid #000000"></td>
+												<td style="border: 1px solid #000000"></td>
+											</tr>
+											<tr
+												style="
+													background-color: #633263;
+													color: #ffffff;
+													font-weight: bold;
+													font-size: 16px;
+												">
+												<th
+													colspan="3"
+													style="padding: 10px; border: 1px solid #000000">
+													Deployed snow agents
+												</th>
+											</tr>
+											<tr
+												style="
+													background-color: #633263;
+													color: #ffffff;
+													font-weight: bold;
+												">
+												<td style="padding: 8px; border: 1px solid #000000">
+													Agent operating system & version
+												</td>
+												<td style="padding: 8px; border: 1px solid #000000">
+													Installations
+												</td>
+												<td style="padding: 8px; border: 1px solid #000000">
+													Supported
+												</td>
+											</tr>
+											<tr style="background-color: #ffffff">
+												<td
+													style="
+														padding: 8px;
+														border: 1px solid #000000;
+														text-align: left;
+														position: relative;
+													">
+													<span
+														style="
+															display: inline-block;
+															width: 15px;
+															height: 100%;
+															background-color: #1ed700;
+															position: absolute;
+															left: 0;
+															top: 0;
+															bottom: 0;
+														"></span>
+													<span style="padding-left: 20px">Windows 7.3.1</span>
+												</td>
+												<td
+													style="
+														padding: 8px;
+														border: 1px solid #000000;
+														font-weight: bold;
+													">
+													XXX
+												</td>
+												<td
+													style="
+														padding: 8px;
+														border: 1px solid #000000;
+														color: #757575;
+													">
+													Choose an item.
+												</td>
+											</tr>
+										</tbody>
 									</table>
 								</div>
 								<div
