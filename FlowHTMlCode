@@ -1,3 +1,77 @@
+<!-- Code for Project Checklist Table-->
+<!-- Check for Tag {{ProjectChecklist}}-->
+<div class="Project-Checklist-table">
+	<h1
+		class="Project-Checklist-title"
+		data-field="section_2_title"
+		style="padding-bottom: 10px">
+		Project Checklist
+	</h1>
+	<table style="width: 100%; border-collapse: collapse; font-size: 13px">
+		<tr>
+			<th
+				colspan="3"
+				style="
+					background-color: #6b3f6b;
+					color: white;
+					padding: 10px;
+					text-align: center;
+					font-size: 16px;
+				">
+				Project Overview
+			</th>
+		</tr>
+		<tr>
+			<td
+				colspan="3"
+				style="
+					background-color: white;
+					padding: 10px;
+					text-align: center;
+					font-size: 12px;
+				">
+				The table below outlines the products and services that have been set
+				up, configured and delivered as part of the agreed scope of work.
+			</td>
+		</tr>
+		<tr>
+			<th
+				style="
+					background-color: #6b3f6b;
+					color: white;
+					padding: 8px;
+					text-align: center;
+				">
+				Task
+			</th>
+			<th
+				style="
+					background-color: #6b3f6b;
+					color: white;
+					padding: 8px;
+					text-align: center;
+					width: 120px;
+				">
+				Version
+			</th>
+			<th
+				style="
+					background-color: #6b3f6b;
+					color: white;
+					padding: 8px;
+					text-align: center;
+					width: 120px;
+				">
+				Completed
+			</th>
+		</tr>
+		{{
+			ProjectTasks
+		}}
+	</table>
+</div>
+<!--End-->
+
 <!-- Code for Rows in Project Task-->
 <!-- Check for Tag {{ProjectTasks}}-->
 <tr>
@@ -15,5 +89,41 @@
 	<td style="text-align: center; border: 1px solid Black">☐</td>
 </tr>
 <!--End-->
+
 <!-- Code for Project Comments-->
-<!-- Check for Tag {{ProjectComments}}-->
+<!-- Check for Tag {{ProjectCommentTable}} {{ProjectComments}}-->
+<table
+	style="
+		width: 100%;
+		border-collapse: collapse;
+		font-size: 13px;
+		margin-top: 16px;
+	">
+	<tr>
+		<th
+			colspan="3"
+			style="
+				background-color: #6b3f6b;
+				color: white;
+				padding: 10px;
+				text-align: center;
+				font-size: 16px;
+			">
+			Project Comments
+		</th>
+	</tr>
+	<tr>
+		<td
+			colspan="3"
+			style="
+				background-color: white;
+				padding: 10px;
+				text-align: center;
+				font-size: 12px;
+				border: 1px solid Black;
+			">
+			{{ ProjectComments }}
+		</td>
+	</tr>
+</table>
+<!--End-->
