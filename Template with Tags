@@ -542,54 +542,9 @@
 													Completed
 												</th>
 											</tr>
-											<tr>
-												<td style="padding: 6px; border: 1px solid Black">
-													Installed Snow License Manager
-												</td>
-												<td
-													style="
-														background-color: #fff59d;
-														text-align: center;
-														border: 1px solid Black;
-													">
-													25.1.00
-												</td>
-												<td style="text-align: center; border: 1px solid Black">
-													☐
-												</td>
-											</tr>
-											<tr>
-												<td style="padding: 6px; border: 1px solid Black">
-													Installed Snow Inventory Server
-												</td>
-												<td
-													style="
-														background-color: #fff59d;
-														text-align: center;
-														border: 1px solid Black;
-													">
-													25.1.00
-												</td>
-												<td style="text-align: center; border: 1px solid Black">
-													☐
-												</td>
-											</tr>
-											<tr>
-												<td style="padding: 6px; border: 1px solid Black">
-													Installed Snow Integration Manager
-												</td>
-												<td
-													style="
-														background-color: #fff59d;
-														text-align: center;
-														border: 1px solid Black;
-													">
-													6.13.0
-												</td>
-												<td style="text-align: center; border: 1px solid Black">
-													☐
-												</td>
-											</tr>
+											{{
+												ProjectTasks
+											}}
 										</table>
 									</div>
 
@@ -624,11 +579,7 @@
 														font-size: 12px;
 														border: 1px solid Black;
 													">
-													This is the project comments section, where you can
-													add any additional information or notes about the
-													project. This section can be used to provide context,
-													highlight important details, or summarize key points
-													related to the project.
+													{{ ProjectComments }}
 												</td>
 											</tr>
 										</table>

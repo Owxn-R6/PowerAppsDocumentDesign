@@ -1,0 +1,19 @@
+<!-- Code for Rows in Project Task-->
+<!-- Check for Tag {{ProjectTasks}}-->
+<tr>
+	<td style="padding: 6px; border: 1px solid Black">
+		Installed Snow License Manager
+	</td>
+	<td
+		style="
+			background-color: #fff59d;
+			text-align: center;
+			border: 1px solid Black;
+		">
+		25.1.00
+	</td>
+	<td style="text-align: center; border: 1px solid Black">☐</td>
+</tr>
+<!--End-->
+<!-- Code for Project Comments-->
+<!-- Check for Tag {{ProjectComments}}-->
