@@ -1,3 +1,8 @@
+Contents:
+Full template with every possible field or element
+Template with the relevant tags for use with Power Apps & Automate
+Code snippits for the Automate Flow with Tag instructions
+
 📄 Document Generation Template (HTML-Based)
 This repository contains the HTML template and supporting notes for generating dynamic documents via Power Apps, Power Automate, and SAMSync.
 
@@ -6,7 +11,6 @@ It includes:
 Implementation details
 Design decisions and rationale
 Guidance for ongoing maintenance and updates
-
 
 ❓ Why is this built in HTML?
 The first question you’ll probably ask is:
@@ -36,7 +40,6 @@ Locked styling – Prevents layout breakage and formatting drift
 Full control – Easier to handle dynamic sections and structured layouts
 Better compatibility with Power Automate rendering
 
-
 ⚠️ Cons
 
 Requires basic HTML knowledge to make changes
@@ -44,9 +47,6 @@ Output is generated as PDF only
 
 No native Word document output
 Post-generation editing is more difficult
-
-
-
 
 🖼️ Why are images stored as code (Base64)?
 Another limitation encountered:
@@ -81,15 +81,11 @@ Ensure field names align with:
 Power Automate outputs
 SAMSync mappings
 
-
 Validate:
 
 Null handling
 Formatting consistency
 Placement within dynamic sections
-
-
-
 
 🔄 Managing Data from SAMSync
 (To be completed — suggested structure below)
@@ -102,13 +98,9 @@ Test with:
 Full data sets
 Partial / missing data scenarios
 
-
-
-
 🧩 Maintenance Notes
 
 Keep HTML structure clean and modular where possible
 Reuse components/sections to avoid duplication
 Test after each change (especially layout or images)
 Be mindful that all styling must work in a Power Automate → PDF context
-
