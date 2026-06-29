@@ -1,0 +1,10 @@
+{
+  "overrides": [
+    {
+      "files": "power-platform-templates/**/*.html",
+      "options": {
+        "parser": "glimmer"
+      }
+    }
+  ]
+}
