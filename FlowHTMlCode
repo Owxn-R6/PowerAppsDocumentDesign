@@ -2,342 +2,577 @@
 <!-- Tags for Details {{ Platform_Type }} {{ Device_Count }}-->
 <!-- Check for Tag {{ProductsServices}}-->
 <tr>
-	<td style="padding: 6px; border: 1px solid Black">
-		{{ Product }}
-	</td>
-	<td style="border: 1px solid Black">
-		{{ Product_State }}
-	</td>
+  <td style="padding: 6px; border: 1px solid Black">
+    {{ Product }}
+  </td>
+  <td style="border: 1px solid Black">
+    {{ Product_State }}
+  </td>
 </tr>
+<!--End-->
 
 <!--Tags for Quick Stats-->
 {{ TotalLicensed }}/{{ TotalInventory }}
+{{ RenewalDate }}
+<!--End-->
 
 <!-- Code for Project Checklist Table-->
 <!-- Check for Tag {{ProjectChecklist}}-->
 <div class="Project-Checklist-table">
-	<h1
-		class="Project-Checklist-title"
-		data-field="section_2_title"
-		style="padding-bottom: 10px">
-		Project Checklist
-	</h1>
-	<table style="width: 100%; border-collapse: collapse; font-size: 13px">
-		<tr>
-			<th
-				colspan="3"
-				style="
-					background-color: #6b3f6b;
-					color: white;
-					padding: 10px;
-					text-align: center;
-					font-size: 16px;
-				">
-				Project Overview
-			</th>
-		</tr>
-		<tr>
-			<td
-				colspan="3"
-				style="
-					background-color: white;
-					padding: 10px;
-					text-align: center;
-					font-size: 12px;
-				">
-				The table below outlines the products and services that have been set
-				up, configured and delivered as part of the agreed scope of work.
-			</td>
-		</tr>
-		<tr>
-			<th
-				style="
-					background-color: #6b3f6b;
-					color: white;
-					padding: 8px;
-					text-align: center;
-				">
-				Task
-			</th>
-			<th
-				style="
-					background-color: #6b3f6b;
-					color: white;
-					padding: 8px;
-					text-align: center;
-					width: 120px;
-				">
-				Version
-			</th>
-			<th
-				style="
-					background-color: #6b3f6b;
-					color: white;
-					padding: 8px;
-					text-align: center;
-					width: 120px;
-				">
-				Completed
-			</th>
-		</tr>
-		{{
-			ProjectTasks
-		}}
-	</table>
+  <h1
+    class="Project-Checklist-title"
+    data-field="section_2_title"
+    style="padding-bottom: 10px"
+  >
+    Project Checklist
+  </h1>
+  <table style="width: 100%; border-collapse: collapse; font-size: 13px">
+    <tr>
+      <th
+        colspan="3"
+        style="
+          background-color: #6b3f6b;
+          color: white;
+          padding: 10px;
+          text-align: center;
+          font-size: 16px;
+        "
+      >
+        Project Overview
+      </th>
+    </tr>
+    <tr>
+      <td
+        colspan="3"
+        style="
+          background-color: white;
+          padding: 10px;
+          text-align: center;
+          font-size: 12px;
+        "
+      >
+        The table below outlines the products and services that have been set
+        up, configured and delivered as part of the agreed scope of work.
+      </td>
+    </tr>
+    <tr>
+      <th
+        style="
+          background-color: #6b3f6b;
+          color: white;
+          padding: 8px;
+          text-align: center;
+        "
+      >
+        Task
+      </th>
+      <th
+        style="
+          background-color: #6b3f6b;
+          color: white;
+          padding: 8px;
+          text-align: center;
+          width: 120px;
+        "
+      >
+        Version
+      </th>
+      <th
+        style="
+          background-color: #6b3f6b;
+          color: white;
+          padding: 8px;
+          text-align: center;
+          width: 120px;
+        "
+      >
+        Completed
+      </th>
+    </tr>
+    {{
+      ProjectTasks
+    }}
+  </table>
 </div>
 <!--End-->
 
 <!-- Code for Rows in Project Task-->
 <!-- Check for Tag {{ProjectTasks}}-->
 <tr>
-	<td style="padding: 6px; border: 1px solid Black">
-		Installed Snow License Manager
-	</td>
-	<td
-		style="
-			background-color: #fff59d;
-			text-align: center;
-			border: 1px solid Black;
-		">
-		25.1.00
-	</td>
-	<td style="text-align: center; border: 1px solid Black">☐</td>
+  <td style="padding: 6px; border: 1px solid Black">
+    Installed Snow License Manager
+  </td>
+  <td
+    style="
+      background-color: #fff59d;
+      text-align: center;
+      border: 1px solid Black;
+    "
+  >
+    25.1.00
+  </td>
+  <td style="text-align: center; border: 1px solid Black">☐</td>
 </tr>
 <!--End-->
 
 <!-- Code for Project Comments-->
 <!-- Check for Tag {{ProjectCommentTable}} {{ProjectComments}}-->
 <table
-	style="
-		width: 100%;
-		border-collapse: collapse;
-		font-size: 13px;
-		margin-top: 16px;
-	">
-	<tr>
-		<th
-			colspan="3"
-			style="
-				background-color: #6b3f6b;
-				color: white;
-				padding: 10px;
-				text-align: center;
-				font-size: 16px;
-			">
-			Project Comments
-		</th>
-	</tr>
-	<tr>
-		<td
-			colspan="3"
-			style="
-				background-color: white;
-				padding: 10px;
-				text-align: center;
-				font-size: 12px;
-				border: 1px solid Black;
-			">
-			{{ ProjectComments }}
-		</td>
-	</tr>
+  style="
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 13px;
+    margin-top: 16px;
+  "
+>
+  <tr>
+    <th
+      colspan="3"
+      style="
+        background-color: #6b3f6b;
+        color: white;
+        padding: 10px;
+        text-align: center;
+        font-size: 16px;
+      "
+    >
+      Project Comments
+    </th>
+  </tr>
+  <tr>
+    <td
+      colspan="3"
+      style="
+        background-color: white;
+        padding: 10px;
+        text-align: center;
+        font-size: 12px;
+        border: 1px solid Black;
+      "
+    >
+      {{ ProjectComments }}
+    </td>
+  </tr>
 </table>
 <!--End-->
 
 <!--Code for ProjectSign Off-->
 <!--Look for Tag {{ProjectSignoff}}-->
 <table
-	style="
-		width: 100%;
-		border-collapse: collapse;
-		font-size: 13px;
-		margin-bottom: 16px;
-	">
-	<tr>
-		<th
-			colspan="3"
-			style="
-				background-color: #6b3f6b;
-				color: white;
-				padding: 10px;
-				text-align: center;
-				font-size: 16px;
-			">
-			Project Sign-Off
-		</th>
-	</tr>
-	<tr>
-		<td
-			colspan="3"
-			style="
-				background-color: white;
-				padding: 10px;
-				text-align: center;
-				font-size: 12px;
-			">
-			By signing this document, the customer declares that the work detailed
-			above has been completed by Softcat plc or representatives thereof, has
-			been accepted by the customer to their satisfaction and authorises Softcat
-			to invoice for the related services
-		</td>
-	</tr>
-	<tr>
-		<th
-			style="
-				background-color: #6b3f6b;
-				color: white;
-				padding: 8px;
-				text-align: center;
-				width: 6cm;
-			">
-			Consultancy
-		</th>
-		<th
-			style="
-				background-color: #6b3f6b;
-				color: white;
-				padding: 8px;
-				text-align: center;
-				width: 9cm;
-			">
-			Value
-		</th>
-		<th
-			style="
-				background-color: #6b3f6b;
-				color: white;
-				padding: 8px;
-				text-align: center;
-			">
-			Completed
-		</th>
-	</tr>
-	<tr>
-		<td style="padding: 6px">Number of Days (Projected)</td>
-		<td style="background-color: white; text-align: center">X</td>
-		<td style="text-align: center">☐</td>
-	</tr>
-	<tr>
-		<td style="padding: 6px">Dates of Consultancy (Actual)</td>
-		<td style="background-color: white; text-align: center">X</td>
-		<td style="text-align: center">☐</td>
-	</tr>
-	<tr>
-		<th
-			colspan="3"
-			style="
-				background-color: #6b3f6b;
-				color: white;
-				padding: 10px;
-				text-align: center;
-				font-size: 16px;
-			">
-			Softcat
-		</th>
-	</tr>
-	<tr>
-		<td style="padding: 6px; border: 1px solid Black; vertical-align: middle">
-			Print Name
-		</td>
+  style="
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 13px;
+    margin-bottom: 16px;
+  "
+>
+  <tr>
+    <th
+      colspan="3"
+      style="
+        background-color: #6b3f6b;
+        color: white;
+        padding: 10px;
+        text-align: center;
+        font-size: 16px;
+      "
+    >
+      Project Sign-Off
+    </th>
+  </tr>
+  <tr>
+    <td
+      colspan="3"
+      style="
+        background-color: white;
+        padding: 10px;
+        text-align: center;
+        font-size: 12px;
+      "
+    >
+      By signing this document, the customer declares that the work detailed
+      above has been completed by Softcat plc or representatives thereof, has
+      been accepted by the customer to their satisfaction and authorises Softcat
+      to invoice for the related services
+    </td>
+  </tr>
+  <tr>
+    <th
+      style="
+        background-color: #6b3f6b;
+        color: white;
+        padding: 8px;
+        text-align: center;
+        width: 6cm;
+      "
+    >
+      Consultancy
+    </th>
+    <th
+      style="
+        background-color: #6b3f6b;
+        color: white;
+        padding: 8px;
+        text-align: center;
+        width: 9cm;
+      "
+    >
+      Value
+    </th>
+    <th
+      style="
+        background-color: #6b3f6b;
+        color: white;
+        padding: 8px;
+        text-align: center;
+      "
+    >
+      Completed
+    </th>
+  </tr>
+  <tr>
+    <td style="padding: 6px">Number of Days (Projected)</td>
+    <td style="background-color: white; text-align: center">X</td>
+    <td style="text-align: center">☐</td>
+  </tr>
+  <tr>
+    <td style="padding: 6px">Dates of Consultancy (Actual)</td>
+    <td style="background-color: white; text-align: center">X</td>
+    <td style="text-align: center">☐</td>
+  </tr>
+  <tr>
+    <th
+      colspan="3"
+      style="
+        background-color: #6b3f6b;
+        color: white;
+        padding: 10px;
+        text-align: center;
+        font-size: 16px;
+      "
+    >
+      Softcat
+    </th>
+  </tr>
+  <tr>
+    <td style="padding: 6px; border: 1px solid Black; vertical-align: middle">
+      Print Name
+    </td>
 
-		<td
-			colspan="2"
-			style="
-				border: 1px solid Black;
-				text-align: center;
-				vertical-align: middle;
-			"></td>
-	</tr>
-	<tr>
-		<td
-			style="
-				padding: 6px;
-				border: 1px solid Black;
-				height: 1.5cm;
-				vertical-align: middle;
-			">
-			Signature
-		</td>
+    <td
+      colspan="2"
+      style="
+        border: 1px solid Black;
+        text-align: center;
+        vertical-align: middle;
+      "
+    ></td>
+  </tr>
+  <tr>
+    <td
+      style="
+        padding: 6px;
+        border: 1px solid Black;
+        height: 1.5cm;
+        vertical-align: middle;
+      "
+    >
+      Signature
+    </td>
 
-		<td
-			colspan="2"
-			style="
-				border: 1px solid Black;
-				height: 1.5cm;
-				text-align: center;
-				vertical-align: middle;
-			"></td>
-	</tr>
-	<tr>
-		<td style="padding: 6px; border: 1px solid Black; vertical-align: middle">
-			Date
-		</td>
+    <td
+      colspan="2"
+      style="
+        border: 1px solid Black;
+        height: 1.5cm;
+        text-align: center;
+        vertical-align: middle;
+      "
+    ></td>
+  </tr>
+  <tr>
+    <td style="padding: 6px; border: 1px solid Black; vertical-align: middle">
+      Date
+    </td>
 
-		<td
-			colspan="2"
-			style="
-				border: 1px solid Black;
-				text-align: center;
-				vertical-align: middle;
-			"></td>
-	</tr>
-	<tr>
-		<th
-			colspan="3"
-			style="
-				background-color: #6b3f6b;
-				color: white;
-				padding: 10px;
-				text-align: center;
-				font-size: 16px;
-			">
-			Customer
-		</th>
-	</tr>
-	<tr>
-		<td style="padding: 6px; border: 1px solid Black; vertical-align: middle">
-			Print Name
-		</td>
+    <td
+      colspan="2"
+      style="
+        border: 1px solid Black;
+        text-align: center;
+        vertical-align: middle;
+      "
+    ></td>
+  </tr>
+  <tr>
+    <th
+      colspan="3"
+      style="
+        background-color: #6b3f6b;
+        color: white;
+        padding: 10px;
+        text-align: center;
+        font-size: 16px;
+      "
+    >
+      Customer
+    </th>
+  </tr>
+  <tr>
+    <td style="padding: 6px; border: 1px solid Black; vertical-align: middle">
+      Print Name
+    </td>
 
-		<td
-			colspan="2"
-			style="
-				border: 1px solid Black;
-				text-align: center;
-				vertical-align: middle;
-			"></td>
-	</tr>
-	<tr>
-		<td
-			style="
-				padding: 6px;
-				border: 1px solid Black;
-				height: 1.5cm;
-				vertical-align: middle;
-			">
-			Signature
-		</td>
+    <td
+      colspan="2"
+      style="
+        border: 1px solid Black;
+        text-align: center;
+        vertical-align: middle;
+      "
+    ></td>
+  </tr>
+  <tr>
+    <td
+      style="
+        padding: 6px;
+        border: 1px solid Black;
+        height: 1.5cm;
+        vertical-align: middle;
+      "
+    >
+      Signature
+    </td>
 
-		<td
-			colspan="2"
-			style="
-				border: 1px solid Black;
-				height: 1.5cm;
-				text-align: center;
-				vertical-align: middle;
-			"></td>
-	</tr>
-	<tr>
-		<td style="padding: 6px; border: 1px solid Black; vertical-align: middle">
-			Date
-		</td>
+    <td
+      colspan="2"
+      style="
+        border: 1px solid Black;
+        height: 1.5cm;
+        text-align: center;
+        vertical-align: middle;
+      "
+    ></td>
+  </tr>
+  <tr>
+    <td style="padding: 6px; border: 1px solid Black; vertical-align: middle">
+      Date
+    </td>
 
-		<td
-			colspan="2"
-			style="
-				border: 1px solid Black;
-				text-align: center;
-				vertical-align: middle;
-			"></td>
-	</tr>
+    <td
+      colspan="2"
+      style="
+        border: 1px solid Black;
+        text-align: center;
+        vertical-align: middle;
+      "
+    ></td>
+  </tr>
 </table>
+<!--end-->
+
+<!--Code for HC Recommendations-->
+<!--look for tags {{HighPriority}} {{MediumPriority}} {{LowPriority}}-->
+<tr>
+  <td style="padding: 6px 0">• Entry One</td>
+</tr>
+<!--end-->
+
+<!--Code for Build Server Specifications-->
+<!--look for tags on insert {{BuildServerSpec}}-->
+<!--look for tags on fill {{ ServerUse }} {{ ServerAppVersion }} {{ ServerOS }} {{ ServerCPU }} {{ ServerRAM }} {{ ServerStorage }}-->
+<tr>
+  <th
+    colspan="3"
+    style="
+      background-color: #6b3f6b;
+      color: white;
+      padding: 10px;
+      text-align: center;
+      font-size: 16px;
+    "
+  >
+    {{ ServerUse }} Server Specifications
+  </th>
+</tr>
+<tr>
+  <td
+    style="
+      width: 40%;
+      padding: 6px;
+      border: 1px solid Black;
+      vertical-align: middle;
+      font-weight: bold;
+    "
+  >
+    Application Version
+  </td>
+  <td
+    colspan="2"
+    style="
+      width: 60%;
+      border: 1px solid Black;
+      text-align: center;
+      vertical-align: middle;
+    "
+  >
+    {{ ServerAppVersion }}
+  </td>
+</tr>
+<tr>
+  <td
+    style="
+      padding: 6px;
+      border: 1px solid Black;
+      vertical-align: middle;
+      font-weight: bold;
+    "
+  >
+    Operating System
+  </td>
+  <td
+    colspan="2"
+    style="border: 1px solid Black; text-align: center; vertical-align: middle"
+  >
+    {{ ServerOS }}
+  </td>
+</tr>
+<tr>
+  <td
+    style="
+      padding: 6px;
+      border: 1px solid Black;
+      vertical-align: middle;
+      font-weight: bold;
+    "
+  >
+    vCPU
+  </td>
+  <td
+    colspan="2"
+    style="border: 1px solid Black; text-align: center; vertical-align: middle"
+  >
+    {{ ServerCPU }}
+  </td>
+</tr>
+<tr>
+  <td
+    style="
+      padding: 6px;
+      border: 1px solid Black;
+      vertical-align: middle;
+      font-weight: bold;
+    "
+  >
+    RAM
+  </td>
+  <td
+    colspan="2"
+    style="border: 1px solid Black; text-align: center; vertical-align: middle"
+  >
+    {{ ServerRAM }}
+  </td>
+</tr>
+<tr>
+  <td
+    style="
+      padding: 6px;
+      border: 1px solid Black;
+      vertical-align: middle;
+      font-weight: bold;
+    "
+  >
+    Drive(s) Storage:
+  </td>
+  <td
+    colspan="2"
+    style="border: 1px solid Black; text-align: center; vertical-align: middle"
+  >
+    {{ ServerStorage }}
+  </td>
+</tr>
+<!--end-->
+
+<!--Code for Healthcheck Server Specifications-->
+<!-- -->
+<tr style="height: 0; line-height: 0; visibility: collapse">
+  <td style="width: 20px; padding: 0; border: none"></td>
+  <td style="width: auto; padding: 0; border: none"></td>
+  <td style="width: 25%; padding: 0; border: none"></td>
+</tr>
+
+<tr>
+  <th
+    colspan="2"
+    style="
+      background-color: #6b3f6b;
+      color: white;
+      padding: 10px;
+      text-align: center;
+      font-size: 16px;
+      font-weight: bold;
+      border-right: 1px solid Black;
+    "
+  >
+    Server Specifications and Versions
+  </th>
+  <th style="background-color: #6b3f6b; padding: 10px; border: none"></th>
+</tr>
+
+<tr>
+  <td
+    style="
+      width: 20px;
+      background-color: #cc0000;
+      border: 1px solid Black;
+      padding: 4px 0;
+    "
+  ></td>
+  <td
+    style="
+      padding: 4px 10px;
+      font-size: 13px;
+      border: 1px solid Black;
+      vertical-align: middle;
+      line-height: 1.3;
+    "
+  >
+    <span style="font-weight: bold; display: block; margin-bottom: 2px"
+      >Snow License Manager version</span
+    >
+    <span style="font-size: 11px; color: #555555; display: block"
+      >Currently installed application version</span
+    >
+  </td>
+  <td
+    style="
+      padding: 4px 10px;
+      font-size: 13px;
+      font-weight: bold;
+      border: 1px solid Black;
+      text-align: center;
+      vertical-align: middle;
+    "
+  >
+    9.30.1
+  </td>
+</tr>
+
+<tr>
+  <td
+    colspan="3"
+    style="
+      background-color: white;
+      padding: 8px 10px;
+      text-align: center;
+      font-size: 12px;
+      border: 1px solid Black;
+      line-height: 1.4;
+    "
+  >
+    <strong>Comment:</strong><br />
+    If within 3 versions, set as orange, recommend Upgrade as a Caution<br />
+    If older than 3 versions, leave as red and Critical Upgrade is required.
+  </td>
+</tr>
 <!--end-->
