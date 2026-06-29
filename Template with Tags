@@ -375,14 +375,9 @@
 											</td>
 											<td style="border: 1px solid Black">Active</td>
 										</tr>
-										<tr>
-											<td style="padding: 6px; border: 1px solid Black">
-												{{ Product }}
-											</td>
-											<td style="border: 1px solid Black">
-												{{ Product_State }}
-											</td>
-										</tr>
+										{{
+											ProductsServices
+										}}
 										<tr>
 											<th
 												colspan="2"
@@ -429,7 +424,7 @@
 													border: 1px solid Black;
 													width: 50%;
 												">
-												XXXX/XXXX
+												{{ TotalLicensed }}/{{ TotalInventory }}
 											</td>
 										</tr>
 										<tr>
@@ -465,7 +460,7 @@
 													border: 1px solid Black;
 													width: 50%;
 												">
-												XX
+												{{ Support12m }}
 											</td>
 										</tr>
 									</table>

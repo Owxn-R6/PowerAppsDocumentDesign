@@ -1,3 +1,18 @@
+<!--Code for Components and Services Table-->
+<!-- Tags for Details {{ Platform_Type }} {{ Device_Count }}-->
+<!-- Check for Tag {{ProductsServices}}-->
+<tr>
+	<td style="padding: 6px; border: 1px solid Black">
+		{{ Product }}
+	</td>
+	<td style="border: 1px solid Black">
+		{{ Product_State }}
+	</td>
+</tr>
+
+<!--Tags for Quick Stats-->
+{{ TotalLicensed }}/{{ TotalInventory }}
+
 <!-- Code for Project Checklist Table-->
 <!-- Check for Tag {{ProjectChecklist}}-->
 <div class="Project-Checklist-table">
