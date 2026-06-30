@@ -1,3 +1,16 @@
+<!--Tags for cover page -->
+{{ document_title }}
+{{ customer_name }}
+{{ consultant_name }}
+{{ document_date }}
+{{ document_status }}
+{{ document_sensitivity }}
+<!--End-->
+
+<!--Tag for Introduction text-->
+{{ introduction_text }}
+<!--End-->
+
 <!--Code for Components and Services Table-->
 <!-- Tags for Details {{ Platform_Type }} {{ Device_Count }}-->
 <!-- Check for Tag {{ProductsServices}}-->
@@ -494,31 +507,8 @@
 <!--end-->
 
 <!--Code for Healthcheck Server Specifications-->
-<!-- -->
-<tr style="height: 0; line-height: 0; visibility: collapse">
-  <td style="width: 20px; padding: 0; border: none"></td>
-  <td style="width: auto; padding: 0; border: none"></td>
-  <td style="width: 25%; padding: 0; border: none"></td>
-</tr>
-
-<tr>
-  <th
-    colspan="2"
-    style="
-      background-color: #6b3f6b;
-      color: white;
-      padding: 10px;
-      text-align: center;
-      font-size: 16px;
-      font-weight: bold;
-      border-right: 1px solid Black;
-    "
-  >
-    Server Specifications and Versions
-  </th>
-  <th style="background-color: #6b3f6b; padding: 10px; border: none"></th>
-</tr>
-
+<!-- look for tags on insert {{HealthCheckServerSpec}}-->
+<!--look for tags on fill {{HealthCheckServerSpecComment}}-->
 <tr>
   <td
     style="
@@ -570,9 +560,8 @@
       line-height: 1.4;
     "
   >
-    <strong>Comment:</strong><br />
-    If within 3 versions, set as orange, recommend Upgrade as a Caution<br />
-    If older than 3 versions, leave as red and Critical Upgrade is required.
+    <strong>Comment:</strong>
+    {{ HealthCheckServerSpecComment }}
   </td>
 </tr>
 <!--end-->
