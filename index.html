@@ -2884,7 +2884,16 @@
                           font-weight: bold;
                         "
                       >
-                        AD Discovery Period:
+                        AD Device Discovery:
+                        <span
+                          style="
+                            font-size: 11px;
+                            color: #555555;
+                            display: block;
+                          "
+                          >Allows the discovery of devices in AD that do not
+                          have a Snow Agent installed.</span
+                        >
                       </td>
                       <td
                         style="
@@ -2893,7 +2902,97 @@
                           text-align: center;
                         "
                       >
-                        {{SLM_AD_Discovery}}
+                        {{SLM_AD_DeviceDiscovery}}
+                      </td>
+                      <td
+                        style="
+                          padding: 6px;
+                          border: 1px solid black;
+                          text-align: center;
+                          font-weight: bold;
+                        "
+                      >
+                        N/A
+                      </td>
+                    </tr>
+                    <tr>
+                      <td
+                        style="
+                          background-color: #32cd32;
+                          border: 1px solid black;
+                        "
+                      ></td>
+                      <td
+                        style="
+                          padding: 6px;
+                          border: 1px solid black;
+                          font-weight: bold;
+                        "
+                      >
+                        AD User Discovery:
+                        <span
+                          style="
+                            font-size: 11px;
+                            color: #555555;
+                            display: block;
+                          "
+                          >Allows the discovery of users in AD that havent been
+                          picked up by a snow agent</span
+                        >
+                      </td>
+                      <td
+                        style="
+                          padding: 6px;
+                          border: 1px solid black;
+                          text-align: center;
+                        "
+                      >
+                        {{SLM_AD_UserDiscovery}}
+                      </td>
+                      <td
+                        style="
+                          padding: 6px;
+                          border: 1px solid black;
+                          text-align: center;
+                          font-weight: bold;
+                        "
+                      >
+                        90 Days
+                      </td>
+                    </tr>
+                    <tr>
+                      <td
+                        style="
+                          background-color: #32cd32;
+                          border: 1px solid black;
+                        "
+                      ></td>
+                      <td
+                        style="
+                          padding: 6px;
+                          border: 1px solid black;
+                          font-weight: bold;
+                        "
+                      >
+                        AD Discovery Period:
+                        <span
+                          style="
+                            font-size: 11px;
+                            color: #555555;
+                            display: block;
+                          "
+                          >Number of days historic AD discovery data is
+                          stored</span
+                        >
+                      </td>
+                      <td
+                        style="
+                          padding: 6px;
+                          border: 1px solid black;
+                          text-align: center;
+                        "
+                      >
+                        {{SLM_AD_DiscoveryPeriod}}
                       </td>
                       <td
                         style="
@@ -3208,7 +3307,18 @@
                           background-color: white;
                         "
                       >
-                        <strong>Comment:</strong><br />This
+                        <strong>Comment:</strong>
+                        <br />There are XXX quarantined computers in SLM, which
+                        have been reviewed by quarantine management but do not
+                        have an action which can prevent historic devices from
+                        impacting license count or utilising software licenses
+                        when no longer active. All settings for quarantine
+                        management are listed in
+
+                        <a
+                          href="https://docs.flexera.com/snow-license-manager/snow-management-and-configuration-center/configuration/manage-quarantine"
+                          >SMACC Settings</a
+                        >
                       </td>
                     </tr>
 
@@ -3551,7 +3661,17 @@
                           background-color: white;
                         "
                       >
-                        <strong>Comment:</strong><br />This
+                        <strong>Comment:</strong><br />There are XXX quarantined
+                        computers in SLM, which have been reviewed by quarantine
+                        management but do not have an action which can prevent
+                        historic devices from impacting license count or
+                        utilising software licenses when no longer active. All
+                        settings for quarantine management are listed in
+
+                        <a
+                          href="https://docs.flexera.com/snow-license-manager/snow-management-and-configuration-center/configuration/manage-quarantine"
+                          >SMACC Settings</a
+                        >
                       </td>
                     </tr>
 
@@ -3649,7 +3769,17 @@
                           background-color: white;
                         "
                       >
-                        <strong>Comment:</strong><br />This
+                        <strong>Comment:</strong><br />There are XXX quarantined
+                        computers in SLM, which have been reviewed by quarantine
+                        management but do not have an action which can prevent
+                        historic devices from impacting license count or
+                        utilising software licenses when no longer active. All
+                        settings for quarantine management are listed in
+
+                        <a
+                          href="https://docs.flexera.com/snow-license-manager/snow-management-and-configuration-center/configuration/manage-quarantine"
+                          >SMACC Settings</a
+                        >
                       </td>
                     </tr>
 
