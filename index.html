@@ -2420,30 +2420,6 @@
                           font-weight: bold;
                         "
                       >
-                        Currency Management:
-                      </td>
-                      <td
-                        colspan="2"
-                        style="
-                          width: 60%;
-                          border: 1px solid Black;
-                          text-align: center;
-                          vertical-align: middle;
-                        "
-                      >
-                        Do we need this if we have a currency table
-                      </td>
-                    </tr>
-                    <tr>
-                      <td
-                        style="
-                          width: 40%;
-                          padding: 6px;
-                          border: 1px solid Black;
-                          vertical-align: middle;
-                          font-weight: bold;
-                        "
-                      >
                         Device Quarantine Active:
                       </td>
                       <td
@@ -2492,7 +2468,7 @@
                           font-weight: bold;
                         "
                       >
-                        Device Quarantine Delete Active:
+                        Device Quarantine Management Action:
                       </td>
                       <td
                         colspan="2"
@@ -2503,7 +2479,7 @@
                           vertical-align: middle;
                         "
                       >
-                        {{SLM_DeviceQuarantine_DeleteActive}}
+                        {{SLM_DeviceQuarantine_ManagementAction}}
                       </td>
                     </tr>
                     <tr>
@@ -2516,7 +2492,7 @@
                           font-weight: bold;
                         "
                       >
-                        Device Quarantine Delete Days:
+                        Device Quarantine Management Action Days:
                       </td>
                       <td
                         colspan="2"
@@ -2527,7 +2503,7 @@
                           vertical-align: middle;
                         "
                       >
-                        {{SLM_DeviceQuarantine_DeleteDays}}
+                        {{SLM_DeviceQuarantine_ManagementActionDays}}
                       </td>
                     </tr>
                     <tr>
@@ -2807,7 +2783,7 @@
                       </th>
                       <th
                         style="
-                          width: 20%;
+                          width: 25%;
                           background-color: #633965;
                           color: white;
                           padding: 8px;
@@ -2820,7 +2796,7 @@
                       </th>
                       <th
                         style="
-                          width: 20%;
+                          width: 25%;
                           background-color: #633965;
                           color: white;
                           padding: 8px;
@@ -3197,6 +3173,15 @@
                         "
                       >
                         Device Quarantine Active:
+                        <span
+                          style="
+                            font-size: 11px;
+                            color: #555555;
+                            display: block;
+                          "
+                          >Updates the status on devices which haven’t reported
+                          in for a set period.</span
+                        >
                       </td>
                       <td
                         style="
@@ -3227,7 +3212,11 @@
                           background-color: white;
                         "
                       >
-                        <strong>Comment:</strong><br />This
+                        <strong>Comment:</strong><br />Disabling this function
+                        results in devices that have not reported in for a set
+                        period being counted as active, which can impact license
+                        count and utilisation of software licenses when no
+                        longer active. We never recommend removing this feature.
                       </td>
                     </tr>
 
@@ -3246,6 +3235,15 @@
                         "
                       >
                         Device Quarantine Days:
+                        <span
+                          style="
+                            font-size: 11px;
+                            color: #555555;
+                            display: block;
+                          "
+                          >The number of days before the status of a device is
+                          updated to Quarantined.
+                        </span>
                       </td>
                       <td
                         style="
@@ -3276,7 +3274,11 @@
                           background-color: white;
                         "
                       >
-                        <strong>Comment:</strong><br />This
+                        <strong>Comment:</strong><br />Increasing this value
+                        will result in devices being quarantined later, which
+                        can impact license count and utilisation of software
+                        licenses when no longer active. We recommend keeping
+                        this value at 30 days.
                       </td>
                     </tr>
 
@@ -3294,7 +3296,16 @@
                           font-weight: bold;
                         "
                       >
-                        Device Quarantine Delete Active:
+                        Device Quarantine Management Action:
+                        <span
+                          style="
+                            font-size: 11px;
+                            color: #555555;
+                            display: block;
+                          "
+                          >Further to the quarantine period, after a set period,
+                          Quarantined devices are either deleted or archived.
+                        </span>
                       </td>
                       <td
                         style="
@@ -3303,7 +3314,7 @@
                           text-align: center;
                         "
                       >
-                        {{SLM_DeviceQuarantine_DeleteActive}}
+                        {{SLM_DeviceQuarantine_ManagementAction}}
                       </td>
                       <td
                         style="
@@ -3354,7 +3365,7 @@
                           font-weight: bold;
                         "
                       >
-                        Device Quarantine Delete Days:
+                        Device Quarantine Management Action Days:
                       </td>
                       <td
                         style="
@@ -3363,7 +3374,7 @@
                           text-align: center;
                         "
                       >
-                        {{SLM_DeviceQuarantine_DeleteDays}}
+                        {{SLM_DeviceQuarantine_ManagementActionDays}}
                       </td>
                       <td
                         style="
@@ -7716,26 +7727,30 @@
                     <tr>
                       <td
                         style="
-                          width: 50%;
+                          width: 60%;
                           background-color: #6b3f6b;
                           color: white;
                           padding: 6px 10px;
                           text-align: center;
                           font-size: 14px;
                           font-weight: bold;
+                          white-space: normal;
+                          word-wrap: break-word;
                         "
                       >
                         Settings Name
                       </td>
                       <td
                         style="
-                          width: 50%;
+                          width: 40%;
                           background-color: #6b3f6b;
                           color: white;
                           padding: 6px 10px;
                           text-align: center;
                           font-size: 14px;
                           font-weight: bold;
+                          white-space: normal;
+                          word-wrap: break-word;
                         "
                       >
                         Setting Value
@@ -8117,26 +8132,30 @@
                     <tr>
                       <td
                         style="
-                          width: 50%;
+                          width: 60%;
                           background-color: #6b3f6b;
                           color: white;
                           padding: 6px 10px;
                           text-align: center;
                           font-size: 14px;
                           font-weight: bold;
+                          white-space: normal;
+                          word-wrap: break-word;
                         "
                       >
                         Settings Name
                       </td>
                       <td
                         style="
-                          width: 50%;
+                          width: 40%;
                           background-color: #6b3f6b;
                           color: white;
                           padding: 6px 10px;
                           text-align: center;
                           font-size: 14px;
                           font-weight: bold;
+                          white-space: normal;
+                          word-wrap: break-word;
                         "
                       >
                         Setting Value
@@ -8784,26 +8803,30 @@
                     <tr>
                       <td
                         style="
-                          width: 50%;
+                          width: 60%;
                           background-color: #6b3f6b;
                           color: white;
                           padding: 6px 10px;
                           text-align: center;
                           font-size: 14px;
                           font-weight: bold;
+                          white-space: normal;
+                          word-wrap: break-word;
                         "
                       >
                         Settings Name
                       </td>
                       <td
                         style="
-                          width: 50%;
+                          width: 40%;
                           background-color: #6b3f6b;
                           color: white;
                           padding: 6px 10px;
                           text-align: center;
                           font-size: 14px;
                           font-weight: bold;
+                          white-space: normal;
+                          word-wrap: break-word;
                         "
                       >
                         Setting Value
