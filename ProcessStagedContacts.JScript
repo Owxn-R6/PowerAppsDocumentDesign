@@ -1,0 +1,36 @@
+function processContacts(primaryControl) {
+  var formContext = primaryControl;
+
+  var contactImportId = formContext.data.entity.getId();
+
+  contactImportId = contactImportId.replace("{", "").replace("}", "");
+
+  var flowUrl =
+    "https://4eb31ccf2e21e4ccb0fe5f9dcf2a60.ae.environment.api.powerplatform.com:443/powerautomate/automations/direct/cu/06/workflows/4a91400f4e8c4243ada2c58ac8290974/triggers/manual/paths/invoke?api-version=1";
+
+  var request = new XMLHttpRequest();
+
+  request.open("POST", flowUrl, true);
+
+  request.setRequestHeader("Content-Type", "application/json");
+
+  request.onreadystatechange = function () {
+    if (this.readyState === 4) {
+      if (this.status >= 200 && this.status < 300) {
+        Xrm.Navigation.openAlertDialog({
+          text: "Contact processing has been started.",
+        });
+      } else {
+        Xrm.Navigation.openErrorDialog({
+          message: "Failed to start contact processing.",
+        });
+      }
+    }
+  };
+
+  request.send(
+    JSON.stringify({
+      ContactImportId: contactImportId,
+    }),
+  );
+}
