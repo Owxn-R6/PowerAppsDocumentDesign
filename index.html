@@ -393,7 +393,7 @@ font-size: 14px;
                   border: 1px solid Black;
                   width: 50%;
                   ">
-          XX/XX/XX
+          {{Renewal_Date}}
         </td>
       </tr>
       <tr>
@@ -409,7 +409,7 @@ font-size: 14px;
                   border: 1px solid Black;
                   width: 50%;
                   ">
-          XXXX/XXXX
+          {{Licensed_Devices}}/{{Inventoried_Devices}}
         </td>
       </tr>
       <tr>
@@ -425,7 +425,7 @@ font-size: 14px;
                   border: 1px solid Black;
                   width: 50%;
                   ">
-          Table?
+          {{License_Completeness}}
         </td>
       </tr>
       <tr>
@@ -580,11 +580,7 @@ font-size: 14px;
                  font-size: 12px;
                  border: 1px solid Black;
                  ">
-          This is the project comments section, where you can
-          add any additional information or notes about the
-          project. This section can be used to provide context,
-          highlight important details, or summarize key points
-          related to the project.
+          {{Document_ProjectComments}}
         </td>
       </tr>
     </table>
@@ -652,7 +648,7 @@ font-size: 14px;
       <tr>
         <td style="padding: 6px">Number of Days (Projected)</td>
         <td style="background-color: white; text-align: center">
-          X
+          {{Document_DaysProjected}}
         </td>
         <td style="text-align: center">☐</td>
       </tr>
@@ -661,7 +657,7 @@ font-size: 14px;
           Dates of Consultancy (Actual)
         </td>
         <td style="background-color: white; text-align: center">
-          X
+          {{Document_DatesActual}}
         </td>
         <td style="text-align: center">☐</td>
       </tr>
@@ -688,8 +684,8 @@ font-size: 14px;
                            border: 1px solid Black;
                            text-align: center;
                            vertical-align: middle;
-                           "></td>
-            </tr>
+                           ">{{Document_ConsultantName}}</td>
+            </tr> 
             <tr>
               <td style="
                            padding: 6px;
@@ -698,13 +694,13 @@ font-size: 14px;
                            vertical-align: middle;
                            ">
                 Signature
-              </td>
+              </td> 
             <td colspan="2" style="
                            border: 1px solid Black;
                            height: 1.5cm;
                            text-align: center;
                            vertical-align: middle;
-                           "></td>
+                           ">{{Document_ConsultantSignature}}</td>
             </tr>
             <tr>
               <td style="
@@ -718,7 +714,7 @@ font-size: 14px;
                            border: 1px solid Black;
                            text-align: center;
                            vertical-align: middle;
-                           "></td>
+                           ">{{Document_ConsultantDate}}</td>
             </tr>
             <tr>
               <th colspan="3" style="
@@ -3757,7 +3753,7 @@ font-size: 14px;
                 <col style="width: 20%"/>
             </colgroup>
             <tr>
-              
+
                 <th colspan="4" style="
                   background-color: #633965;
                   color: white;
