@@ -210,6 +210,13 @@
         margin-top: 16px;
       }
 
+      .Introduction-header{
+        font-size: 16px;
+        font-weight: 700
+      }
+      .Introduction-content{
+        font-size: 14px;
+      }
       /* Standard block protection rules for printing */
       tr,
       h1,
@@ -321,12 +328,26 @@ font-size: 14px;
   <h1 class="Introduction-title" data-field="section_2_title" style="padding-bottom: 10px">
     Introduction
   </h1>
-  <p data-field="Introduction_text" style="padding-bottom: 10px">
-    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed
-    non risus. Suspendisse lectus tortor, dignissim sit amet,
-    adipiscing nec, ultricies sed, dolor. Cras elementum
-    ultrices diam. Maecenas ligula massa, varius a, semper
-    congue, euismod non, mi.
+    <h1 class="Introduction-header" data-field="section_2_title" style="padding-bottom: 10px">
+    {{Document_Header}}
+    <br> <br>
+    What is a Build Sheet?<br> <br>
+    What is a Health Check?
+  </h1>
+  <p data-field="Introduction-content" style="padding-bottom: 10px">
+    {{Document_Introduction}}
+    <br> <br>
+    A build sheet provides a complete record of the Snow configuration 
+    established for <strong>{{customer_name}}</strong>. It details the setup of the hosting servers, inventory agents, and 
+    platform settings as they were at the time of delivery. Our goal is to ensure you have a clear, 
+    documented implementation of the product. 
+    <br> <br>
+    A health check offers a detailed overview of the Snow Software instance utilised by <strong>{{customer_name}}</strong>
+    It covers information about the servers hosting the application, as well as the product's 
+    usage and settings. This data allows us to provide specific recommendations for improvements 
+    and enhance overall performance. Our goal is to ensure that our customers get the most use out 
+    of the product. 
+
   </p>
 </div>
 <div class="Customer-Overview" data-field="section_2">
@@ -362,13 +383,13 @@ font-size: 14px;
       <td style="padding: 6px; border: 1px solid Black">
         {{Platform_Type}} for {{Device_Count}} endpoints
       </td>
-      <td style="border: 1px solid Black">Active</td>
+      <td style="border: 1px solid Black; text-align: center;">Active</td>
     </tr>
     <tr>
       <td style="padding: 6px; border: 1px solid Black">
         {{Product}}
       </td>
-      <td style="border: 1px solid Black">{{Product_State}}</td>
+      <td style="border: 1px solid Black; text-align: center;">{{Product_State}}</td>
     </tr>
     <tr>
       <th colspan="2" style="
@@ -392,6 +413,7 @@ font-size: 14px;
                   padding: 6px;
                   border: 1px solid Black;
                   width: 50%;
+                  text-align: center;
                   ">
           {{Renewal_Date}}
         </td>
@@ -401,6 +423,7 @@ font-size: 14px;
                   padding: 6px;
                   border: 1px solid Black;
                   width: 50%;
+                  text-align: left;
                   ">
           Licensed Devices / Inventoried Devices
         </td>
@@ -408,6 +431,7 @@ font-size: 14px;
                   padding: 6px;
                   border: 1px solid Black;
                   width: 50%;
+                  text-align: center;
                   ">
           {{Licensed_Devices}}/{{Inventoried_Devices}}
         </td>
@@ -417,6 +441,7 @@ font-size: 14px;
                   padding: 6px;
                   border: 1px solid Black;
                   width: 50%;
+                  text-align: left;
                   ">
           License Completeness (%)
         </td>
@@ -424,6 +449,7 @@ font-size: 14px;
                   padding: 6px;
                   border: 1px solid Black;
                   width: 50%;
+                  text-align: center;
                   ">
           {{License_Completeness}}
         </td>
@@ -433,6 +459,7 @@ font-size: 14px;
                   padding: 6px;
                   border: 1px solid Black;
                   width: 50%;
+                  text-align: left;
                   ">
           Support Cases Raised in 12 Months
         </td>
@@ -440,8 +467,9 @@ font-size: 14px;
                   padding: 6px;
                   border: 1px solid Black;
                   width: 50%;
+                  text-align: center;
                   ">
-          XX
+          {{Support_Cases}}
         </td>
       </tr>
       </table>
@@ -509,47 +537,17 @@ font-size: 14px;
             </tr>
             <tr>
               <td style="padding: 6px; border: 1px solid Black">
-                Installed Snow License Manager
+                {{Document_Task}}
               </td>
               <td style="
                      background-color: #fff59d;
                      text-align: center;
                      border: 1px solid Black;
                      ">
-                25.1.00
+               {{Document_TaskVersion}}
               </td>
               <td style="text-align: center; border: 1px solid Black">
-                ☐
-              </td>
-            </tr>
-            <tr>
-              <td style="padding: 6px; border: 1px solid Black">
-                Installed Snow Inventory Server
-              </td>
-              <td style="
-                     background-color: #fff59d;
-                     text-align: center;
-                     border: 1px solid Black;
-                     ">
-                25.1.00
-              </td>
-              <td style="text-align: center; border: 1px solid Black">
-                ☐
-              </td>
-            </tr>
-            <tr>
-              <td style="padding: 6px; border: 1px solid Black">
-                Installed Snow Integration Manager
-              </td>
-              <td style="
-                     background-color: #fff59d;
-                     text-align: center;
-                     border: 1px solid Black;
-                     ">
-                6.13.0
-              </td>
-              <td style="text-align: center; border: 1px solid Black">
-                ☐
+                🗹 
               </td>
             </tr>
           </table>
@@ -650,7 +648,7 @@ font-size: 14px;
         <td style="background-color: white; text-align: center">
           {{Document_DaysProjected}}
         </td>
-        <td style="text-align: center">☐</td>
+        <td style="text-align: center">🗹</td>
       </tr>
       <tr>
         <td style="padding: 6px">
@@ -659,7 +657,7 @@ font-size: 14px;
         <td style="background-color: white; text-align: center">
           {{Document_DatesActual}}
         </td>
-        <td style="text-align: center">☐</td>
+        <td style="text-align: center">🗹</td>
       </tr>
       <tr>
         <th colspan="3" style="
@@ -804,13 +802,7 @@ font-size: 14px;
         font-size: 13px;
         ">
     <tr>
-      <td style="padding: 6px 0">• Entry One</td>
-    </tr>
-    <tr>
-      <td style="padding: 6px 0">• Entry Two</td>
-    </tr>
-    <tr>
-      <td style="padding: 6px 0">• Entry Three</td>
+      <td style="padding: 6px 0">• {{HighPriorityImprovements}}</td>
     </tr>
   </table>
   <h1 class="Enhancements-title" data-field="section_2_subtitle" style="
@@ -830,14 +822,9 @@ font-size: 14px;
         font-size: 13px;
         ">
     <tr>
-      <td style="padding: 6px 0">• Entry One</td>
+      <td style="padding: 6px 0">• {{MediumPriorityImprovements}}</td>
     </tr>
-    <tr>
-      <td style="padding: 6px 0">• Entry Two</td>
-    </tr>
-    <tr>
-      <td style="padding: 6px 0">• Entry Three</td>
-    </tr>
+
   </table>
   <h1 class="Practice-title" data-field="section_2_subtitle" style="
         padding-bottom: 10px;
@@ -856,13 +843,7 @@ font-size: 14px;
         font-size: 13px;
         ">
     <tr>
-      <td style="padding: 6px 0">• Entry One</td>
-    </tr>
-    <tr>
-      <td style="padding: 6px 0">• Entry Two</td>
-    </tr>
-    <tr>
-      <td style="padding: 6px 0">• Entry Three</td>
+      <td style="padding: 6px 0">• {{LowPriorityImprovements}}</td>
     </tr>
   </table>
   </div>
