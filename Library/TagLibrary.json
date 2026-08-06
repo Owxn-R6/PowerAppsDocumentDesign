@@ -1,0 +1,674 @@
+{
+    "Agent_AdditionalPackagesRequired": {
+        "type": "",
+        "description": ""
+    },
+    "Agent_ConfigName": {
+        "type": "",
+        "description": ""
+    },
+    "Agent_EndpointAddress": {
+        "type": "",
+        "description": ""
+    },
+    "Agent_LoggingLevel": {
+        "type": "",
+        "description": ""
+    },
+    "Agent_MeteringDays": {
+        "type": "",
+        "description": ""
+    },
+    "Agent_MeteringTimings": {
+        "type": "",
+        "description": ""
+    },
+    "Agent_OS_Name": {
+        "type": "",
+        "description": ""
+    },
+    "Agent_ProxyAddress": {
+        "type": "",
+        "description": ""
+    },
+    "agent_rows": {
+        "type": "",
+        "description": ""
+    },
+    "Agent_SaaSMetering": {
+        "type": "",
+        "description": ""
+    },
+    "Agent_SiteName": {
+        "type": "",
+        "description": ""
+    },
+    "Agent_SpecificExcludeLocations": {
+        "type": "",
+        "description": ""
+    },
+    "Agent_SpecificIncludeFileType": {
+        "type": "",
+        "description": ""
+    },
+    "Agent_SpecificIncludeLocations": {
+        "type": "",
+        "description": ""
+    },
+    "Agent_SSLCertificate": {
+        "type": "",
+        "description": ""
+    },
+    "Agent_SSLVerify": {
+        "type": "",
+        "description": ""
+    },
+    "Atlas_ADDiscoveryPeriod": {
+        "type": "",
+        "description": ""
+    },
+    "Atlas_AllowlistFileExtensions": {
+        "type": "",
+        "description": ""
+    },
+    "Atlas_CheckIfExternalLicenseIDUnique": {
+        "type": "",
+        "description": ""
+    },
+    "Atlas_DataVisibilityBasedOnOrganizationStructure": {
+        "type": "",
+        "description": ""
+    },
+    "Atlas_DataVisibilityBasedOnOrgStructure": {
+        "type": "",
+        "description": ""
+    },
+    "Atlas_DaysBeforeRemovingInactiveDatacenters": {
+        "type": "",
+        "description": ""
+    },
+    "Atlas_DenylistFileExtensions": {
+        "type": "",
+        "description": ""
+    },
+    "Atlas_DeviceQuarantineDays": {
+        "type": "",
+        "description": ""
+    },
+    "Atlas_DeviceQuarantineDeleteAction": {
+        "type": "",
+        "description": ""
+    },
+    "Atlas_DeviceQuarantineDeleteActive": {
+        "type": "",
+        "description": ""
+    },
+    "Atlas_DeviceQuarantineDeleteDays": {
+        "type": "",
+        "description": ""
+    },
+    "Atlas_EnableAllowListApplications": {
+        "type": "",
+        "description": ""
+    },
+    "Atlas_EnableAnonymousUserManagement": {
+        "type": "",
+        "description": ""
+    },
+    "Atlas_ExcludeMostFrequentUser": {
+        "type": "",
+        "description": ""
+    },
+    "Atlas_ExcludeMostRecentUser": {
+        "type": "",
+        "description": ""
+    },
+    "Atlas_ExternalAccessEnabled": {
+        "type": "",
+        "description": ""
+    },
+    "Atlas_ExternalLicenseIDUnique": {
+        "type": "",
+        "description": ""
+    },
+    "Atlas_HistoricSoftwareUsageMetering": {
+        "type": "",
+        "description": ""
+    },
+    "Atlas_HistoricUserLoginDataRetentionPeriod": {
+        "type": "",
+        "description": ""
+    },
+    "Atlas_PortalAuthentication": {
+        "type": "",
+        "description": ""
+    },
+    "Atlas_RemoteDeviceDeleteDays": {
+        "type": "",
+        "description": ""
+    },
+    "Atlas_RemoteDeviceQuarantineDays": {
+        "type": "",
+        "description": ""
+    },
+    "Atlas_RemoteDeviceQuarantineDelete": {
+        "type": "",
+        "description": ""
+    },
+    "Atlas_SaveIncompleteLicenses": {
+        "type": "",
+        "description": ""
+    },
+    "Atlas_UserAccountExclusions": {
+        "type": "",
+        "description": ""
+    },
+    "Atlas_UserQuarantineDays": {
+        "type": "",
+        "description": ""
+    },
+    "Atlas_UserQuarantineDeleteActive": {
+        "type": "",
+        "description": ""
+    },
+    "Atlas_UserQuarantineDeleteDays": {
+        "type": "",
+        "description": ""
+    },
+    "connector_rows": {
+        "type": "",
+        "description": ""
+    },
+    "consultant_name": {
+        "type": "",
+        "description": ""
+    },
+    "customer_name": {
+        "type": "",
+        "description": ""
+    },
+    "Customer_Name": {
+        "type": "",
+        "description": ""
+    },
+    "Device_Count": {
+        "type": "",
+        "description": ""
+    },
+    "Document_AddressAndPort": {
+        "type": "",
+        "description": ""
+    },
+    "Document_AgentInstallationsCount": {
+        "type": "",
+        "description": ""
+    },
+    "Document_AgentName": {
+        "type": "",
+        "description": ""
+    },
+    "Document_AggregationTest": {
+        "type": "",
+        "description": ""
+    },
+    "Document_AllowlistedApplicationsUsage": {
+        "type": "",
+        "description": ""
+    },
+    "Document_AllowlistedApplicationsUsageCount": {
+        "type": "",
+        "description": ""
+    },
+    "Document_ApplicationsInstalledOnDenylistCount": {
+        "type": "",
+        "description": ""
+    },
+    "Document_ApplicationsShownWithinPortalCount": {
+        "type": "",
+        "description": ""
+    },
+    "Document_ApplicationVersion": {
+        "type": "",
+        "description": ""
+    },
+    "Document_CloudApplicationMeteringUsage": {
+        "type": "",
+        "description": ""
+    },
+    "Document_CloudApplicationMeteringUsageCount": {
+        "type": "",
+        "description": ""
+    },
+    "Document_CloudBasedApplicationsCount": {
+        "type": "",
+        "description": ""
+    },
+    "Document_CompliantApplicationsCount": {
+        "type": "",
+        "description": ""
+    },
+    "Document_ConnectorComment": {
+        "type": "",
+        "description": ""
+    },
+    "Document_ConnectorName": {
+        "type": "",
+        "description": ""
+    },
+    "Document_ConsultantDate": {
+        "type": "",
+        "description": ""
+    },
+    "Document_ConsultantName": {
+        "type": "",
+        "description": ""
+    },
+    "Document_ConsultantSignature": {
+        "type": "",
+        "description": ""
+    },
+    "Document_CurrencyBase": {
+        "type": "",
+        "description": ""
+    },
+    "Document_CurrencyDescription": {
+        "type": "",
+        "description": ""
+    },
+    "Document_CurrencyName": {
+        "type": "",
+        "description": ""
+    },
+    "Document_CurrencyRate": {
+        "type": "",
+        "description": ""
+    },
+    "Document_CustomCompareValuesUsage": {
+        "type": "",
+        "description": ""
+    },
+    "Document_CustomCompareValuesUsageCount": {
+        "type": "",
+        "description": ""
+    },
+    "Document_CustomObjectsUsage": {
+        "type": "",
+        "description": ""
+    },
+    "Document_CustomObjectsUsageCount": {
+        "type": "",
+        "description": ""
+    },
+    "document_date": {
+        "type": "",
+        "description": ""
+    },
+    "Document_DatesActual": {
+        "type": "",
+        "description": ""
+    },
+    "Document_DaysProjected": {
+        "type": "",
+        "description": ""
+    },
+    "Document_DeleteOldFiles": {
+        "type": "",
+        "description": ""
+    },
+    "Document_DenylistedApplicationsUsage": {
+        "type": "",
+        "description": ""
+    },
+    "Document_DenylistedApplicationsUsageCount": {
+        "type": "",
+        "description": ""
+    },
+    "Document_Domain": {
+        "type": "",
+        "description": ""
+    },
+    "Document_DriveStorage": {
+        "type": "",
+        "description": ""
+    },
+    "Document_EnableSoftwareRecognitionUpdates": {
+        "type": "",
+        "description": ""
+    },
+    "Document_ExpiredAgreementsCount": {
+        "type": "",
+        "description": ""
+    },
+    "Document_Header": {
+        "type": "",
+        "description": ""
+    },
+    "Document_Introduction": {
+        "type": "",
+        "description": ""
+    },
+    "Document_InventoriedDataCentresCount": {
+        "type": "",
+        "description": ""
+    },
+    "Document_InventoriedDevicesCount": {
+        "type": "",
+        "description": ""
+    },
+    "Document_InventoriedVirtualMachinesCount": {
+        "type": "",
+        "description": ""
+    },
+    "Document_LastRan": {
+        "type": "",
+        "description": ""
+    },
+    "Document_LoggingLevel": {
+        "type": "",
+        "description": ""
+    },
+    "Document_MaxFileSize": {
+        "type": "",
+        "description": ""
+    },
+    "Document_NonInventoriedDevicesCount": {
+        "type": "",
+        "description": ""
+    },
+    "Document_NotificationsUsage": {
+        "type": "",
+        "description": ""
+    },
+    "Document_NotificationsUsageCount": {
+        "type": "",
+        "description": ""
+    },
+    "Document_NotInventoriedVirtualMachinesCount": {
+        "type": "",
+        "description": ""
+    },
+    "Document_OperatingSystem": {
+        "type": "",
+        "description": ""
+    },
+    "Document_OutOfSupportOperatingSystemsCount": {
+        "type": "",
+        "description": ""
+    },
+    "Document_OverLicensedApplicationsCount": {
+        "type": "",
+        "description": ""
+    },
+    "Document_ProjectComments": {
+        "type": "",
+        "description": ""
+    },
+    "Document_ProxyAddress": {
+        "type": "",
+        "description": ""
+    },
+    "Document_RAM": {
+        "type": "",
+        "description": ""
+    },
+    "Document_Schedule": {
+        "type": "",
+        "description": ""
+    },
+    "Document_SchedulingAggregation": {
+        "type": "",
+        "description": ""
+    },
+    "document_sensitivity": {
+        "type": "",
+        "description": ""
+    },
+    "Document_ServerApplicationVersion": {
+        "type": "",
+        "description": ""
+    },
+    "Document_ServerName": {
+        "type": "",
+        "description": ""
+    },
+    "Document_ServerSpecifications": {
+        "type": "",
+        "description": ""
+    },
+    "Document_ServerSpecificationsComment": {
+        "type": "",
+        "description": ""
+    },
+    "Document_ServerVersionComment": {
+        "type": "",
+        "description": ""
+    },
+    "Document_SIMVersion": {
+        "type": "",
+        "description": ""
+    },
+    "Document_Sitename": {
+        "type": "",
+        "description": ""
+    },
+    "Document_SLMTest": {
+        "type": "",
+        "description": ""
+    },
+    "Document_SMACCAutoUpdates": {
+        "type": "",
+        "description": ""
+    },
+    "Document_SnowInventoryServerAutoUpdates": {
+        "type": "",
+        "description": ""
+    },
+    "Document_SnowLicenseManagerAutoUpdates": {
+        "type": "",
+        "description": ""
+    },
+    "document_status": {
+        "type": "",
+        "description": ""
+    },
+    "Document_SupportedAgentValue": {
+        "type": "",
+        "description": ""
+    },
+    "Document_Task": {
+        "type": "",
+        "description": ""
+    },
+    "Document_TaskVersion": {
+        "type": "",
+        "description": ""
+    },
+    "document_title": {
+        "type": "",
+        "description": ""
+    },
+    "Document_UnderLicensedApplicationsCount": {
+        "type": "",
+        "description": ""
+    },
+    "Document_UniqueAgreementsCount": {
+        "type": "",
+        "description": ""
+    },
+    "Document_UniqueLicensesCount": {
+        "type": "",
+        "description": ""
+    },
+    "Document_UseDefaultProxySettings": {
+        "type": "",
+        "description": ""
+    },
+    "Document_UseOfflineMode": {
+        "type": "",
+        "description": ""
+    },
+    "Document_Username": {
+        "type": "",
+        "description": ""
+    },
+    "Document_vCPU": {
+        "type": "",
+        "description": ""
+    },
+    "HighPriorityImprovements": {
+        "type": "",
+        "description": ""
+    },
+    "Inventoried_Devices": {
+        "type": "",
+        "description": ""
+    },
+    "License_Completeness": {
+        "type": "",
+        "description": ""
+    },
+    "Licensed_Devices": {
+        "type": "",
+        "description": ""
+    },
+    "LowPriorityImprovements": {
+        "type": "",
+        "description": ""
+    },
+    "MediumPriorityImprovements": {
+        "type": "",
+        "description": ""
+    },
+    "Platform_Type": {
+        "type": "",
+        "description": ""
+    },
+    "Product": {
+        "type": "",
+        "description": ""
+    },
+    "Product_State": {
+        "type": "",
+        "description": ""
+    },
+    "Renewal_Date": {
+        "type": "",
+        "description": ""
+    },
+    "SLM_AD_DeviceDiscovery": {
+        "type": "",
+        "description": ""
+    },
+    "SLM_AD_Discovery": {
+        "type": "",
+        "description": ""
+    },
+    "SLM_AD_DiscoveryPeriod": {
+        "type": "",
+        "description": ""
+    },
+    "SLM_AD_UserDiscovery": {
+        "type": "",
+        "description": ""
+    },
+    "SLM_AutoGenerateDatacenters": {
+        "type": "",
+        "description": ""
+    },
+    "SLM_CloudMetering": {
+        "type": "",
+        "description": ""
+    },
+    "SLM_ComplianceCleanup_Active": {
+        "type": "",
+        "description": ""
+    },
+    "SLM_ComplianceCleanup_Months": {
+        "type": "",
+        "description": ""
+    },
+    "SLM_DeviceQuarantine_Active": {
+        "type": "",
+        "description": ""
+    },
+    "SLM_DeviceQuarantine_Days": {
+        "type": "",
+        "description": ""
+    },
+    "SLM_DeviceQuarantine_ManagementAction": {
+        "type": "",
+        "description": ""
+    },
+    "SLM_DeviceQuarantine_ManagementActionDays": {
+        "type": "",
+        "description": ""
+    },
+    "SLM_PortalAuthentication": {
+        "type": "",
+        "description": ""
+    },
+    "SLM_PortalURL": {
+        "type": "",
+        "description": ""
+    },
+    "SLM_Quarantine_Active": {
+        "type": "",
+        "description": ""
+    },
+    "SLM_Quarantine_Days": {
+        "type": "",
+        "description": ""
+    },
+    "SLM_Quarantine_DeleteAction": {
+        "type": "",
+        "description": ""
+    },
+    "SLM_Quarantine_DeleteActive": {
+        "type": "",
+        "description": ""
+    },
+    "SLM_Quarantine_DeleteDays": {
+        "type": "",
+        "description": ""
+    },
+    "SLM_UserQuarantine_Active": {
+        "type": "",
+        "description": ""
+    },
+    "SLM_UserQuarantine_Days": {
+        "type": "",
+        "description": ""
+    },
+    "SLM_UserQuarantine_DeleteActive": {
+        "type": "",
+        "description": ""
+    },
+    "SLM_UserQuarantine_DeleteDays": {
+        "type": "",
+        "description": ""
+    },
+    "SLMPortalAuthentication": {
+        "type": "",
+        "description": ""
+    },
+    "Support_Cases": {
+        "type": "",
+        "description": ""
+    },
+    "users_role": {
+        "type": "",
+        "description": ""
+    },
+    "users_rows": {
+        "type": "",
+        "description": ""
+    },
+    "users_status": {
+        "type": "",
+        "description": ""
+    },
+    "users_username": {
+        "type": "",
+        "description": ""
+    }
+}
