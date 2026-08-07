@@ -1,673 +1,841 @@
 {
     "Agent_AdditionalPackagesRequired": {
+        "occurrences": 1,
         "type": "",
         "description": ""
     },
     "Agent_ConfigName": {
+        "occurrences": 1,
         "type": "",
         "description": ""
     },
     "Agent_EndpointAddress": {
+        "occurrences": 1,
         "type": "",
         "description": ""
     },
     "Agent_LoggingLevel": {
+        "occurrences": 1,
         "type": "",
         "description": ""
     },
     "Agent_MeteringDays": {
+        "occurrences": 1,
         "type": "",
         "description": ""
     },
     "Agent_MeteringTimings": {
+        "occurrences": 1,
         "type": "",
         "description": ""
     },
     "Agent_OS_Name": {
+        "occurrences": 2,
         "type": "",
         "description": ""
     },
     "Agent_ProxyAddress": {
+        "occurrences": 1,
         "type": "",
         "description": ""
     },
     "agent_rows": {
+        "occurrences": 1,
         "type": "",
         "description": ""
     },
     "Agent_SaaSMetering": {
+        "occurrences": 1,
         "type": "",
         "description": ""
     },
     "Agent_SiteName": {
+        "occurrences": 1,
         "type": "",
         "description": ""
     },
     "Agent_SpecificExcludeLocations": {
+        "occurrences": 1,
         "type": "",
         "description": ""
     },
     "Agent_SpecificIncludeFileType": {
+        "occurrences": 1,
         "type": "",
         "description": ""
     },
     "Agent_SpecificIncludeLocations": {
+        "occurrences": 1,
         "type": "",
         "description": ""
     },
     "Agent_SSLCertificate": {
+        "occurrences": 1,
         "type": "",
         "description": ""
     },
     "Agent_SSLVerify": {
+        "occurrences": 1,
         "type": "",
         "description": ""
     },
     "Atlas_ADDiscoveryPeriod": {
+        "occurrences": 2,
         "type": "",
         "description": ""
     },
     "Atlas_AllowlistFileExtensions": {
+        "occurrences": 2,
         "type": "",
         "description": ""
     },
     "Atlas_CheckIfExternalLicenseIDUnique": {
+        "occurrences": 1,
         "type": "",
         "description": ""
     },
     "Atlas_DataVisibilityBasedOnOrganizationStructure": {
+        "occurrences": 1,
         "type": "",
         "description": ""
     },
     "Atlas_DataVisibilityBasedOnOrgStructure": {
+        "occurrences": 1,
         "type": "",
         "description": ""
     },
     "Atlas_DaysBeforeRemovingInactiveDatacenters": {
+        "occurrences": 2,
         "type": "",
         "description": ""
     },
     "Atlas_DenylistFileExtensions": {
+        "occurrences": 2,
         "type": "",
         "description": ""
     },
     "Atlas_DeviceQuarantineDays": {
+        "occurrences": 2,
         "type": "",
         "description": ""
     },
     "Atlas_DeviceQuarantineDeleteAction": {
+        "occurrences": 2,
         "type": "",
         "description": ""
     },
     "Atlas_DeviceQuarantineDeleteActive": {
+        "occurrences": 2,
         "type": "",
         "description": ""
     },
     "Atlas_DeviceQuarantineDeleteDays": {
+        "occurrences": 2,
         "type": "",
         "description": ""
     },
     "Atlas_EnableAllowListApplications": {
+        "occurrences": 2,
         "type": "",
         "description": ""
     },
     "Atlas_EnableAnonymousUserManagement": {
+        "occurrences": 2,
         "type": "",
         "description": ""
     },
     "Atlas_ExcludeMostFrequentUser": {
+        "occurrences": 2,
         "type": "",
         "description": ""
     },
     "Atlas_ExcludeMostRecentUser": {
+        "occurrences": 2,
         "type": "",
         "description": ""
     },
     "Atlas_ExternalAccessEnabled": {
+        "occurrences": 2,
         "type": "",
         "description": ""
     },
     "Atlas_ExternalLicenseIDUnique": {
+        "occurrences": 1,
         "type": "",
         "description": ""
     },
     "Atlas_HistoricSoftwareUsageMetering": {
+        "occurrences": 2,
         "type": "",
         "description": ""
     },
     "Atlas_HistoricUserLoginDataRetentionPeriod": {
+        "occurrences": 2,
         "type": "",
         "description": ""
     },
     "Atlas_PortalAuthentication": {
+        "occurrences": 2,
         "type": "",
         "description": ""
     },
     "Atlas_RemoteDeviceDeleteDays": {
+        "occurrences": 2,
         "type": "",
         "description": ""
     },
     "Atlas_RemoteDeviceQuarantineDays": {
+        "occurrences": 2,
         "type": "",
         "description": ""
     },
     "Atlas_RemoteDeviceQuarantineDelete": {
+        "occurrences": 2,
         "type": "",
         "description": ""
     },
     "Atlas_SaveIncompleteLicenses": {
+        "occurrences": 2,
         "type": "",
         "description": ""
     },
     "Atlas_UserAccountExclusions": {
+        "occurrences": 2,
         "type": "",
         "description": ""
     },
     "Atlas_UserQuarantineDays": {
+        "occurrences": 2,
         "type": "",
         "description": ""
     },
     "Atlas_UserQuarantineDeleteActive": {
+        "occurrences": 2,
         "type": "",
         "description": ""
     },
     "Atlas_UserQuarantineDeleteDays": {
+        "occurrences": 2,
         "type": "",
         "description": ""
     },
     "connector_rows": {
+        "occurrences": 1,
         "type": "",
         "description": ""
     },
     "consultant_name": {
+        "occurrences": 1,
         "type": "",
         "description": ""
     },
     "customer_name": {
+        "occurrences": 3,
         "type": "",
         "description": ""
     },
     "Customer_Name": {
+        "occurrences": 1,
         "type": "",
         "description": ""
     },
     "Device_Count": {
+        "occurrences": 1,
         "type": "",
         "description": ""
     },
     "Document_AddressAndPort": {
+        "occurrences": 1,
         "type": "",
         "description": ""
     },
     "Document_AgentInstallationsCount": {
+        "occurrences": 1,
         "type": "",
         "description": ""
     },
     "Document_AgentName": {
+        "occurrences": 1,
         "type": "",
         "description": ""
     },
     "Document_AggregationTest": {
+        "occurrences": 2,
         "type": "",
         "description": ""
     },
     "Document_AllowlistedApplicationsUsage": {
+        "occurrences": 1,
         "type": "",
         "description": ""
     },
     "Document_AllowlistedApplicationsUsageCount": {
+        "occurrences": 1,
         "type": "",
         "description": ""
     },
     "Document_ApplicationsInstalledOnDenylistCount": {
+        "occurrences": 1,
         "type": "",
         "description": ""
     },
     "Document_ApplicationsShownWithinPortalCount": {
+        "occurrences": 1,
         "type": "",
         "description": ""
     },
     "Document_ApplicationVersion": {
+        "occurrences": 1,
         "type": "",
         "description": ""
     },
     "Document_CloudApplicationMeteringUsage": {
+        "occurrences": 1,
         "type": "",
         "description": ""
     },
     "Document_CloudApplicationMeteringUsageCount": {
+        "occurrences": 1,
         "type": "",
         "description": ""
     },
     "Document_CloudBasedApplicationsCount": {
+        "occurrences": 1,
         "type": "",
         "description": ""
     },
     "Document_CompliantApplicationsCount": {
+        "occurrences": 1,
         "type": "",
         "description": ""
     },
     "Document_ConnectorComment": {
+        "occurrences": 1,
         "type": "",
         "description": ""
     },
     "Document_ConnectorName": {
+        "occurrences": 2,
         "type": "",
         "description": ""
     },
     "Document_ConsultantDate": {
+        "occurrences": 1,
         "type": "",
         "description": ""
     },
     "Document_ConsultantName": {
+        "occurrences": 1,
         "type": "",
         "description": ""
     },
     "Document_ConsultantSignature": {
+        "occurrences": 1,
         "type": "",
         "description": ""
     },
     "Document_CurrencyBase": {
+        "occurrences": 1,
         "type": "",
         "description": ""
     },
     "Document_CurrencyDescription": {
+        "occurrences": 2,
         "type": "",
         "description": ""
     },
     "Document_CurrencyName": {
+        "occurrences": 2,
         "type": "",
         "description": ""
     },
     "Document_CurrencyRate": {
+        "occurrences": 2,
         "type": "",
         "description": ""
     },
     "Document_CustomCompareValuesUsage": {
+        "occurrences": 1,
         "type": "",
         "description": ""
     },
     "Document_CustomCompareValuesUsageCount": {
+        "occurrences": 1,
         "type": "",
         "description": ""
     },
     "Document_CustomObjectsUsage": {
+        "occurrences": 1,
         "type": "",
         "description": ""
     },
     "Document_CustomObjectsUsageCount": {
+        "occurrences": 1,
         "type": "",
         "description": ""
     },
     "document_date": {
+        "occurrences": 1,
         "type": "",
         "description": ""
     },
     "Document_DatesActual": {
+        "occurrences": 1,
         "type": "",
         "description": ""
     },
     "Document_DaysProjected": {
+        "occurrences": 1,
         "type": "",
         "description": ""
     },
     "Document_DeleteOldFiles": {
+        "occurrences": 1,
         "type": "",
         "description": ""
     },
     "Document_DenylistedApplicationsUsage": {
+        "occurrences": 1,
         "type": "",
         "description": ""
     },
     "Document_DenylistedApplicationsUsageCount": {
+        "occurrences": 1,
         "type": "",
         "description": ""
     },
     "Document_Domain": {
+        "occurrences": 1,
         "type": "",
         "description": ""
     },
     "Document_DriveStorage": {
+        "occurrences": 1,
         "type": "",
         "description": ""
     },
     "Document_EnableSoftwareRecognitionUpdates": {
+        "occurrences": 1,
         "type": "",
         "description": ""
     },
     "Document_ExpiredAgreementsCount": {
+        "occurrences": 1,
         "type": "",
         "description": ""
     },
     "Document_Header": {
+        "occurrences": 1,
         "type": "",
         "description": ""
     },
     "Document_Introduction": {
+        "occurrences": 1,
         "type": "",
         "description": ""
     },
     "Document_InventoriedDataCentresCount": {
+        "occurrences": 1,
         "type": "",
         "description": ""
     },
     "Document_InventoriedDevicesCount": {
+        "occurrences": 1,
         "type": "",
         "description": ""
     },
     "Document_InventoriedVirtualMachinesCount": {
+        "occurrences": 1,
         "type": "",
         "description": ""
     },
     "Document_LastRan": {
+        "occurrences": 1,
         "type": "",
         "description": ""
     },
     "Document_LoggingLevel": {
+        "occurrences": 1,
         "type": "",
         "description": ""
     },
     "Document_MaxFileSize": {
+        "occurrences": 1,
         "type": "",
         "description": ""
     },
     "Document_NonInventoriedDevicesCount": {
+        "occurrences": 1,
         "type": "",
         "description": ""
     },
     "Document_NotificationsUsage": {
+        "occurrences": 1,
         "type": "",
         "description": ""
     },
     "Document_NotificationsUsageCount": {
+        "occurrences": 1,
         "type": "",
         "description": ""
     },
     "Document_NotInventoriedVirtualMachinesCount": {
+        "occurrences": 1,
         "type": "",
         "description": ""
     },
     "Document_OperatingSystem": {
+        "occurrences": 1,
         "type": "",
         "description": ""
     },
     "Document_OutOfSupportOperatingSystemsCount": {
+        "occurrences": 1,
         "type": "",
         "description": ""
     },
     "Document_OverLicensedApplicationsCount": {
+        "occurrences": 1,
         "type": "",
         "description": ""
     },
     "Document_ProjectComments": {
+        "occurrences": 1,
         "type": "",
         "description": ""
     },
     "Document_ProxyAddress": {
+        "occurrences": 1,
         "type": "",
         "description": ""
     },
     "Document_RAM": {
+        "occurrences": 1,
         "type": "",
         "description": ""
     },
     "Document_Schedule": {
+        "occurrences": 2,
         "type": "",
         "description": ""
     },
     "Document_SchedulingAggregation": {
+        "occurrences": 1,
         "type": "",
         "description": ""
     },
     "document_sensitivity": {
+        "occurrences": 1,
         "type": "",
         "description": ""
     },
     "Document_ServerApplicationVersion": {
+        "occurrences": 1,
         "type": "",
         "description": ""
     },
     "Document_ServerName": {
+        "occurrences": 3,
         "type": "",
         "description": ""
     },
     "Document_ServerSpecifications": {
+        "occurrences": 1,
         "type": "",
         "description": ""
     },
     "Document_ServerSpecificationsComment": {
+        "occurrences": 1,
         "type": "",
         "description": ""
     },
     "Document_ServerVersionComment": {
+        "occurrences": 1,
         "type": "",
         "description": ""
     },
     "Document_SIMVersion": {
+        "occurrences": 1,
         "type": "",
         "description": ""
     },
     "Document_Sitename": {
+        "occurrences": 1,
         "type": "",
         "description": ""
     },
     "Document_SLMTest": {
+        "occurrences": 2,
         "type": "",
         "description": ""
     },
     "Document_SMACCAutoUpdates": {
+        "occurrences": 1,
         "type": "",
         "description": ""
     },
     "Document_SnowInventoryServerAutoUpdates": {
+        "occurrences": 1,
         "type": "",
         "description": ""
     },
     "Document_SnowLicenseManagerAutoUpdates": {
+        "occurrences": 1,
         "type": "",
         "description": ""
     },
     "document_status": {
+        "occurrences": 1,
         "type": "",
         "description": ""
     },
     "Document_SupportedAgentValue": {
+        "occurrences": 1,
         "type": "",
         "description": ""
     },
     "Document_Task": {
+        "occurrences": 1,
         "type": "",
         "description": ""
     },
     "Document_TaskVersion": {
+        "occurrences": 1,
         "type": "",
         "description": ""
     },
     "document_title": {
+        "occurrences": 1,
         "type": "",
         "description": ""
     },
     "Document_UnderLicensedApplicationsCount": {
+        "occurrences": 1,
         "type": "",
         "description": ""
     },
     "Document_UniqueAgreementsCount": {
+        "occurrences": 1,
         "type": "",
         "description": ""
     },
     "Document_UniqueLicensesCount": {
+        "occurrences": 1,
         "type": "",
         "description": ""
     },
     "Document_UseDefaultProxySettings": {
+        "occurrences": 1,
         "type": "",
         "description": ""
     },
     "Document_UseOfflineMode": {
+        "occurrences": 1,
         "type": "",
         "description": ""
     },
     "Document_Username": {
+        "occurrences": 1,
         "type": "",
         "description": ""
     },
     "Document_vCPU": {
+        "occurrences": 1,
         "type": "",
         "description": ""
     },
     "HighPriorityImprovements": {
+        "occurrences": 1,
         "type": "",
         "description": ""
     },
     "Inventoried_Devices": {
+        "occurrences": 1,
         "type": "",
         "description": ""
     },
     "License_Completeness": {
+        "occurrences": 1,
         "type": "",
         "description": ""
     },
     "Licensed_Devices": {
+        "occurrences": 1,
         "type": "",
         "description": ""
     },
     "LowPriorityImprovements": {
+        "occurrences": 1,
         "type": "",
         "description": ""
     },
     "MediumPriorityImprovements": {
+        "occurrences": 1,
         "type": "",
         "description": ""
     },
     "Platform_Type": {
+        "occurrences": 1,
         "type": "",
         "description": ""
     },
     "Product": {
+        "occurrences": 1,
         "type": "",
         "description": ""
     },
     "Product_State": {
+        "occurrences": 1,
         "type": "",
         "description": ""
     },
     "Renewal_Date": {
+        "occurrences": 1,
         "type": "",
         "description": ""
     },
     "SLM_AD_DeviceDiscovery": {
+        "occurrences": 1,
         "type": "",
         "description": ""
     },
     "SLM_AD_Discovery": {
+        "occurrences": 1,
         "type": "",
         "description": ""
     },
     "SLM_AD_DiscoveryPeriod": {
+        "occurrences": 1,
         "type": "",
         "description": ""
     },
     "SLM_AD_UserDiscovery": {
+        "occurrences": 1,
         "type": "",
         "description": ""
     },
     "SLM_AutoGenerateDatacenters": {
+        "occurrences": 2,
         "type": "",
         "description": ""
     },
     "SLM_CloudMetering": {
+        "occurrences": 2,
         "type": "",
         "description": ""
     },
     "SLM_ComplianceCleanup_Active": {
+        "occurrences": 2,
         "type": "",
         "description": ""
     },
     "SLM_ComplianceCleanup_Months": {
+        "occurrences": 2,
         "type": "",
         "description": ""
     },
     "SLM_DeviceQuarantine_Active": {
+        "occurrences": 2,
         "type": "",
         "description": ""
     },
     "SLM_DeviceQuarantine_Days": {
+        "occurrences": 2,
         "type": "",
         "description": ""
     },
     "SLM_DeviceQuarantine_ManagementAction": {
+        "occurrences": 2,
         "type": "",
         "description": ""
     },
     "SLM_DeviceQuarantine_ManagementActionDays": {
+        "occurrences": 2,
         "type": "",
         "description": ""
     },
     "SLM_PortalAuthentication": {
+        "occurrences": 1,
         "type": "",
         "description": ""
     },
     "SLM_PortalURL": {
+        "occurrences": 1,
         "type": "",
         "description": ""
     },
     "SLM_Quarantine_Active": {
+        "occurrences": 2,
         "type": "",
         "description": ""
     },
     "SLM_Quarantine_Days": {
+        "occurrences": 2,
         "type": "",
         "description": ""
     },
     "SLM_Quarantine_DeleteAction": {
+        "occurrences": 2,
         "type": "",
         "description": ""
     },
     "SLM_Quarantine_DeleteActive": {
+        "occurrences": 2,
         "type": "",
         "description": ""
     },
     "SLM_Quarantine_DeleteDays": {
+        "occurrences": 2,
         "type": "",
         "description": ""
     },
     "SLM_UserQuarantine_Active": {
+        "occurrences": 2,
         "type": "",
         "description": ""
     },
     "SLM_UserQuarantine_Days": {
+        "occurrences": 2,
         "type": "",
         "description": ""
     },
     "SLM_UserQuarantine_DeleteActive": {
+        "occurrences": 2,
         "type": "",
         "description": ""
     },
     "SLM_UserQuarantine_DeleteDays": {
+        "occurrences": 2,
         "type": "",
         "description": ""
     },
     "SLMPortalAuthentication": {
+        "occurrences": 1,
         "type": "",
         "description": ""
     },
     "Support_Cases": {
+        "occurrences": 1,
         "type": "",
         "description": ""
     },
     "users_role": {
+        "occurrences": 1,
         "type": "",
         "description": ""
     },
     "users_rows": {
+        "occurrences": 2,
         "type": "",
         "description": ""
     },
     "users_status": {
+        "occurrences": 1,
         "type": "",
         "description": ""
     },
     "users_username": {
+        "occurrences": 1,
         "type": "",
         "description": ""
     }

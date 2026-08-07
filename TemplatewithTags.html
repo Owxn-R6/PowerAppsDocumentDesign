@@ -330,24 +330,10 @@ font-size: 14px;
   </h1>
     <h1 class="Introduction-header" data-field="section_2_title" style="padding-bottom: 10px">
     {{Document_Header}}
-    <br> <br>
-    What is a Build Sheet?<br> <br>
-    What is a Health Check?
+    <br>
   </h1>
   <p data-field="Introduction-content" style="padding-bottom: 10px">
     {{Document_Introduction}}
-    <br> <br>
-    A build sheet provides a complete record of the Snow configuration 
-    established for <strong>{{customer_name}}</strong>. It details the setup of the hosting servers, inventory agents, and 
-    platform settings as they were at the time of delivery. Our goal is to ensure you have a clear, 
-    documented implementation of the product. 
-    <br> <br>
-    A health check offers a detailed overview of the Snow Software instance utilised by <strong>{{customer_name}}</strong>
-    It covers information about the servers hosting the application, as well as the product's 
-    usage and settings. This data allows us to provide specific recommendations for improvements 
-    and enhance overall performance. Our goal is to ensure that our customers get the most use out 
-    of the product. 
-
   </p>
 </div>
 <div class="Customer-Overview" data-field="section_2">
@@ -459,7 +445,7 @@ font-size: 14px;
                   padding: 6px;
                   border: 1px solid Black;
                   width: 50%;
-                  text-align: center;
+                  text-align: left;
                   ">
           Support Cases Raised in 12 Months
         </td>
@@ -473,6 +459,7 @@ font-size: 14px;
         </td>
       </tr>
       </table>
+      {{Section_Document_CustomerOverview}}
       </div>
       <div class="Project-Checklist" data-field="section_2">
         <div class="Project-Checklist-table">

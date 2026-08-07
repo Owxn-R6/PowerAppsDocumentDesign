@@ -1,0 +1,137 @@
+  <!--{{Document_Header}}-->
+    What is a Build Sheet?
+
+    What is a Health Check?
+
+  <!--{{Document_Introduction}}-->
+    A build sheet provides a complete record of the Snow configuration 
+    established for <strong>{{customer_name}}</strong>. It details the setup of the hosting servers, inventory agents, and 
+    platform settings as they were at the time of delivery. Our goal is to ensure you have a clear, 
+    documented implementation of the product. 
+
+    A health check offers a detailed overview of the Snow Software instance utilised by <strong>{{customer_name}}</strong>
+    It covers information about the servers hosting the application, as well as the product's 
+    usage and settings. This data allows us to provide specific recommendations for improvements 
+    and enhance overall performance. Our goal is to ensure that our customers get the most use out 
+    of the product. 
+
+  <!--{{Section_Document_CustomerOverview}}-->
+  <table style="
+      width: 100%;
+      border-collapse: collapse;
+      font-size: 13px;
+      ">
+    <tr>
+      <th style="
+            background-color: #6b3f6b;
+            color: white;
+            padding: 8px;
+            text-align: center;
+            width: 70%;
+            ">
+        Componenets/Services
+      </th>
+      <th style="
+            background-color: #6b3f6b;
+            color: white;
+            padding: 8px;
+            text-align: center;
+            width: 30%;
+            ">
+        State
+      </th>
+    </tr>
+    <tr>
+      <td style="padding: 6px; border: 1px solid Black">
+        {{Platform_Type}} for {{Device_Count}} endpoints
+      </td>
+      <td style="border: 1px solid Black; text-align: center;">Active</td>
+    </tr>
+    <tr>
+      <td style="padding: 6px; border: 1px solid Black">
+        {{Product}}
+      </td>
+      <td style="border: 1px solid Black; text-align: center;">{{Product_State}}</td>
+    </tr>
+    <tr>
+      <th colspan="2" style="
+            background-color: #6b3f6b;
+            color: white;
+            padding: 8px;
+            text-align: center;
+            ">
+        Quick Stats
+      </th>
+    </tr>
+      <tr>
+        <td style="
+                  padding: 6px;
+                  border: 1px solid Black;
+                  width: 50%;
+                  ">
+          Renewal Date
+        </td>
+        <td style="
+                  padding: 6px;
+                  border: 1px solid Black;
+                  width: 50%;
+                  text-align: center;
+                  ">
+          {{Renewal_Date}}
+        </td>
+      </tr>
+      <tr>
+        <td style="
+                  padding: 6px;
+                  border: 1px solid Black;
+                  width: 50%;
+                  text-align: left;
+                  ">
+          Licensed Devices / Inventoried Devices
+        </td>
+        <td style="
+                  padding: 6px;
+                  border: 1px solid Black;
+                  width: 50%;
+                  text-align: center;
+                  ">
+          {{Licensed_Devices}}/{{Inventoried_Devices}}
+        </td>
+      </tr>
+      <tr>
+        <td style="
+                  padding: 6px;
+                  border: 1px solid Black;
+                  width: 50%;
+                  text-align: left;
+                  ">
+          License Completeness (%)
+        </td>
+        <td style="
+                  padding: 6px;
+                  border: 1px solid Black;
+                  width: 50%;
+                  text-align: center;
+                  ">
+          {{License_Completeness}}
+        </td>
+      </tr>
+      <tr>
+        <td style="
+                  padding: 6px;
+                  border: 1px solid Black;
+                  width: 50%;
+                  text-align: left;
+                  ">
+          Support Cases Raised in 12 Months
+        </td>
+        <td style="
+                  padding: 6px;
+                  border: 1px solid Black;
+                  width: 50%;
+                  text-align: center;
+                  ">
+          {{Support_Cases}}
+        </td>
+      </tr>
+      </table>

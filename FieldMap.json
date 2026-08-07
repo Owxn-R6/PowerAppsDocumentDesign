@@ -1,0 +1,43 @@
+{
+    "variables": [
+        {
+            "name": "field_map",
+            "type": "Array",
+            "value": [
+                {
+                    "Key": "{{document_title}}",
+                    "Value": "Example Build Sheet"
+                },
+                {
+                    "Key": "{{customer_name}}",
+                    "Value": "Ashurst"
+                },
+                {
+                    "Key": "{{document_date}}",
+                    "Value": "01/05/2026"
+                },
+                {
+                    "Key": "{{consultant_name}}",
+                    "Value": "Owen Harrison"
+                },
+                {
+                    "Key": "{{document_status}}",
+                    "Value": "Final"
+                },
+                {
+                    "Key": "{{document_sensitivity}}",
+                    "Value": "External"
+                },
+                                {
+                    "Key": "{{Document_Header}}",
+                    "Value": "External"
+                }
+
+
+
+
+                
+            ]
+        }
+    ]
+}

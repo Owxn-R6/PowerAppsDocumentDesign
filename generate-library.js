@@ -1,7 +1,7 @@
 const fs = require("fs");
 const path = require("path");
 
-const templateFile = path.join(__dirname, "Index.html");
+const templateFile = path.join(__dirname, "CompleteDocument.html");
 const outputFile = path.join(__dirname, "Library", "tagLibrary.json");
 
 const tags = {};
@@ -22,9 +22,14 @@ if (matches) {
         if (!tags[tagName]) {
 
             tags[tagName] = {
+                occurrences: 1,
                 type: "",
                 description: ""
             };
+        }
+        else {
+
+            tags[tagName].occurrences++;
         }
     });
 }
