@@ -516,3 +516,3331 @@
     </tr>
   </table>
   </div>
+  <!--{{Section_Document_ServerList_Header}}-->
+    <h1 class="Server-title" data-field="section_2_title" style="
+      padding-bottom: 10px;
+      padding-top: 16px;
+      font-size: 18px;
+      color: #6b3f6b !important;
+      ">
+        SNOW APPLICATIONS AND HOSTING:
+    </h1>
+    <!--{{Section_Document_ServerList_BuildTable}}-->
+        <table style="
+      width: 100%;
+      border-collapse: collapse;
+      font-size: 13px;
+      margin-bottom: 16px;
+      border: 1px solid Black;
+      ">
+        <tr>
+            <th colspan="3" style="
+            background-color: #6b3f6b;
+            color: white;
+            padding: 10px;
+            text-align: center;
+            font-size: 16px;
+            ">
+                {{Document_ServerName}} Server Specifications
+            </th>
+        </tr>
+        <tr>
+            <td style="
+            width: 40%;
+            padding: 6px;
+            border: 1px solid Black;
+            vertical-align: middle;
+            font-weight: bold;
+            ">
+                Application Version
+            </td>
+            <td colspan="2" style="
+            width: 60%;
+            border: 1px solid Black;
+            text-align: center;
+            vertical-align: middle;
+            "> {{Document_ApplicationVersion}}
+            </td>
+        </tr>
+        <tr>
+            <td style="
+            padding: 6px;
+            border: 1px solid Black;
+            vertical-align: middle;
+            font-weight: bold;
+            ">
+                Operating System
+            </td>
+            <td colspan="2" style="
+            border: 1px solid Black;
+            text-align: center;
+            vertical-align: middle;
+            ">
+            {{Document_OperatingSystem}}
+            </td>
+        </tr>
+        <tr>
+            <td style="
+            padding: 6px;
+            border: 1px solid Black;
+            vertical-align: middle;
+            font-weight: bold;
+            ">
+                vCPU
+            </td>
+            <td colspan="2" style="
+            border: 1px solid Black;
+            text-align: center;
+            vertical-align: middle;
+            "> {{Document_vCPU}}
+            </td>
+        </tr>
+        <tr>
+            <td style="
+            padding: 6px;
+            border: 1px solid Black;
+            vertical-align: middle;
+            font-weight: bold;
+            ">
+                RAM
+            </td>
+            <td colspan="2" style="
+            border: 1px solid Black;
+            text-align: center;
+            vertical-align: middle;
+            ">
+            {{Document_RAM}}
+            </td>
+        </tr>
+        <tr>
+            <td style="
+            padding: 6px;
+            border: 1px solid Black;
+            vertical-align: middle;
+            font-weight: bold;
+            ">
+                Drive(s) Storage:
+            </td>
+            <td colspan="2" style="
+            border: 1px solid Black;
+            text-align: center;
+            vertical-align: middle;
+            ">
+            {{Document_DriveStorage}}
+            </td>
+        </tr>
+    </table>
+    <!--{{Section_Document_ServerList_Healthcheck}}-->
+        <table style="
+            width: 100%;
+            border-collapse: collapse;
+            font-size: 13px;
+            margin-top: 16px;
+            margin-bottom: 24px;
+            border: 1px solid Black;
+            table-layout: fixed;
+            ">
+        <tr style="height: 0; line-height: 0; visibility: collapse">
+            <td style="width: 20px; padding: 0; border: none"></td>
+            <td style="width: auto; padding: 0; border: none"></td>
+            <td style="width: 25%; padding: 0; border: none"></td>
+        </tr>
+        <tr>
+            <th colspan="3" style="
+                  background-color: #6b3f6b;
+                  color: white;
+                  padding: 10px;
+                  text-align: center;
+                  font-size: 16px;
+                  font-weight: bold;
+                  border-right: 1px solid Black;
+                  ">
+                Server Specifications and Versions
+            </th>
+        </tr>
+        <tr>
+            <td style="
+                  width: 20px;
+                  background-color: #cc0000;
+                  border: 1px solid Black;
+                  padding: 4px 0;
+                  "><!-- background-color: #cc0000; FOR RED AND background-color: #00cc00; FOR GREEN-->
+            </td>
+            <td style="
+                  padding: 4px 10px;
+                  font-size: 13px;
+                  border: 1px solid Black;
+                  vertical-align: middle;
+                  line-height: 1.3;
+                  ">
+                <span style="
+                     font-weight: bold;
+                     display: block;
+                     margin-bottom: 2px;
+                     ">{{Document_ServerName}} version</span> <span style="
+                     font-size: 11px;
+                     color: #555555;
+                     display: block;
+                     ">Currently installed application version</span>
+            </td>
+            <td style="
+                  padding: 4px 10px;
+                  font-size: 13px;
+                  font-weight: bold;
+                  border: 1px solid Black;
+                  text-align: center;
+                  vertical-align: middle;
+                  ">
+                {{Document_ServerApplicationVersion}}
+            </td>
+        </tr>
+        <tr>
+            <td colspan="3" style="
+                  background-color: white;
+                  padding: 8px 10px;
+                  text-align: center;
+                  font-size: 12px;
+                  border: 1px solid Black;
+                  line-height: 1.4;
+                  ">
+                <strong>Comment:</strong> <!-- <br/> for linebreak -->
+                <br/> {{Document_ServerVersionComment}}
+            </td>
+        </tr>
+        <tr>
+            <td style="
+                  width: 20px;
+                  background-color: #00cc00;
+                  border: 1px solid Black;
+                  padding: 4px 0;
+                  ">
+            </td>
+            <td style="
+                  padding: 4px 10px;
+                  font-size: 13px;
+                  border: 1px solid Black;
+                  vertical-align: middle;
+                  line-height: 1.3;
+                  ">
+                <span style="
+                     font-weight: bold;
+                     display: block;
+                     margin-bottom: 2px;
+                     ">{{Document_ServerName}} server specifications</span> <span style="
+                     font-size: 11px;
+                     color: #555555;
+                     display: block;
+                     ">This hosts the server and does all the core processing behind the application.</span>
+            </td>
+            <td style="
+                  padding: 4px 10px;
+                  font-size: 13px;
+                  border: 1px solid Black;
+                  text-align: center;
+                  vertical-align: middle;
+                  ">
+                {{Document_ServerSpecifications}}
+            </td>
+        </tr>
+                <tr>
+            <td colspan="3" style="
+                  background-color: white;
+                  padding: 8px 10px;
+                  text-align: center;
+                  font-size: 12px;
+                  border: 1px solid Black;
+                  line-height: 1.4;
+                  ">
+                <strong>Comment:</strong> <!-- <br/> for linebreak -->
+                <br/> {{Document_ServerSpecificationsComment}}
+            </td>
+        </tr>
+    </table>
+    <!--{{Section_Document_SnowPlatformConfigurations_Header}}-->
+        <h1 class="Snow-Platform-Configurations-title" data-field="section_2_title" style="
+            padding-bottom: 10px;
+            padding-top: 16px;
+            font-size: 18px;
+            color: #6b3f6b !important;
+            font-family: Avenir Next LT Pro Demi (Headings);
+            ">
+        SNOW Platform Configurations:
+    </h1>
+    <!--{{Section_Document_SnowPlatformConfigurations_BuildTable}}-->
+        <table style="
+        width: 100%;
+        border-collapse: collapse;  
+        font-size: 13px;
+        margin-top: 16px;
+        margin-bottom: 16px;
+        border: 1px solid Black;
+        ">
+        <tr>
+            <th colspan="3" style="
+              background-color: #6b3f6b;
+              color: white;
+              padding: 10px;
+              text-align: center;
+              font-size: 16px;
+              ">
+                Settings in SMACC
+            </th>
+        </tr>
+        <tr>
+            <td colspan="4" style="
+              background-color: white;
+              padding: 10px;
+              text-align: center;
+              font-size: 12px;
+              border: 1px solid Black;
+              ">
+                This table shows platform configurations found in the Snow Management & Configuration Center, these are set as default as part of this project unless changed manually.
+            </td>
+        </tr>
+        <tr>
+            <th colspan="1" style="
+                  background-color: #633965;
+                  color: white;
+                  padding: 8px;
+                  text-align: center;
+                  border: 1px solid black;
+                  font-size: 14px;
+                  ">
+                Setting name
+            </th>
+            <th style="
+                  width: 20%;
+                  background-color: #633965;
+                  color: white;
+                  padding: 8px;
+                  text-align: center;
+                  border: 1px solid black;
+                  font-size: 14px;
+                  ">
+                Setting value
+            </th>
+        </tr>
+        <tr>
+            <td style="
+              width: 40%;
+              padding: 6px;
+              border: 1px solid Black;
+              vertical-align: middle;
+              font-weight: bold;
+              ">
+                SLM Portal URL:
+            </td>
+            <td colspan="2" style="
+              width: 60%;
+              border: 1px solid Black;
+              text-align: center;
+              vertical-align: middle;
+              ">
+                {{SLM_PortalURL}}
+            </td>
+        </tr>
+        <tr>
+            <td style="
+              width: 40%;
+              padding: 6px;
+              border: 1px solid Black;
+              vertical-align: middle;
+              font-weight: bold;
+              ">
+                Portal Authentication Method: <span style="
+                 font-size: 11px;
+                 color: #555555;
+                 display: block;
+                 ">The method used to authenticate users accessing the portal.</span>
+            </td>
+            <td colspan="2" style="
+              width: 60%;
+              border: 1px solid Black;
+              text-align: center;
+              vertical-align: middle;
+              ">
+                {{SLM_PortalAuthentication}}
+            </td>
+        </tr>
+        <tr>
+            <td style="
+              width: 40%;
+              padding: 6px;
+              border: 1px solid Black;
+              vertical-align: middle;
+              font-weight: bold;
+              ">
+                AD Discovery Period: <span style="
+                 font-size: 11px;
+                 color: #555555;
+                 display: block;
+                 ">Number of days historic AD discovery data is stored</span>
+            </td>
+            <td colspan="2" style="
+              width: 60%;
+              border: 1px solid Black;
+              text-align: center;
+              vertical-align: middle;
+              ">
+                {{SLM_AD_Discovery}}
+            </td>
+        </tr>
+        <tr>
+            <td style="
+              width: 40%;
+              padding: 6px;
+              border: 1px solid Black;
+              vertical-align: middle;
+              font-weight: bold;
+              ">
+                Cloud Metering Enabled: <span style="
+                 font-size: 11px;
+                 color: #555555;
+                 display: block;
+                 ">Allows the system to track SaaS application usage.</span>
+            </td>
+            <td colspan="2" style="
+              width: 60%;
+              border: 1px solid Black;
+              text-align: center;
+              vertical-align: middle;
+              ">
+                {{SLM_CloudMetering}}
+            </td>
+        </tr>
+        <tr>
+            <td style="
+              width: 40%;
+              padding: 6px;
+              border: 1px solid Black;
+              vertical-align: middle;
+              font-weight: bold;
+              ">
+                Compliance Cleanup Active: <span style="
+                                                                              font-size: 11px;
+                                                                              color: #555555;
+                                                                              display: block;
+                                                                              ">Number of days historic AD discovery data is stored</span>
+            </td>
+        </td>
+        <td colspan="2" style="
+              width: 60%;
+              border: 1px solid Black;
+              text-align: center;
+              vertical-align: middle;
+              ">
+            {{SLM_ComplianceCleanup_Active}}
+        </td>
+    </tr>
+    <tr>
+        <td style="
+              width: 40%;
+              padding: 6px;
+              border: 1px solid Black;
+              vertical-align: middle;
+              font-weight: bold;
+              ">
+            Compliance Cleanup Months: <span style="
+  font-size: 11px;
+  color: #555555;
+  display: block;
+  ">The Number of months of compliance data is kept within the Platform.</span>
+        </td>
+        <td colspan="2" style="
+              width: 60%;
+              border: 1px solid Black;
+              text-align: center;
+              vertical-align: middle;
+              ">
+            {{SLM_ComplianceCleanup_Months}}
+        </td>
+    </tr>
+    <tr>
+        <td style="
+              width: 40%;
+              padding: 6px;
+              border: 1px solid Black;
+              vertical-align: middle;
+              font-weight: bold;
+              ">
+            Device Quarantine Active: <span style="
+                                                                        font-size: 11px;
+                                                                        color: #555555;
+                                                                        display: block;
+                                                                        ">Updates the status on devices which haven’t reported in for a set period.</span>
+        </td>
+        <td colspan="2" style="
+              width: 60%;
+              border: 1px solid Black;
+              text-align: center;
+              vertical-align: middle;
+              ">
+            {{SLM_DeviceQuarantine_Active}}
+        </td>
+    </tr>
+    <tr>
+        <td style="
+              width: 40%;
+              padding: 6px;
+              border: 1px solid Black;
+              vertical-align: middle;
+              font-weight: bold;
+              ">
+            Device Quarantine Days: <span style="
+                                    font-size: 11px;
+                                    color: #555555;
+                                    display: block;
+                                    ">The number of days before the status of a device is updated to Quarantined. </span>
+        </td>
+        <td colspan="2" style="
+              width: 60%;
+              border: 1px solid Black;
+              text-align: center;
+              vertical-align: middle;
+              ">
+            {{SLM_DeviceQuarantine_Days}}
+        </td>
+    </tr>
+    <tr>
+        <td style="
+              width: 40%;
+              padding: 6px;
+              border: 1px solid Black;
+              vertical-align: middle;
+              font-weight: bold;
+              ">
+            Device Quarantine Management Action: <span style="
+                                    font-size: 11px;
+                                    color: #555555;
+                                    display: block;
+                                    ">Further to the quarantine period, after a set period, Quarantined devices are either deleted or archived. </span>
+        </td>
+        <td colspan="2" style="
+              width: 60%;
+              border: 1px solid Black;
+              text-align: center;
+              vertical-align: middle;
+              ">
+            {{SLM_DeviceQuarantine_ManagementAction}}
+        </td>
+    </tr>
+    <tr>
+        <td style="
+              width: 40%;
+              padding: 6px;
+              border: 1px solid Black;
+              vertical-align: middle;
+              font-weight: bold;
+              ">
+            Device Quarantine Management Action Days: <span style="
+                                    font-size: 11px;
+                                    color: #555555;
+                                    display: block;
+                                    ">The number of days after a device in quaratine triggers the action. </span>
+        </td>
+        <td colspan="2" style="
+              width: 60%;
+              border: 1px solid Black;
+              text-align: center;
+              vertical-align: middle;
+              ">
+            {{SLM_DeviceQuarantine_ManagementActionDays}}
+        </td>
+    </tr>
+    <tr>
+        <td style="
+              width: 40%;
+              padding: 6px;
+              border: 1px solid Black;
+              vertical-align: middle;
+              font-weight: bold;
+              ">
+            Quarantine Active: <span style="
+                 font-size: 11px;
+                 color: #555555;
+                 display: block;"> Activates quarantine management for computers and mobile devices. </span>
+        </td>
+        <td colspan="2" style="
+              width: 60%;
+              border: 1px solid Black;
+              text-align: center;
+              vertical-align: middle;
+              ">
+            {{SLM_Quarantine_Active}}
+        </td>
+    </tr>
+    <tr>
+        <td style="
+              width: 40%;
+              padding: 6px;
+              border: 1px solid Black;
+              vertical-align: middle;
+              font-weight: bold;
+              ">
+            Quarantine Days: <span style="
+                                        font-size: 11px;
+                                        color: #555555;
+                                        display: block;
+                                        ">The number of inactive days before a computer or mobile device is placed in quarantine. </span>
+        </td>
+        <td colspan="2" style="
+              width: 60%;
+              border: 1px solid Black;
+              text-align: center;
+              vertical-align: middle;
+              ">
+            {{SLM_Quarantine_Days}}
+        </td>
+    </tr>
+    <tr>
+        <td style="
+              width: 40%;
+              padding: 6px;
+              border: 1px solid Black;
+              vertical-align: middle;
+              font-weight: bold;
+              ">
+            Quarantine Delete Active: <span style="
+                                        font-size: 11px;
+                                        color: #555555;
+                                        display: block;
+                                        ">Further to the quarantine period, after a set period, Quarantined devices are either deleted or archived. </span>
+        </td>
+        <td colspan="2" style="
+              width: 60%;
+              border: 1px solid Black;
+              text-align: center;
+              vertical-align: middle;
+              ">
+            {{SLM_Quarantine_DeleteActive}}
+        </td>
+    </tr>
+    <tr>
+        <td style="
+              width: 40%;
+              padding: 6px;
+              border: 1px solid Black;
+              vertical-align: middle;
+              font-weight: bold;
+              ">
+            Quarantine Delete Action: <span style="
+                    font-size: 11px;
+                    color: #555555;
+                    display: block;
+                    ">What action to take when handling computer and mobile device quarantine delete: Delete, Set to inactive, or Archive. </span>
+        </td>
+        <td colspan="2" style="
+              width: 60%;
+              border: 1px solid Black;
+              text-align: center;
+              vertical-align: middle;
+              ">
+            {{SLM_Quarantine_DeleteAction}}
+        </td>
+    </tr>
+    <tr>
+        <td style="
+              width: 40%;
+              padding: 6px;
+              border: 1px solid Black;
+              vertical-align: middle;
+              font-weight: bold;
+              ">
+            Quarantine Delete Days: <span style="
+                    font-size: 11px;
+                    color: #555555;
+                    display: block;
+                    ">The number of days after a device in quaratine triggers the action. </span>
+        </td>
+        <td colspan="2" style="
+              width: 60%;
+              border: 1px solid Black;
+              text-align: center;
+              vertical-align: middle;
+              ">
+            {{SLM_Quarantine_DeleteDays}}
+        </td>
+    </tr>
+    <tr>
+        <td style="
+              width: 40%;
+              padding: 6px;
+              border: 1px solid Black;
+              vertical-align: middle;
+              font-weight: bold;
+              ">
+            User Quarantine Active: <span style="
+                           font-size: 11px;
+                           color: #555555;
+                           display: block;
+                           ">Activates quarantine management for users. . </span>
+        </td>
+        <td colspan="2" style="
+              width: 60%;
+              border: 1px solid Black;
+              text-align: center;
+              vertical-align: middle;
+              ">
+            {{SLM_UserQuarantine_Active}}
+        </td>
+    </tr>
+    <tr>
+        <td style="
+              width: 40%;
+              padding: 6px;
+              border: 1px solid Black;
+              vertical-align: middle;
+              font-weight: bold;
+              ">
+            User Quarantine Days: <span style="
+                           font-size: 11px;
+                           color: #555555;
+                           display: block;
+                           ">The number of inactive days before a user is placed in quarantine. </span>
+        </td>
+        <td colspan="2" style="
+              width: 60%;
+              border: 1px solid Black;
+              text-align: center;
+              vertical-align: middle;
+              ">
+            {{SLM_UserQuarantine_Days}}
+        </td>
+    </tr>
+    <tr>
+        <td style="
+              width: 40%;
+              padding: 6px;
+              border: 1px solid Black;
+              vertical-align: middle;
+              font-weight: bold;
+              ">
+            User Quarantine Delete Active: <span style="
+                           font-size: 11px;
+                           color: #555555;
+                           display: block;
+                           ">Activates delete action for user quarantine. </span>
+        </td>
+        <td colspan="2" style="
+              width: 60%;
+              border: 1px solid Black;
+              text-align: center;
+              vertical-align: middle;
+              ">
+            {{SLM_UserQuarantine_DeleteActive}}
+        </td>
+    </tr>
+    <tr>
+        <td style="
+              width: 40%;
+              padding: 6px;
+              border: 1px solid Black;
+              vertical-align: middle;
+              font-weight: bold;
+              ">
+            User Quarantine Delete Days: <span style="
+                    font-size: 11px;
+                    color: #555555;
+                    display: block;
+                    ">The number of days after a user in quaratine triggers the action. </span>
+        </td>
+        <td colspan="2" style="
+              width: 60%;
+              border: 1px solid Black;
+              text-align: center;
+              vertical-align: middle;
+              ">
+            {{SLM_UserQuarantine_DeleteDays}}
+        </td>
+    </tr>
+</table>
+<!--{{Section_Document_SnowPlatformConfigurations_Healthcheck}}-->
+<table style="
+        width: 100%;
+        border-collapse: collapse;
+        font-family: Arial, sans-serif;
+        font-size: 13px;
+        border: 1px solid black;
+        margin-bottom: 24px;
+        table-layout: fixed;
+        ">
+    <colgroup>
+        <col style="width: 20px"/>
+        <col style="width: auto"/>
+        <col style="width: 20%"/>
+        <col style="width: 20%"/>
+    </colgroup>
+    <tr>
+        <th colspan="4" style="
+              background-color: #633965;
+              color: white;
+              padding: 10px;
+              text-align: center;
+              font-size: 16px;
+              border: 1px solid black;
+              ">
+            Settings in SMACC
+        </th>
+    </tr>
+    <tr>
+        <td colspan="4" style="
+                  background-color: white;
+                  padding: 10px;
+                  text-align: center;
+                  font-size: 12px;
+                  border: 1px solid black;
+                  ">
+            This table shows platform configurations found in the Snow Management & Configuration Center, these are set as default as part of this project unless changed manually.
+        </td>
+    </tr>
+    <tr>
+        <th colspan="2" style="
+                  background-color: #633965;
+                  color: white;
+                  padding: 8px;
+                  text-align: center;
+                  border: 1px solid black;
+                  font-size: 14px;
+                  ">
+            Setting name
+        </th>
+        <th style="
+                  background-color: #633965;
+                  color: white;
+                  padding: 8px;
+                  text-align: center;
+                  border: 1px solid black;
+                  font-size: 14px;
+                  ">
+            Setting value
+        </th>
+        <th style="
+                  background-color: #633965;
+                  color: white;
+                  padding: 8px;
+                  text-align: center;
+                  border: 1px solid black;
+                  font-size: 14px;
+                  ">
+            Suggested value
+        </th>
+    </tr>
+    <tr>
+        <td style="
+                  width: 20px;
+                  background-color: #ff7e00;
+                  border: 1px solid black;
+                  ">
+        </td>
+        <td style="
+                  padding: 6px;
+                  border: 1px solid black;
+                  font-weight: bold;
+                  ">
+            Portal Authentication Method: <span style="
+                     font-size: 11px;
+                     color: #555555;
+                     display: block;
+                     ">The method used to authenticate users accessing the portal.</span>
+        </td>
+        <td style="
+                  padding: 6px;
+                  border: 1px solid black;
+                  text-align: center;
+                  ">
+            {{SLMPortalAuthentication}}
+        </td>
+        <td style="
+                  padding: 6px;
+                  border: 1px solid black;
+                  text-align: center;
+                  font-weight: bold;
+                  ">
+            N/A
+        </td>
+    </tr>
+    <tr>
+        <td style="
+                  background-color: #32cd32;
+                  border: 1px solid black;
+                  ">
+        </td>
+        <td style="
+                  padding: 6px;
+                  border: 1px solid black;
+                  font-weight: bold;
+                  ">
+            Auto-generate Datacenters: <span style="
+                     font-size: 11px;
+                     color: #555555;
+                     display: block;
+                     ">Automatically Creates Data Centre records for devices that meet the minimum host quantity.</span>
+        </td>
+        <td style="
+                  padding: 6px;
+                  border: 1px solid black;
+                  text-align: center;
+                  ">
+            {{SLM_AutoGenerateDatacenters}}
+        </td>
+        <td style="
+                  padding: 6px;
+                  border: 1px solid black;
+                  text-align: center;
+                  font-weight: bold;
+                  ">
+            N/A
+        </td>
+    </tr>
+    <tr>
+        <td style="
+                  background-color: #32cd32;
+                  border: 1px solid black;
+                  ">
+        </td>
+        <td style="
+                  padding: 6px;
+                  border: 1px solid black;
+                  font-weight: bold;
+                  ">
+            Minimum Hosts to Auto-Generate as Data Centre: <span style="
+                     font-size: 11px;
+                     color: #555555;
+                     display: block;
+                     "> Number of Hosts associated with the Data Centre to automatically create a record. </span>
+        </td>
+        <td style="
+                  padding: 6px;
+                  border: 1px solid black;
+                  text-align: center;
+                  ">
+            {{SLM_AutoGenerateDatacenters}}
+        </td>
+        <td style="
+                  padding: 6px;
+                  border: 1px solid black;
+                  text-align: center;
+                  font-weight: bold;
+                  ">
+            N/A
+        </td>
+    </tr>
+    <tr>
+        <td style="
+                  background-color: #32cd32;
+                  border: 1px solid black;
+                  ">
+        </td>
+        <td style="
+                  padding: 6px;
+                  border: 1px solid black;
+                  font-weight: bold;
+                  ">
+            AD Device Discovery: <span style="
+                     font-size: 11px;
+                     color: #555555;
+                     display: block;
+                     ">Allows the discovery of devices in AD that do not have a Snow Agent installed.</span>
+        </td>
+        <td style="
+                  padding: 6px;
+                  border: 1px solid black;
+                  text-align: center;
+                  ">
+            {{SLM_AD_DeviceDiscovery}}
+        </td>
+        <td style="
+                  padding: 6px;
+                  border: 1px solid black;
+                  text-align: center;
+                  font-weight: bold;
+                  ">
+            N/A
+        </td>
+    </tr>
+    <tr>
+        <td style="
+                  background-color: #32cd32;
+                  border: 1px solid black;
+                  ">
+        </td>
+        <td style="
+                  padding: 6px;
+                  border: 1px solid black;
+                  font-weight: bold;
+                  ">
+            AD User Discovery: <span style="
+                     font-size: 11px;
+                     color: #555555;
+                     display: block;
+                     ">Allows the discovery of users in AD that havent been picked up by a snow agent</span>
+        </td>
+        <td style="
+                  padding: 6px;
+                  border: 1px solid black;
+                  text-align: center;
+                  ">
+            {{SLM_AD_UserDiscovery}}
+        </td>
+        <td style="
+                  padding: 6px;
+                  border: 1px solid black;
+                  text-align: center;
+                  font-weight: bold;
+                  ">
+            90 Days
+        </td>
+    </tr>
+    <tr>
+        <td style="
+                  background-color: #32cd32;
+                  border: 1px solid black;
+                  ">
+        </td>
+        <td style="
+                  padding: 6px;
+                  border: 1px solid black;
+                  font-weight: bold;
+                  ">
+            AD Discovery Period: <span style="
+                     font-size: 11px;
+                     color: #555555;
+                     display: block;
+                     ">Number of days historic AD discovery data is stored</span>
+        </td>
+        <td style="
+                  padding: 6px;
+                  border: 1px solid black;
+                  text-align: center;
+                  ">
+            {{SLM_AD_DiscoveryPeriod}}
+        </td>
+        <td style="
+                  padding: 6px;
+                  border: 1px solid black;
+                  text-align: center;
+                  font-weight: bold;
+                  ">
+            90 Days
+        </td>
+    </tr>
+    <tr>
+        <td style="
+                  background-color: #ff7e00;
+                  border: 1px solid black;
+                  ">
+        </td>
+        <td style="
+                  padding: 6px;
+                  border: 1px solid black;
+                  font-weight: bold;
+                  ">
+            Cloud Metering Enabled: <span style="
+                     font-size: 11px;
+                     color: #555555;
+                     display: block;
+                     ">Allows for the capture of SaaS application usage data</span>
+        </td>
+        <td style="
+                  padding: 6px;
+                  border: 1px solid black;
+                  text-align: center;
+                  ">
+            {{SLM_CloudMetering}}
+        </td>
+        <td style="
+                  padding: 6px;
+                  border: 1px solid black;
+                  text-align: center;
+                  font-weight: bold;
+                  ">
+            Enabled
+        </td>
+    </tr>
+    <tr>
+        <td style="
+                  background-color: #32cd32;
+                  border: 1px solid black;
+                  ">
+        </td>
+        <td style="
+                  padding: 6px;
+                  border: 1px solid black;
+                  font-weight: bold;
+                  ">
+            Compliance Cleanup Active: <span style="
+                     font-size: 11px;
+                     color: #555555;
+                     display: block;
+                     ">Automatically clears historic compliance records after the defined period below.</span>
+        </td>
+        <td style="
+                  padding: 6px;
+                  border: 1px solid black;
+                  text-align: center;
+                  ">
+            {{SLM_ComplianceCleanup_Active}}
+        </td>
+        <td style="
+                  padding: 6px;
+                  border: 1px solid black;
+                  text-align: center;
+                  font-weight: bold;
+                  ">
+            Enabled
+        </td>
+    </tr>
+    <tr>
+        <td style="
+                  background-color: #ff7e00;
+                  border: 1px solid black;
+                  ">
+        </td>
+        <td style="
+                  padding: 6px;
+                  border: 1px solid black;
+                  font-weight: bold;
+                  ">
+            Compliance Cleanup Months: <span style="
+                     font-size: 11px;
+                     color: #555555;
+                     display: block;
+                     ">The Number of months of compliance data is kept within the Platform.</span>
+        </td>
+        <td style="
+                    padding: 6px;
+                    border: 1px solid black;
+                    text-align: center;
+                    ">
+            {{SLM_ComplianceCleanup_Months}}
+        </td>
+        <td style="
+                    padding: 6px;
+                    border: 1px solid black;
+                    text-align: center;
+                    font-weight: bold;
+                    ">
+            12
+        </td>
+    </tr>
+    <tr>
+        <td style="
+                    background-color: #ff7e00;
+                    border: 1px solid black;
+                    ">
+        </td>
+        <td style="
+                    padding: 6px;
+                    border: 1px solid black;
+                    font-weight: bold;
+                    ">
+            Device Quarantine Active: <span style="
+                       font-size: 11px;
+                       color: #555555;
+                       display: block;
+                       ">Updates the status on devices which haven’t reported in for a set period.</span>
+        </td>
+        <td style="
+                    padding: 6px;
+                    border: 1px solid black;
+                    text-align: center;
+                    ">
+            {{SLM_DeviceQuarantine_Active}}
+        </td>
+        <td style="
+                    padding: 6px;
+                    border: 1px solid black;
+                    text-align: center;
+                    font-weight: bold;
+                    ">
+            Enabled
+        </td>
+    </tr>
+    <tr>
+        <td colspan="4" style="
+                    padding: 4px 6px;
+                    border: 1px solid black;
+                    background-color: white;
+                    ">
+            <strong>Comment:</strong><br/>Disabling this function results in devices that have not reported in for a set period being counted as active, which can impact license count and utilisation of software licenses when no longer active. We never recommend removing this feature.
+        </td>
+    </tr>
+    <tr>
+        <td style="
+                  background-color: #32cd32;
+                  border: 1px solid black;
+                  ">
+        </td>
+        <td style="
+                  padding: 6px;
+                  border: 1px solid black;
+                  font-weight: bold;
+                  ">
+            Device Quarantine Days: <span style="
+                     font-size: 11px;
+                     color: #555555;
+                     display: block;
+                     ">The number of days before the status of a device is updated to Quarantined. </span>
+        </td>
+        <td style="
+                  padding: 6px;
+                  border: 1px solid black;
+                  text-align: center;
+                  ">
+            {{SLM_DeviceQuarantine_Days}}
+        </td>
+        <td style="
+                  padding: 6px;
+                  border: 1px solid black;
+                  text-align: center;
+                  font-weight: bold;
+                  ">
+            30
+        </td>
+    </tr>
+    <tr>
+        <td colspan="4" style="
+                  padding: 4px 6px;
+                  border: 1px solid black;
+                  background-color: white;
+                  ">
+            <strong>Comment:</strong><br/>Increasing this value will result in devices being quarantined later, which can impact license count and utilisation of software licenses when no longer active. We recommend keeping this value at 30 days.
+        </td>
+    </tr>
+    <tr>
+        <td style="
+                  background-color: #ff7e00;
+                  border: 1px solid black;
+                  ">
+        </td>
+        <td style="
+                  padding: 6px;
+                  border: 1px solid black;
+                  font-weight: bold;
+                  ">
+            Device Quarantine Management Action: <span style="
+                     font-size: 11px;
+                     color: #555555;
+                     display: block;
+                     ">Further to the quarantine period, after a set period, Quarantined devices are either deleted or archived. </span>
+        </td>
+        <td style="
+                  padding: 6px;
+                  border: 1px solid black;
+                  text-align: center;
+                  ">
+            {{SLM_DeviceQuarantine_ManagementAction}}
+        </td>
+        <td style="
+                  padding: 6px;
+                  border: 1px solid black;
+                  text-align: center;
+                  font-weight: bold;
+                  ">
+            Enabled
+        </td>
+    </tr>
+    <tr>
+        <td colspan="4" style="
+                  padding: 4px 6px;
+                  border: 1px solid black;
+                  background-color: white;
+                  ">
+            <strong>Comment:</strong> <br/>There are XXX quarantined computers in SLM, which have been reviewed by quarantine management but do not have an action which can prevent historic devices from impacting license count or utilising software licenses when no longer active. All settings for quarantine management are listed in <a href="https://docs.flexera.com/snow-license-manager/snow-management-and-configuration-center/configuration/manage-quarantine">SMACC Settings</a>
+        </td>
+    </tr>
+    <tr>
+        <td style="
+                  background-color: #32cd32;
+                  border: 1px solid black;
+                  ">
+        </td>
+        <td style="
+                  padding: 6px;
+                  border: 1px solid black;
+                  font-weight: bold;
+                  ">
+            Device Quarantine Management Action Days: <span style="
+                     font-size: 11px;
+                     color: #555555;
+                     display: block;
+                     ">The number of days after a device in quaratine triggers the action. </span>
+        </td>
+        <td style="
+                  padding: 6px;
+                  border: 1px solid black;
+                  text-align: center;
+                  ">
+            {{SLM_DeviceQuarantine_ManagementActionDays}}
+        </td>
+        <td style="
+                  padding: 6px;
+                  border: 1px solid black;
+                  text-align: center;
+                  font-weight: bold;
+                  ">
+            60
+        </td>
+    </tr>
+    <tr>
+        <td style="
+                  background-color: #ff7e00;
+                  border: 1px solid black;
+                  ">
+        </td>
+        <td style="
+                  padding: 6px;
+                  border: 1px solid black;
+                  font-weight: bold;
+                  ">
+            Quarantine Active: <span style="
+                     font-size: 11px;
+                     color: #555555;
+                     display: block;"> Activates quarantine management for computers and mobile devices. </span>
+        </td>
+        <td style="
+                  padding: 6px;
+                  border: 1px solid black;
+                  text-align: center;
+                  ">
+            {{SLM_Quarantine_Active}}
+        </td>
+        <td style="
+                  padding: 6px;
+                  border: 1px solid black;
+                  text-align: center;
+                  font-weight: bold;
+                  ">
+            Enabled
+        </td>
+    </tr>
+    <tr>
+        <td colspan="4" style="
+                  padding: 4px 6px;
+                  border: 1px solid black;
+                  background-color: white;
+                  ">
+            <strong>Comment:</strong><br />Disabling this function results in devices that have not reported in for a set period
+            being counted as active, which can impact license count and utilisation of software licenses when no longer active. We
+            never recommend removing this feature.
+        </td>
+    </tr>
+    <tr>
+        <td style="
+                  background-color: #32cd32;
+                  border: 1px solid black;
+                  ">
+        </td>
+        <td style="
+                  padding: 6px;
+                  border: 1px solid black;
+                  font-weight: bold;
+                  ">
+            Quarantine Days: <span style="
+                           font-size: 11px;
+                           color: #555555;
+                           display: block;
+                           ">The number of inactive days before a computer or mobile device is placed in quarantine. </span>
+        </td>
+        <td style="
+                    padding: 6px;
+                    border: 1px solid black;
+                    text-align: center;
+                    ">
+            {{SLM_Quarantine_Days}}
+        </td>
+        <td style="
+                    padding: 6px;
+                    border: 1px solid black;
+                    text-align: center;
+                    font-weight: bold;
+                    ">
+            30
+        </td>
+    </tr>
+    <tr>
+        <td style="
+                  background-color: #ff7e00;
+                  border: 1px solid black;
+                  ">
+        </td>
+        <td style="
+                  padding: 6px;
+                  border: 1px solid black;
+                  font-weight: bold;
+                  ">
+            Quarantine Delete Active: <span style="
+                           font-size: 11px;
+                           color: #555555;
+                           display: block;
+                           ">Further to the quarantine period, after a set period, Quarantined devices are either deleted or archived. </span>
+        </td>
+        <td style="
+                    padding: 6px;
+                    border: 1px solid black;
+                    text-align: center;
+                    ">
+            {{SLM_Quarantine_DeleteActive}}
+        </td>
+        <td style="
+                    padding: 6px;
+                    border: 1px solid black;
+                    text-align: center;
+                    font-weight: bold;
+                    ">
+            Enabled
+        </td>
+    </tr>
+    <tr>
+        <td colspan="4" style="
+                    padding: 4px 6px;
+                    border: 1px solid black;
+                    background-color: white;
+                    ">
+            <strong>Comment:</strong><br/>This
+        </td>
+    </tr>
+    <tr>
+        <td style="
+                  background-color: #32cd32;
+                  border: 1px solid black;
+                  ">
+        </td>
+        <td style="
+                  padding: 6px;
+                  border: 1px solid black;
+                  font-weight: bold;
+                  ">
+            Quarantine Delete Action: <span style="
+                           font-size: 11px;
+                           color: #555555;
+                           display: block;
+                           ">What action to take when handling computer and mobile device quarantine delete: Delete, Set to inactive, or Archive. </span>
+        </td>
+        <td style="
+                    padding: 6px;
+                    border: 1px solid black;
+                    text-align: center;
+                    ">
+            {{SLM_Quarantine_DeleteAction}}
+        </td>
+        <td style="
+                    padding: 6px;
+                    border: 1px solid black;
+                    text-align: center;
+                    font-weight: bold;
+                    ">
+            Delete
+        </td>
+    </tr>
+    <tr>
+        <td colspan="4" style="
+                    padding: 4px 6px;
+                    border: 1px solid black;
+                    background-color: white;
+                    ">
+            <strong>Comment:</strong><br/>This
+        </td>
+    </tr>
+    <tr>
+        <td style="
+                  background-color: #ff7e00;
+                  border: 1px solid black;
+                  ">
+        </td>
+        <td style="
+                  padding: 6px;
+                  border: 1px solid black;
+                  font-weight: bold;
+                  ">
+            Quarantine Delete Days: <span style="
+                           font-size: 11px;
+                           color: #555555;
+                           display: block;
+                           ">The number of days after a device in quaratine triggers the action. </span>
+        </td>
+        <td style="
+                    padding: 6px;
+                    border: 1px solid black;
+                    text-align: center;
+                    ">
+            {{SLM_Quarantine_DeleteDays}}
+        </td>
+        <td style="
+                    padding: 6px;
+                    border: 1px solid black;
+                    text-align: center;
+                    font-weight: bold;
+                    ">
+            60
+        </td>
+    </tr>
+    <tr>
+        <td style="
+                  background-color: #32cd32;
+                  border: 1px solid black;
+                  ">
+        </td>
+        <td style="
+                  padding: 6px;
+                  border: 1px solid black;
+                  font-weight: bold;
+                  ">
+            User Quarantine Active: <span style="
+                           font-size: 11px;
+                           color: #555555;
+                           display: block;
+                           ">Activates quarantine management for users. </span>
+        </td>
+        <td style="
+                  padding: 6px;
+                  border: 1px solid black;
+                  text-align: center;
+                  ">
+            {{SLM_UserQuarantine_Active}}
+        </td>
+        <td style="
+                  padding: 6px;
+                  border: 1px solid black;
+                  text-align: center;
+                  font-weight: bold;
+                  ">
+            Enabled
+        </td>
+    </tr>
+    <tr>
+        <td colspan="4" style="
+                  padding: 4px 6px;
+                  border: 1px solid black;
+                  background-color: white;
+                  ">
+            <strong>Comment:</strong><br/>There are XXX quarantined computers in SLM, which have been reviewed by quarantine management but do not have an action which can prevent historic devices from impacting license count or utilising software licenses when no longer active. All settings for quarantine management are listed in <a href="https://docs.flexera.com/snow-license-manager/snow-management-and-configuration-center/configuration/manage-quarantine">SMACC Settings</a>
+        </td>
+    </tr>
+    <tr>
+        <td style="
+                  background-color: #ff7e00;
+                  border: 1px solid black;
+                  ">
+        </td>
+        <td style="
+                  padding: 6px;
+                  border: 1px solid black;
+                  font-weight: bold;
+                  ">
+            User Quarantine Days: <span style="
+                           font-size: 11px;
+                           color: #555555;
+                           display: block;
+                           ">The number of inactive days before a user is placed in quarantine. </span>
+        </td>
+        <td style="
+                  padding: 6px;
+                  border: 1px solid black;
+                  text-align: center;
+                  ">
+            {{SLM_UserQuarantine_Days}}
+        </td>
+        <td style="
+                  padding: 6px;
+                  border: 1px solid black;
+                  text-align: center;
+                  font-weight: bold;
+                  ">
+            45
+        </td>
+    </tr>
+    <tr>
+        <td style="
+                  background-color: #32cd32;
+                  border: 1px solid black;
+                  ">
+        </td>
+        <td style="
+                  padding: 6px;
+                  border: 1px solid black;
+                  font-weight: bold;
+                  ">
+            User Quarantine Delete Active: <span style="
+                           font-size: 11px;
+                           color: #555555;
+                           display: block;
+                           ">Activates delete action for user quarantine. </span>
+        </td>
+        <td style="
+                  padding: 6px;
+                  border: 1px solid black;
+                  text-align: center;
+                  ">
+            {{SLM_UserQuarantine_DeleteActive}}
+        </td>
+        <td style="
+                  padding: 6px;
+                  border: 1px solid black;
+                  text-align: center;
+                  font-weight: bold;
+                  ">
+            Enabled
+        </td>
+    </tr>
+    <tr>
+        <td colspan="4" style="
+                  padding: 4px 6px;
+                  border: 1px solid black;
+                  background-color: white;
+                  ">
+            <strong>Comment:</strong><br/>There are XXX quarantined computers in SLM, which have been reviewed by quarantine management but do not have an action which can prevent historic devices from impacting license count or utilising software licenses when no longer active. All settings for quarantine management are listed in <a href="https://docs.flexera.com/snow-license-manager/snow-management-and-configuration-center/configuration/manage-quarantine">SMACC Settings</a>
+        </td>
+    </tr>
+    <tr>
+        <td style="
+                  background-color: #ff7e00;
+                  border: 1px solid black;
+                  ">
+        </td>
+        <td style="
+                  padding: 6px;
+                  border: 1px solid black;
+                  font-weight: bold;
+                  ">
+            User Quarantine Delete Days: <span style="
+                                  font-size: 11px;
+                                  color: #555555;
+                                  display: block;
+                                  ">The number of days after a user in quaratine triggers the action. </span>
+        </td>
+        <td style="
+                  padding: 6px;
+                  border: 1px solid black;
+                  text-align: center;
+                  ">
+            {{SLM_UserQuarantine_DeleteDays}}
+        </td>
+        <td style="
+                  padding: 6px;
+                  border: 1px solid black;
+                  text-align: center;
+                  font-weight: bold;
+                  ">
+            45
+        </td>
+    </tr>
+</table>
+<!--{{Section_Document_SnowAtlasPlatformConfigurations_Header}}-->
+    <h1 class="Snow-Atlas-Platform-Configurations-title" data-field="section_2_title" style="
+            padding-bottom: 10px;
+            padding-top: 16px;
+            font-size: 18px;
+            color: #6b3f6b !important;
+            font-family: Avenir Next LT Pro Demi (Headings);
+            ">
+        SNOW Atlas Platform Configurations:
+    </h1>
+    <!--{{Section_Document_SnowAtlasPlatformConfigurations_BuildTable}}-->
+    <table style="
+            width: 100%;
+            border-collapse: collapse;
+            font-size: 13px;
+            margin-top: 16px;
+            margin-bottom: 16px;
+            border: 1px solid Black;
+            ">
+        <tr>
+            <th colspan="3" style="
+                  background-color: #6b3f6b;
+                  color: white;
+                  padding: 10px;
+                  text-align: center;
+                  font-size: 16px;
+                  ">
+                Settings in Snow Atlas
+            </th>
+        </tr>
+        <tr>
+            <td colspan="3" style="
+                  background-color: white;
+                  padding: 10px;
+                  text-align: center;
+                  font-size: 12px;
+                  border: 1px solid Black;
+                  ">
+                This table shows platform configurations found in the Snow Atlas settings, these are set as default as part of this project unless changed manually.
+            </td>
+        </tr>
+        <tr>
+            <th colspan="1" style="
+                  background-color: #633965;
+                  color: white;
+                  padding: 8px;
+                  text-align: center;
+                  border: 1px solid black;
+                  font-size: 14px;
+                  ">
+                Setting name
+            </th>
+            <th style="
+                  width: 20%;
+                  background-color: #633965;
+                  color: white;
+                  padding: 8px;
+                  text-align: center;
+                  border: 1px solid black;
+                  font-size: 14px;
+                  ">
+                Setting value
+            </th>
+        </tr>
+        <tr>
+            <td style="
+                  width: 40%;
+                  padding: 6px;
+                  border: 1px solid Black;
+                  vertical-align: middle;
+                  font-weight: bold;
+                  ">
+                Portal Authentication Method: <span style="
+                     font-size: 11px;
+                     color: #555555;
+                     display: block;
+                     ">The method used to authenticate users accessing the portal.</span>
+            </td>
+            <td colspan="2" style="
+                  width: 60%;
+                  border: 1px solid Black;
+                  text-align: center;
+                  vertical-align: middle;
+                  ">{{Atlas_PortalAuthentication}}</td>
+            </td>
+        </tr>
+        <tr>
+            <td style="
+                  width: 40%;
+                  padding: 6px;
+                  border: 1px solid Black;
+                  vertical-align: middle;
+                  font-weight: bold;
+                  ">
+                External Access Enabled: <span style="
+                     font-size: 11px;
+                     color: #555555;
+                     display: block;
+                     ">Access method for softcat to be able to support your environment.</span>
+            </td>
+            <td colspan="2" style="
+                  width: 60%;
+                  border: 1px solid Black;
+                  text-align: center;
+                  vertical-align: middle;
+                  "> {{Atlas_ExternalAccessEnabled}}
+            </td>
+        </tr>
+        <tr>
+            <td style="
+                  width: 40%;
+                  padding: 6px;
+                  border: 1px solid Black;
+                  vertical-align: middle;
+                  font-weight: bold;
+                  ">
+                Save Incomplete Licenses: <span style="
+                  font-size: 11px;
+                  color: #555555;
+                  display: block;
+                  ">Allows for users to save partially populated licenses within the portal.</span>
+            </td>
+            <td colspan="2" style="
+                  width: 60%;
+                  border: 1px solid Black;
+                  text-align: center;
+                  vertical-align: middle;
+                  ">{{Atlas_SaveIncompleteLicenses}}
+            </td>
+        </tr>
+        <tr>
+            <td style="
+                  width: 40%;
+                  padding: 6px;
+                  border: 1px solid Black;
+                  vertical-align: middle;
+                  font-weight: bold;
+                  ">
+                Check if External License ID is Unique:
+            </td>
+            <td colspan="2" style="
+                  width: 60%;
+                  border: 1px solid Black;
+                  text-align: center;
+                  vertical-align: middle;
+                  "> {{Atlas_ExternalLicenseIDUnique}}
+            </td>
+        </tr>
+        <tr>
+            <td style="
+                  width: 40%;
+                  padding: 6px;
+                  border: 1px solid Black;
+                  vertical-align: middle;
+                  font-weight: bold;
+                  ">
+                Allowlist File Extensions: <span style="
+                  font-size: 11px;
+                  color: #555555;
+                  display: block;
+                  ">A list of file extensions that are marked as allowed within the portal.</span>
+            </td>
+            <td colspan="2" style="
+                  width: 60%;
+                  border: 1px solid Black;
+                  text-align: center;
+                  vertical-align: middle;
+                  "> {{Atlas_AllowlistFileExtensions}}
+            </td>
+        </tr>
+        <tr>
+            <td style="
+                  width: 40%;
+                  padding: 6px;
+                  border: 1px solid Black;
+                  vertical-align: middle;
+                  font-weight: bold;
+                  ">
+                Denylist File Extensions: <span style="
+                  font-size: 11px;
+                  color: #555555;
+                  display: block;
+                  ">A list of file extensions that are marked as denied within the portal.</span>
+            </td>
+            <td colspan="2" style="
+                  width: 60%;
+                  border: 1px solid Black;
+                  text-align: center;
+                  vertical-align: middle;
+                  ">{{Atlas_DenylistFileExtensions}}
+            </td>
+        </tr>
+        <tr>
+            <td style="
+                  width: 40%;
+                  padding: 6px;
+                  border: 1px solid Black;
+                  vertical-align: middle;
+                  font-weight: bold;
+                  ">
+                Enable AllowList Applications: <span style="
+                  font-size: 11px;
+                  color: #555555;
+                  display: block;
+                  ">Enables the feature that allows the tagging of applications as allowed for usage.</span>
+            </td>
+            <td colspan="2" style="
+                  width: 60%;
+                  border: 1px solid Black;
+                  text-align: center;
+                  vertical-align: middle;
+                  ">
+                {{Atlas_EnableAllowListApplications}}
+            </td>
+        </tr>
+        <tr>
+            <td style="
+                  width: 40%;
+                  padding: 6px;
+                  border: 1px solid Black;
+                  vertical-align: middle;
+                  font-weight: bold;
+                  ">
+                User Account Exclusions:
+            </td>
+            <td colspan="2" style="
+                  width: 60%;
+                  border: 1px solid Black;
+                  text-align: center;
+                  vertical-align: middle;
+                  ">
+                {{Atlas_UserAccountExclusions}}
+            </td>
+        </tr>
+        <tr>
+            <td style="
+                  width: 40%;
+                  padding: 6px;
+                  border: 1px solid Black;
+                  vertical-align: middle;
+                  font-weight: bold;
+                  ">
+                AD Discovery Period: <span style="
+                     font-size: 11px;
+                     color: #555555;
+                     display: block;
+                     ">Number of days historic AD discovery data is stored</span </td>
+                <td colspan="2" style="
+                  width: 60%;
+                  border: 1px solid Black;
+                  text-align: center;
+                  vertical-align: middle;
+                  ">
+                {{Atlas_ADDiscoveryPeriod}}
+                </td>
+            </tr>
+            <tr>
+                <td style="
+                  width: 40%;
+                  padding: 6px;
+                  border: 1px solid Black;
+                  vertical-align: middle;
+                  font-weight: bold;
+                  ">
+                    Enable Anonymous User Management:
+                </td>
+                <td colspan="2" style="
+                  width: 60%;
+                  border: 1px solid Black;
+                  text-align: center;
+                  vertical-align: middle;
+                  ">
+                {{Atlas_EnableAnonymousUserManagement}}
+                </td>
+            </tr>
+            <tr>
+                <td style="
+                  width: 40%;
+                  padding: 6px;
+                  border: 1px solid Black;
+                  vertical-align: middle;
+                  font-weight: bold;
+                  ">
+                    Device Quarantine Days: <span style="
+                     font-size: 11px;
+                     color: #555555;
+                     display: block;
+                     ">The number of days before the status of a device is updated to Quarantined. </span>
+                </td>
+                <td colspan="2" style="
+                  width: 60%;
+                  border: 1px solid Black;
+                  text-align: center;
+                  vertical-align: middle;
+                  ">
+                {{Atlas_DeviceQuarantineDays}}
+                </td>
+            </tr>
+            <tr>
+                <td style="
+                  width: 40%;
+                  padding: 6px;
+                  border: 1px solid Black;
+                  vertical-align: middle;
+                  font-weight: bold;
+                  ">
+                    Device Quarantine Delete Days: <span style="
+                    font-size: 11px;
+                    color: #555555;
+                    display: block;
+                    ">The number of days after a device in quaratine triggers the action. </span>
+                </td>
+                <td colspan="2" style="
+                  width: 60%;
+                  border: 1px solid Black;
+                  text-align: center;
+                  vertical-align: middle;
+                  "> {{Atlas_DeviceQuarantineDeleteDays}}
+                </td> 
+            </tr>
+            <tr>
+                <td style="
+                  width: 40%;
+                  padding: 6px;
+                  border: 1px solid Black;
+                  vertical-align: middle;
+                  font-weight: bold;
+                  ">
+                    Device Quarantine Delete Action: <span style="
+                    font-size: 11px;
+                    color: #555555;
+                    display: block;
+                    ">What action to take when handling computer and mobile device quarantine delete: Delete, Set to inactive, or Archive. </span>
+                </td>
+                <td colspan="2" style="
+                  width: 60%;
+                  border: 1px solid Black;
+                  text-align: center;
+                  vertical-align: middle;
+                  ">
+                {{Atlas_DeviceQuarantineDeleteAction}}
+                </td>
+            </tr>
+            <tr>
+                <td style="
+                  width: 40%;
+                  padding: 6px;
+                  border: 1px solid Black;
+                  vertical-align: middle;
+                  font-weight: bold;
+                  ">
+                    Device Quarantine Delete Active: <span style="
+                    font-size: 11px;
+                    color: #555555;
+                    display: block;
+                    ">Activates delete action for device quarantine. </span>
+                </td>
+                <td colspan="2" style="
+                  width: 60%;
+                  border: 1px solid Black;
+                  text-align: center;
+                  vertical-align: middle;
+                  "> {{Atlas_DeviceQuarantineDeleteActive}}
+                </td>
+            </tr>
+            <tr>
+                <td style="
+                  width: 40%;
+                  padding: 6px;
+                  border: 1px solid Black;
+                  vertical-align: middle;
+                  font-weight: bold;
+                  ">
+                    Days before removing inactive datacenters:
+                </td>
+                <td colspan="2" style="
+                  width: 60%;
+                  border: 1px solid Black;
+                  text-align: center;
+                  vertical-align: middle;
+                  "> {{Atlas_DaysBeforeRemovingInactiveDatacenters}}
+                </td>
+            </tr>
+            <tr>
+                <td style="
+                  width: 40%;
+                  padding: 6px;
+                  border: 1px solid Black;
+                  vertical-align: middle;
+                  font-weight: bold;
+                  ">
+                    Data Visibilty based on organization structure:
+                </td>
+                <td colspan="2" style="
+                  width: 60%;
+                  border: 1px solid Black;
+                  text-align: center;
+                  vertical-align: middle;
+                  "> {{Atlas_DataVisibilityBasedOnOrgStructure}}
+                </td>
+            </tr>
+            <tr>
+                <td style="
+                  width: 40%;
+                  padding: 6px;
+                  border: 1px solid Black;
+                  vertical-align: middle;
+                  font-weight: bold;
+                  ">
+                    Remote Device Quarantine days: <span style="
+                     font-size: 11px;
+                     color: #555555;
+                     display: block;
+                     ">The number of days before the status of a device is updated to Quarantined. </span>
+                </td>
+                <td colspan="2" style="
+                  width: 60%;
+                  border: 1px solid Black;
+                  text-align: center;
+                  vertical-align: middle;
+                  "> {{Atlas_RemoteDeviceQuarantineDays}}
+                </td>
+            </tr>
+            <tr>
+                <td style="
+                  width: 40%;
+                  padding: 6px;
+                  border: 1px solid Black;
+                  vertical-align: middle;
+                  font-weight: bold;
+                  ">
+                    Remote Device Delete Days: <span style="
+                    font-size: 11px;
+                    color: #555555;
+                    display: block;
+                    ">The number of days after a device in quaratine triggers the action. </span>
+                </td>
+                <td colspan="2" style="
+                  width: 60%;
+                  border: 1px solid Black;
+                  text-align: center;
+                  vertical-align: middle;
+                  "> {{Atlas_RemoteDeviceDeleteDays}}
+                </td>
+            </tr>
+            <tr>
+                <td style="
+                  width: 40%;
+                  padding: 6px;
+                  border: 1px solid Black;
+                  vertical-align: middle;
+                  font-weight: bold;
+                  ">
+                    Remote Device Quarantine Delete: <span style="
+                    font-size: 11px;
+                    color: #555555;
+                    display: block;
+                    ">Enables the delete action to remove quarantined remote devices. </span>
+                </td>
+                <td colspan="2" style="
+                  width: 60%;
+                  border: 1px solid Black;
+                  text-align: center;
+                  vertical-align: middle;
+                  "> {{Atlas_RemoteDeviceQuarantineDelete}}
+                </td>
+            </tr>
+            <tr>
+                <td style="
+                  width: 40%;
+                  padding: 6px;
+                  border: 1px solid Black;
+                  vertical-align: middle;
+                  font-weight: bold;
+                  ">
+                    Historic Software Usage Metering: <span style="
+                    font-size: 11px;
+                    color: #555555;
+                    display: block;
+                    ">The number of months the system stores software metering data. </span>
+                </td>
+                <td colspan="2" style="
+                  width: 60%;
+                  border: 1px solid Black;
+                  text-align: center;
+                  vertical-align: middle;
+                  "> {{Atlas_HistoricSoftwareUsageMetering}}
+                </td>
+            </tr>
+            <tr>
+                <td style="
+                  width: 40%;
+                  padding: 6px;
+                  border: 1px solid Black;
+                  vertical-align: middle;
+                  font-weight: bold;
+                  ">
+                    Exclude Most Recent User:
+                </td>
+                <td colspan="2" style="
+                  width: 60%;
+                  border: 1px solid Black;
+                  text-align: center;
+                  vertical-align: middle;
+                  "> {{Atlas_ExcludeMostRecentUser}}
+                </td>
+            </tr>
+            <tr>
+                <td style="
+                  width: 40%;
+                  padding: 6px;
+                  border: 1px solid Black;
+                  vertical-align: middle;
+                  font-weight: bold;
+                  ">
+                    Exclude most frequent user:
+                </td>
+                <td colspan="2" style="
+                  width: 60%;
+                  border: 1px solid Black;
+                  text-align: center;
+                  vertical-align: middle;
+                  "> {{Atlas_ExcludeMostFrequentUser}}
+                </td>
+            </tr>
+            <tr>
+                <td style="
+                  width: 40%;
+                  padding: 6px;
+                  border: 1px solid Black;
+                  vertical-align: middle;
+                  font-weight: bold;
+                  ">
+                    Historic user login data retention period (days):
+                </td>
+                <td colspan="2" style="
+                  width: 60%;
+                  border: 1px solid Black;
+                  text-align: center;
+                  vertical-align: middle;
+                  "> {{Atlas_HistoricUserLoginDataRetentionPeriod}}
+                </td>
+            </tr>
+            <tr>
+                <td style="
+                  width: 40%;
+                  padding: 6px;
+                  border: 1px solid Black;
+                  vertical-align: middle;
+                  font-weight: bold;
+                  ">
+                    User Quarantine Days: <span style="
+                    font-size: 11px;
+                    color: #555555;
+                    display: block;
+                    ">The number of days a user doesnt report in to be flagged as Quarantined. </span>
+                </td>
+                <td colspan="2" style="
+                  width: 60%;
+                  border: 1px solid Black;
+                  text-align: center;
+                  vertical-align: middle;
+                  "> {{Atlas_UserQuarantineDays}}
+                </td>
+            </tr>
+            <tr>
+                <td style="
+                  width: 40%;
+                  padding: 6px;
+                  border: 1px solid Black;
+                  vertical-align: middle;
+                  font-weight: bold;
+                  ">
+                    User Quarantine Delete Days: <span style="
+                    font-size: 11px;
+                    color: #555555;
+                    display: block;
+                    ">The number of days after a user in quaratine triggers the action. </span>
+                </td>
+                <td colspan="2" style="
+                  width: 60%;
+                  border: 1px solid Black;
+                  text-align: center;
+                  vertical-align: middle;
+                  "> {{Atlas_UserQuarantineDeleteDays}}
+                </td>
+            </tr>
+            <tr>
+                <td style="
+                  width: 40%;
+                  padding: 6px;
+                  border: 1px solid Black;
+                  vertical-align: middle;
+                  font-weight: bold;
+                  ">
+                    User Quarantine Delete Active: <span style="
+                                        font-size: 11px;
+                                        color: #555555;
+                                        display: block;
+                                        ">Activates delete action for user quarantine. </span>
+                </td>
+                <td colspan="2" style="
+                  width: 60%;
+                  border: 1px solid Black;
+                  text-align: center;
+                  vertical-align: middle;
+                  "> {{Atlas_UserQuarantineDeleteActive}}
+                </td>
+            </tr>
+        </table>
+
+    <!--{{Section_Document_SnowAtlasPlatformConfigurations_Healthcheck}}-->
+        <table style="
+          width: 100%;
+          border-collapse: collapse;
+          font-family: Arial, sans-serif;
+          font-size: 13px;
+          border: 1px solid black;
+          margin-bottom: 24px;
+          table-layout: fixed;
+          ">
+            <colgroup>
+                <col style="width: 20px"/>
+                <col style="width: auto"/>
+                <col style="width: 20%"/>
+                <col style="width: 20%"/>
+            </colgroup>
+            <tr>
+
+                <th colspan="4" style="
+                  background-color: #633965;
+                  color: white;
+                  padding: 10px;
+                  text-align: center;
+                  font-size: 16px;
+                  border: 1px solid black;
+                  ">
+                    Settings in Snow Atlas
+                </th>
+            </tr>
+            <tr>
+                <td colspan="4" style="
+                  background-color: white;
+                  padding: 10px;
+                  text-align: center;
+                  font-size: 12px;
+                  border: 1px solid black;
+                  ">
+                    This table shows platform configurations found in the Snow Atlas settings, these are set as default as part of this project unless changed manually.
+                </td>
+            </tr>
+            <tr>
+                <th colspan="2" style="
+                  background-color: #633965;
+                  color: white;
+                  padding: 8px;
+                  text-align: center;
+                  border: 1px solid black;
+                  font-size: 14px;
+                  ">
+                    Setting name
+                </th>
+                <th style="
+                  width: 20%;
+                  background-color: #633965;
+                  color: white;
+                  padding: 8px;
+                  text-align: center;
+                  border: 1px solid black;
+                  font-size: 14px;
+                  ">
+                    Setting value
+                </th>
+                <th style="
+                  width: 20%;
+                  background-color: #633965;
+                  color: white;
+                  padding: 8px;
+                  text-align: center;
+                  border: 1px solid black;
+                  font-size: 14px;
+                  ">
+                    Suggested value
+                </th>
+            </tr>
+            <tr>
+                <td style="
+                  width: 20px;
+                  background-color: #ff7e00;
+                  border: 1px solid black;
+                  ">
+                </td>
+                <td style="
+                  padding: 6px;
+                  border: 1px solid black;
+                  font-weight: bold;
+                  ">
+                    Portal Authentication Method <span style="
+                     font-size: 11px;
+                     color: #555555;
+                     display: block;
+                     ">The method used to authenticate users accessing the portal.</span>
+                </td>
+                <td style="
+                  padding: 6px;
+                  border: 1px solid black;
+                  text-align: center;
+                  color: #666;
+                  ">{{Atlas_PortalAuthentication}}
+                    
+                </td>
+                <td style="
+                  padding: 6px;
+                  border: 1px solid black;
+                  text-align: center;
+                  font-weight: bold;
+                  ">
+                    N/A
+                </td>
+            </tr>
+            <tr>
+                <td style="
+                  background-color: #ff7e00;
+                  border: 1px solid black;
+                  ">
+                </td>
+                <td style="
+                  padding: 6px;
+                  border: 1px solid black;
+                  font-weight: bold;
+                  ">
+                    External Access Enabled <span style="
+                     font-size: 11px;
+                     color: #555555;
+                     display: block;
+                     ">Access method for softcat to be able to support your environment.</span>
+                </td>
+                <td style="
+                  padding: 6px;
+                  border: 1px solid black;
+                  text-align: center;
+                  color: #666;
+                  ">{{Atlas_ExternalAccessEnabled}}
+                    
+                </td>
+                <td style="
+                  padding: 6px;
+                  border: 1px solid black;
+                  text-align: center;
+                  font-weight: bold;
+                  ">
+                    True
+                </td>
+            </tr>
+            <tr>
+                <td colspan="4" style="
+                  padding: 4px 6px;
+                  border: 1px solid black;
+                  background-color: white;
+                  ">
+                    <strong>Comment:</strong><br />Please note disabling this option will prevent Softcat from Supporting your environment
+                    or providing managed services. Please contact Softcat if you wish to change this setting.
+                </td>
+            </tr>
+            <tr>
+                <td style="
+                  background-color: #ff7e00;
+                  border: 1px solid black;
+                  ">
+                </td>
+                <td style="
+                  padding: 6px;
+                  border: 1px solid black;
+                  font-weight: bold;
+                  ">
+                    Save Incomplete Licenses <span style="
+                     font-size: 11px;
+                     color: #555555;
+                     display: block;
+                     ">Allows for users to save partially populated licenses within the portal.</span>
+                </td>
+                <td style="
+                  padding: 6px;
+                  border: 1px solid black;
+                  text-align: center;
+                  "> {{Atlas_SaveIncompleteLicenses}}
+                </td>
+                <td style="
+                  padding: 6px;
+                  border: 1px solid black;
+                  text-align: center;
+                  font-weight: bold;
+                  "> N/A
+                </td>
+            </tr>
+            <tr>
+                <td style="
+                  background-color: #32cd32;
+                  border: 1px solid black;
+                  ">
+                </td>
+                <td style="
+                  padding: 6px;
+                  border: 1px solid black;
+                  font-weight: bold;
+                  ">
+                    Check if External License ID is Unique
+                </td>
+                <td style="
+                    padding: 6px;
+                    border: 1px solid black;
+                    text-align: center;
+                    "> {{Atlas_CheckIfExternalLicenseIDUnique}}
+                </td>
+                <td style="
+                    padding: 6px;
+                    border: 1px solid black;
+                    text-align: center;
+                    font-weight: bold;
+                    "> N/A
+                </td>
+            </tr>
+            <tr>
+                <td style="
+                  background-color: #32cd32;
+                  border: 1px solid black;
+                  ">
+                </td>
+                <td style="
+                  padding: 6px;
+                  border: 1px solid black;
+                  font-weight: bold;
+                  ">
+                    Allowlist File Extensions <span style="
+                     font-size: 11px;
+                     color: #555555;
+                     display: block;
+                     ">A list of file extensions that are marked as allowed within the portal.</span>
+                </td>
+                <td style="
+                  padding: 6px;
+                  border: 1px solid black;
+                  text-align: center;
+                  ">
+                    {{Atlas_AllowlistFileExtensions}}
+                </td>
+                <td style="
+                  padding: 6px;
+                  border: 1px solid black;
+                  text-align: center;
+                  font-weight: bold;
+                  ">
+                    N/A
+                </td>
+            </tr>
+            <tr>
+                <td style="
+                  background-color: #ff7e00;
+                  border: 1px solid black;
+                  ">
+                </td>
+                <td style="
+                  padding: 6px;
+                  border: 1px solid black;
+                  font-weight: bold;
+                  ">
+                    Denylist File Extensions <span style="
+                     font-size: 11px;
+                     color: #555555;
+                     display: block;
+                     ">A list of file extensions that are marked as denied within the portal.</span>
+                </td>
+                <td style="
+                  padding: 6px;
+                  border: 1px solid black;
+                  text-align: center;
+                  ">
+                    {{Atlas_DenylistFileExtensions}}
+                </td>
+                <td style="
+                  padding: 6px;
+                  border: 1px solid black;
+                  text-align: center;
+                  font-weight: bold;
+                  ">
+                    N/A
+                </td>
+            </tr>
+            <tr>
+                <td style="
+                  background-color: #32cd32;
+                  border: 1px solid black;
+                  ">
+                </td>
+                <td style="
+                  padding: 6px;
+                  border: 1px solid black;
+                  font-weight: bold;
+                  ">
+                    Enable AllowList Applications <span style="
+                     font-size: 11px;
+                     color: #555555;
+                     display: block;
+                     ">Enables the feature that allows the tagging of applications as allowed for usage</span>
+                </td>
+                <td style="
+                  padding: 6px;
+                  border: 1px solid black;
+                  text-align: center;
+                  ">
+                    {{Atlas_EnableAllowListApplications}}
+                </td>
+                <td style="
+                  padding: 6px;
+                  border: 1px solid black;
+                  text-align: center;
+                  font-weight: bold;
+                  ">
+                    N/A
+                </td>
+            </tr>
+            <tr>
+                <td colspan="4" style="
+                  padding: 4px 6px;
+                  border: 1px solid black;
+                  background-color: white;
+                  ">
+                    <strong>Comment:</strong><br />When this setting is enabled, the system will tag all application thats are not
+                    explicitly allowed as denied.
+                </td>
+            </tr>
+            <tr>
+                <td style="
+                  background-color: #ff7e00;
+                  border: 1px solid black;
+                  ">
+                </td>
+                <td style="
+                  padding: 6px;
+                  border: 1px solid black;
+                  font-weight: bold;
+                  ">
+                    User Account Exclusions <span style="
+                     font-size: 11px;
+                     color: #555555;
+                     display: block;
+                     ">Allows the exclusion of useraccounts from reporting such as build accounts used when initally setting up a device</span>
+                </td>
+                <td style="
+                  padding: 6px;
+                  border: 1px solid black;
+                  text-align: center;
+                  ">
+                    {{Atlas_UserAccountExclusions}}
+                </td>
+                <td style="
+                  padding: 6px;
+                  border: 1px solid black;
+                  text-align: center;
+                  font-weight: bold;
+                  ">
+                    N/A
+                </td>
+            </tr>
+            <tr>
+                <td style="
+                  background-color: #32cd32;
+                  border: 1px solid black;
+                  ">
+                </td>
+                <td style="
+                  padding: 6px;
+                  border: 1px solid black;
+                  font-weight: bold;
+                  ">
+                    AD Discovery Period <span style="
+                     font-size: 11px;
+                     color: #555555;
+                     display: block;
+                     ">Number of days historic AD discovery data is stored</span </td>
+                    <td style="
+                  padding: 6px;
+                  border: 1px solid black;
+                  text-align: center;
+                  ">
+                    {{Atlas_ADDiscoveryPeriod}}
+                </td>
+                <td style="
+                  padding: 6px;
+                  border: 1px solid black;
+                  text-align: center;
+                  font-weight: bold;
+                  ">90 Days                </td>
+            </tr>
+            <tr>
+                <td style="
+                  background-color: #ff7e00;
+                  border: 1px solid black;
+                  ">
+                    </td>
+                    <td style="
+                  padding: 6px;
+                  border: 1px solid black;
+                  font-weight: bold;
+                  ">
+                        Enable Anonymous User Management
+                    </td>
+                    <td style="
+                  padding: 6px;
+                  border: 1px solid black;
+                  text-align: center;
+                  ">
+                    {{Atlas_EnableAnonymousUserManagement}}
+                </td>
+                <td style="
+                  padding: 6px;
+                  border: 1px solid black;
+                  text-align: center;
+                  font-weight: bold;
+                  ">
+                    N/A
+                </td>
+            </tr>
+            <tr>
+                <td style="
+                  background-color: #32cd32;
+                  border: 1px solid black;
+                  ">
+                    </td>
+                    <td style="
+                  padding: 6px;
+                  border: 1px solid black;
+                  font-weight: bold;
+                  ">
+                        Device Quarantine Days <span style="
+                     font-size: 11px;
+                     color: #555555;
+                     display: block;
+                     ">The number of days before the status of a device is updated to Quarantined. </span>
+                    </td>
+                    <td style="
+                  padding: 6px;
+                  border: 1px solid black;
+                  text-align: center;
+                  ">
+                    {{Atlas_DeviceQuarantineDays}}
+                </td>
+                <td style="
+                  padding: 6px;
+                  border: 1px solid black;
+                  text-align: center;
+                  font-weight: bold;
+                  "> 30
+                    </td>
+                </tr>
+                <tr>
+                    <td style="
+                  background-color: #ff7e00;
+                  border: 1px solid black;
+                  ">
+                    </td>
+                    <td style="
+                  padding: 6px;
+                  border: 1px solid black;
+                  font-weight: bold;
+                  ">
+                        Device Quarantine Delete Days <span style="
+                                  font-size: 11px;
+                                  color: #555555;
+                                  display: block;
+                                  ">The number of days after a device in quaratine triggers the action. </span>
+                    </td>
+                    <td style="
+                  padding: 6px;
+                  border: 1px solid black;
+                  text-align: center;
+                  ">
+                    {{Atlas_DeviceQuarantineDeleteDays}}
+                </td>
+                <td style="
+                  padding: 6px;
+                  border: 1px solid black;
+                  text-align: center;
+                  font-weight: bold;
+                  "> 60
+                    </td>
+                </tr>
+                <tr>
+                    <td style="
+                  background-color: #32cd32;
+                  border: 1px solid black;
+                  ">
+                    </td>
+                    <td style="
+                  padding: 6px;
+                  border: 1px solid black;
+                  font-weight: bold;
+                  ">
+                        Device Quarantine Delete Action: <span style="
+                        font-size: 11px;
+                        color: #555555;
+                        display: block;
+                        ">What action to take when handling computer and mobile device quarantine delete: Delete, Set to inactive, or Archive. </span>
+                    </td>
+                    <td style="
+                  padding: 6px;
+                  border: 1px solid black;
+                  text-align: center;
+                  ">
+                    {{Atlas_DeviceQuarantineDeleteAction}}
+                </td>
+                <td style="
+                  padding: 6px;
+                  border: 1px solid black;
+                  text-align: center;
+                  font-weight: bold;
+                  ">Delete
+                    </td>
+                </tr>
+                <tr>
+                    <td style="
+                  background-color: #ff7e00;
+                  border: 1px solid black;
+                  ">
+                    </td>
+                    <td style="
+                  padding: 6px;
+                  border: 1px solid black;
+                  font-weight: bold;
+                  ">
+                        Device Quarantine Delete Active <span style="
+                        font-size: 11px;
+                        color: #555555;
+                        display: block;
+                        ">Activates delete action for device quarantine. </span>
+                    </td>
+                    <td style="
+                  padding: 6px;
+                  border: 1px solid black;
+                  text-align: center;
+                  ">
+                    {{Atlas_DeviceQuarantineDeleteActive}}
+                </td>
+                <td style="
+                  padding: 6px;
+                  border: 1px solid black;
+                  text-align: center;
+                  font-weight: bold;
+                  ">Enabled
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="4" style="
+                  padding: 4px 6px;
+                  border: 1px solid black;
+                  background-color: white;
+                  ">
+                        <strong>Comment:</strong><br />Disabling this function results in devices that have not reported in for a set period
+                        being counted as active, which can impact license count and utilisation of software licenses when no longer active. We
+                        never recommend removing this feature.
+                    </td>
+                </tr>
+                <tr>
+                    <td style="
+                  background-color: #32cd32;
+                  border: 1px solid black;
+                  ">
+                    </td>
+                    <td style="
+                  padding: 6px;
+                  border: 1px solid black;
+                  font-weight: bold;
+                  ">
+                        Days before removing inactive datacenters
+                    </td>
+                    <td style="
+                  padding: 6px;
+                  border: 1px solid black;
+                  text-align: center;
+                  ">
+                    {{Atlas_DaysBeforeRemovingInactiveDatacenters}}
+                </td>
+                <td style="
+                  padding: 6px;
+                  border: 1px solid black;
+                  text-align: center;
+                  font-weight: bold;
+                  ">90
+                    </td>
+                </tr>
+                <tr>
+                    <td style="
+                  background-color: #ff7e00;
+                  border: 1px solid black;
+                  ">
+                    </td>
+                    <td style="
+                  padding: 6px;
+                  border: 1px solid black;
+                  font-weight: bold;
+                  ">
+                        Data Visibilty based on organization structure
+                    </td>
+                    <td style="
+                  padding: 6px;
+                  border: 1px solid black;
+                  text-align: center;
+                  ">
+                    {{Atlas_DataVisibilityBasedOnOrganizationStructure}}
+                </td>
+                <td style="
+                  padding: 6px;
+                  border: 1px solid black;
+                  text-align: center;
+                  font-weight: bold;
+                  ">Enabled
+                    </td>
+                </tr>
+                <tr>
+                    <td style="
+                  background-color: #32cd32;
+                  border: 1px solid black;
+                  ">
+                    </td>
+                    <td style="
+                  padding: 6px;
+                  border: 1px solid black;
+                  font-weight: bold;
+                  ">
+                        Remote Device Quarantine days <span style="
+                     font-size: 11px;
+                     color: #555555;
+                     display: block;
+                     ">The number of days before the status of a device is updated to Quarantined. </span>
+                    </td>
+                    <td style="
+                  padding: 6px;
+                  border: 1px solid black;
+                  text-align: center;
+                  ">
+                    {{Atlas_RemoteDeviceQuarantineDays}}
+                </td>
+                <td style="
+                  padding: 6px;
+                  border: 1px solid black;
+                  text-align: center;
+                  font-weight: bold;
+                  ">30
+                    </td>
+                </tr>
+                <tr>
+                    <td style="
+                  background-color: #ff7e00;
+                  border: 1px solid black;
+                  ">
+                    </td>
+                    <td style="
+                  padding: 6px;
+                  border: 1px solid black;
+                  font-weight: bold;
+                  ">
+                        Remote Device Delete Days: <span style="
+                                                   font-size: 11px;
+                                                   color: #555555;
+                                                   display: block;
+                                                   ">The number of days after a device in quaratine triggers the action. </span>
+                    </td>
+                    <td style="
+                  padding: 6px;
+                  border: 1px solid black;
+                  text-align: center;
+                  ">
+                    {{Atlas_RemoteDeviceDeleteDays}}
+                </td>
+                <td style="
+                  padding: 6px;
+                  border: 1px solid black;
+                  text-align: center;
+                  font-weight: bold;
+                  ">60
+                    </td>
+                </tr>
+                <tr>
+                    <td style="
+                  background-color: #32cd32;
+                  border: 1px solid black;
+                  ">
+                    </td>
+                    <td style="
+                  padding: 6px;
+                  border: 1px solid black;
+                  font-weight: bold;
+                  ">
+                        Remote Device Quarantine Delete <span style="
+                                                                       font-size: 11px;
+                                                                       color: #555555;
+                                                                       display: block;
+                                                                       ">Enables the delete action to remove quarantined remote devices. </span>
+                    </td>
+                    <td style="
+                  padding: 6px;
+                  border: 1px solid black;
+                  text-align: center;
+                  ">
+                    {{Atlas_RemoteDeviceQuarantineDelete}}
+                </td>
+                <td style="
+                  padding: 6px;
+                  border: 1px solid black;
+                  text-align: center;
+                  font-weight: bold;
+                  ">Enabled
+                    </td>
+                </tr>
+                <tr>
+                    <td style="
+                  background-color: #ff7e00;
+                  border: 1px solid black;
+                  ">
+                    </td>
+                    <td style="
+                  padding: 6px;
+                  border: 1px solid black;
+                  font-weight: bold;
+                  ">
+                        Historic Software Usage Metering <span style="
+                        font-size: 11px;
+                        color: #555555;
+                        display: block;
+                        ">The number of months the system stores software metering data. </span>
+                    </td>
+                    <td style="
+                  padding: 6px;
+                  border: 1px solid black;
+                  text-align: center;
+                  ">
+                    {{Atlas_HistoricSoftwareUsageMetering}}
+                </td>
+                <td style="
+                  padding: 6px;
+                  border: 1px solid black;
+                  text-align: center;
+                  font-weight: bold;
+                  ">12
+                    </td>
+                </tr>
+                <tr>
+                    <td style="
+                  background-color: #32cd32;
+                  border: 1px solid black;
+                  ">
+                    </td>
+                    <td style="
+                  padding: 6px;
+                  border: 1px solid black;
+                  font-weight: bold;
+                  ">
+                        Exclude Most Recent User
+                    </td>
+                    <td style="
+                  padding: 6px;
+                  border: 1px solid black;
+                  text-align: center;
+                  ">
+                    {{Atlas_ExcludeMostRecentUser}}
+                </td>
+                <td style="
+                  padding: 6px;
+                  border: 1px solid black;
+                  text-align: center;
+                  font-weight: bold;
+                  ">N/A
+                    </td>
+                </tr>
+                <tr>
+                    <td style="
+                  background-color: #ff7e00;
+                  border: 1px solid black;
+                  ">
+                    </td>
+                    <td style="
+                  padding: 6px;
+                  border: 1px solid black;
+                  font-weight: bold;
+                  ">
+                        Exclude most frequent user
+                    </td>
+                    <td style="
+                  padding: 6px;
+                  border: 1px solid black;
+                  text-align: center;
+                  ">
+                    {{Atlas_ExcludeMostFrequentUser}}
+                </td>
+                <td style="
+                  padding: 6px;
+                  border: 1px solid black;
+                  text-align: center;
+                  font-weight: bold;
+                  ">N/A
+                    </td>
+                </tr>
+                <tr>
+                    <td style="
+                  background-color: #32cd32;
+                  border: 1px solid black;
+                  ">
+                    </td>
+                    <td style="
+                  padding: 6px;
+                  border: 1px solid black;
+                  font-weight: bold;
+                  ">
+                        Historic user login data retention period (Months)
+                    </td>
+                    <td style="
+                  padding: 6px;
+                  border: 1px solid black;
+                  text-align: center;
+                  ">
+                    {{Atlas_HistoricUserLoginDataRetentionPeriod}}
+                </td>
+                <td style="
+                  padding: 6px;
+                  border: 1px solid black;
+                  text-align: center;
+                  font-weight: bold;
+                  ">3
+                    </td>
+                </tr>
+                <tr>
+                    <td style="
+                  background-color: #ff7e00;
+                  border: 1px solid black;
+                  ">
+                    </td>
+                    <td style="
+                  padding: 6px;
+                  border: 1px solid black;
+                  font-weight: bold;
+                  ">
+                        User Quarantine Days <span style="
+                                                       font-size: 11px;
+                                                       color: #555555;
+                                                       display: block;
+                                                       ">The number of days a user doesnt report in to be flagged as Quarantined. </span>
+                    </td>
+                    <td style="
+                  padding: 6px;
+                  border: 1px solid black;
+                  text-align: center;
+                  ">
+                    {{Atlas_UserQuarantineDays}}
+                </td>
+                <td style="
+                  padding: 6px;
+                  border: 1px solid black;
+                  text-align: center;
+                  font-weight: bold;
+                  ">30
+                    </td>
+                </tr>
+                <tr>
+                    <td style="
+                  background-color: #32cd32;
+                  border: 1px solid black;
+                  ">
+                    </td>
+                    <td style="
+                  padding: 6px;
+                  border: 1px solid black;
+                  font-weight: bold;
+                  ">
+                        User Quarantine Delete Days <span style="
+                                  font-size: 11px;
+                                  color: #555555;
+                                  display: block;
+                                  ">The number of days after a user in quaratine triggers the action. </span>
+                    </td>
+                    <td style="
+                  padding: 6px;
+                  border: 1px solid black;
+                  text-align: center;
+                  "> 
+                    {{Atlas_UserQuarantineDeleteDays}}  
+                    </td>
+                    <td style="
+                  padding: 6px;
+                  border: 1px solid black;
+                  text-align: center;
+                  font-weight: bold;
+                  ">60
+                    </td>
+                </tr>
+                <tr>
+                    <td style="
+                  background-color: #ff7e00;
+                  border: 1px solid black;
+                  ">
+                    </td>
+                    <td style="
+                  padding: 6px;
+                  border: 1px solid black;
+                  font-weight: bold;
+                  ">
+                        User Quarantine Delete Active <span style="
+                        font-size: 11px;
+                        color: #555555;
+                        display: block;
+                        ">Activates delete action for user quarantine. </span>
+                    </td>
+                    <td style="
+                  padding: 6px;
+                  border: 1px solid black;
+                  text-align: center;
+                  ">
+                    {{Atlas_UserQuarantineDeleteActive}}</td>
+                    <td style="
+                  padding: 6px;
+                  border: 1px solid black;
+                  text-align: center;
+                  font-weight: bold;
+                  ">Enabled
+                    </td>
+                </tr>
+            </table>
+        </div>
+        <!--{{Section_Document_CurrencyManagement_Header}}-->
+    <h1 class="Snow-CurrencyManagement-title" data-field="section_2_title" style="
+            padding-bottom: 10px;
+            padding-top: 16px;
+            font-size: 18px;
+            color: #6b3f6b !important;
+            font-family: Avenir Next LT Pro Demi (Headings);
+            ">
+        SNOW Currency Management:
+    </h1>
+        <!--{{Section_Document_CurrencyManagement_BuildTable}}-->
+            <table style="
+            width: 100%;
+            border-collapse: collapse;
+            font-family: Arial, sans-serif;
+            font-size: 14px;
+            border: 1px solid #000000;
+            text-align: center;
+            ">
+                <thead>
+                    <tr style="
+                  background-color: #633263;
+                  color: #ffffff;
+                  font-weight: bold;
+                  font-size: 16px;
+                  ">
+                        <th colspan="4" style="padding: 10px; border: 1px solid #000000">
+                            Snow platform currency management
+                        </th>
+                    </tr>
+                    <tr style="background-color: #ffffff; color: #000000">
+                        <td colspan="4" style="
+                     padding: 10px;
+                     border: 1px solid #000000;
+                     font-size: 13px;
+                     line-height: 1.4;
+                     ">
+                            This table details the currency configured within your platform. Snow allows for various currencies to be used when logging costs associated with Devices/Agreements &amp; Licenses.
+                        </td>
+                    </tr>
+                    <tr style="
+                  background-color: #633263;
+                  color: #ffffff;
+                  font-weight: bold;
+                  ">
+                        <td style="
+                     width: 30%;
+                     padding: 8px;
+                     border: 1px solid #000000;
+                     ">
+                            Currency name
+                        </td>
+                        <td style="
+                     width: 35%;
+                     padding: 8px;
+                     border: 1px solid #000000;
+                     ">
+                            Description
+                        </td>
+                        <td style="
+                     width: 17%;
+                     padding: 8px;
+                     border: 1px solid #000000;
+                     ">
+                            Currency rate
+                        </td>
+                        <td style="
+                     width: 18%;
+                     padding: 8px;
+                     border: 1px solid #000000;
+                     ">
+                            Base currency
+                        </td>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr style="background-color: #ffffff">
+                        <td style="
+                     padding: 8px;
+                     border: 1px solid #000000;
+                     text-align: left;
+                     ">
+                            {{Document_CurrencyName}}
+                        </td>
+                        <td style="
+                     padding: 8px;
+                     border: 1px solid #000000;
+                     text-align: left;
+                     ">
+                            {{Document_CurrencyDescription}}
+                        </td>
+                        <td style="padding: 8px; border: 1px solid #000000">
+                            {{Document_CurrencyRate}}
+                        </td>
+                        <td style="
+                     padding: 8px;
+                     border: 1px solid #000000;
+                     font-weight: bold;
+                     ">
+                            Yes
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+         <!--{{Section_Document_CurrencyManagement_Healthcheck}}-->
+                     <table style="
+            width: 100%;
+            border-collapse: collapse;
+            font-family: Arial, sans-serif;
+            font-size: 14px;
+            border: 1px solid #000000;
+            text-align: center;
+            margin-bottom: 24px;
+            table-layout: fixed;
+            ">
+                <colgroup>
+                    <col style="width: 20px"/>
+                    <col style="width: auto"/>
+                    <col style="width: 35%"/>
+                    <col style="width: 17%"/>
+                    <col style="width: 18%"/>
+                </colgroup>
+                <thead>
+                    <tr style="
+                  background-color: #633263;
+                  color: #ffffff;
+                  font-weight: bold;
+                  font-size: 16px;
+                  ">
+                        <th colspan="5" style="padding: 10px; border: 1px solid #000000">
+                            Snow platform currency management
+                        </th>
+                    </tr>
+                    <tr style="background-color: #ffffff; color: #000000">
+                        <td colspan="5" style="
+                     padding: 10px;
+                     border: 1px solid #000000;
+                     font-size: 13px;
+                     line-height: 1.4;
+                     ">
+                            This table details the currency configured within your platform. Snow allows for various currencies to be used when logging costs associated with Devices/Agreements &amp; Licenses.
+                        </td>
+                    </tr>
+                    <tr style="
+                  background-color: #633263;
+                  color: #ffffff;
+                  font-weight: bold;
+                  ">
+                        <th colspan="2" style="padding: 8px; border: 1px solid #000000">
+                            Currency name
+                        </th>
+                        <th style="padding: 8px; border: 1px solid #000000">Description</th>
+                        <th style="padding: 8px; border: 1px solid #000000">Currency rate</th>
+                        <th style="padding: 8px; border: 1px solid #000000">Base currency</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr style="background-color: #ffffff">
+                        <td style="
+                     background-color: #1ed700;
+                     border: 1px solid #000000;
+                     padding: 4px 0;
+                     ">
+                        </td>
+                        <td style="
+                     padding: 8px;
+                     border: 1px solid #000000;
+                     text-align: left;
+                     ">
+                            {{Document_CurrencyName}}
+                        </td>
+                        <td style="
+                     padding: 8px;
+                     border: 1px solid #000000;
+                     text-align: left;
+                     ">
+                            {{Document_CurrencyDescription}}
+                        </td>
+                        <td style="padding: 8px; border: 1px solid #000000">
+                            {{Document_CurrencyRate}}
+                        </td>
+                        <td style="
+                     padding: 8px;
+                     border: 1px solid #000000;
+                     font-weight: bold;
+                     ">
+                            {{Document_CurrencyBase}}
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
