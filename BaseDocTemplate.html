@@ -293,154 +293,135 @@
                   <h1 class="TableContents-title" data-field="section_1_title">
                     Table of Contents
                   </h1>
-                  <table
-                    style="
-                      width: 100%;
-                      border-collapse: collapse;
-font-size: 14px;
-"
->
-<tr>
-   <td style="padding: 6px 0">1. Executive Summary</td>
-   <td style="text-align: right">3</td>
-</tr>
-<tr>
-   <td style="padding: 6px 0">2. Environment Overview</td>
-   <td style="text-align: right">4</td>
-</tr>
-<tr>
-   <td style="padding: 6px 0">3. Server Inventory</td>
-   <td style="text-align: right">5</td>
-</tr>
-<tr>
-   <td style="padding: 6px 0">
-      4. Findings & Recommendations
-   </td>
-   <td style="text-align: right">6</td>
-</tr>
-<tr>
-   <td style="padding: 6px 0">5. Summary</td>
-   <td style="text-align: right">7</td>
-</tr>
-</table>
-</div>
-<div class="Introduction" data-field="section_2">
-  <h1 class="Introduction-title" data-field="section_2_title" style="padding-bottom: 10px">
-    Introduction
-  </h1>
-    <h1 class="Introduction-header" data-field="section_2_title" style="padding-bottom: 10px">
-    {{Document_Header}}
-    <br>
-  </h1>
-  <p data-field="Introduction-content" style="padding-bottom: 10px">
-    {{Document_Introduction}}
-  </p>
-</div>
-<div class="Customer-Overview" data-field="section_2">
-      {{Section_Document_CustomerOverview}}
-      </div>
-      <div class="Project-Checklist" data-field="section_2">
-        {{Section_Document_ProjectChecklist_Header}}<br>
-        {{Section_Document_ProjectChecklist_Table}}<br>
-        {{Section_Document_ProjectChecklist_Comments}}<br>
-        {{Section_Document_ProjectChecklist_SignOff}}<br><br>
-      </div>
-      {{Section_Document_Recommendations_Advice}}<br><br>
-            
-<div class="Server-List" data-field="section_2" style="page-break-before: always; break-before: page">
-  {{Section_Document_ServerList_Header}}<br>
-  {{Section_Document_ServerList_BuildTable}}<br>
-  {{Section_Document_ServerList_Healthcheck}}<br><br>
-</div>
-<div class="Snow-Platform-Configurations" data-field="section_2" style="font-family: Avenir Next LT Pro Regular (Body)">
-  {{Section_Document_SnowPlatformConfigurations_Header}}<br>
-  {{Section_Document_SnowPlatformConfigurations_BuildTable}}<br>
-  {{Section_Document_SnowPlatformConfigurations_Healthcheck}}<br><br>
-</div>
-<div class="Snow-Atlas-Platform-Configurations" data-field="section_2" style="font-family: Avenir Next LT Pro Regular (Body)">
-    {{Section_Document_SnowAtlasPlatformConfigurations_Header}}<br>
-    {{Section_Document_SnowAtlasPlatformConfigurations_BuildTable}}<br>
-    {{Section_Document_SnowAtlasPlatformConfigurations_Healthcheck}}<br><br>
-
-        <div class="Snow-Currency" data-field="section_2" style="font-family: Avenir Next LT Pro Regular (Body)">
-              {{Section_Document_CurrencyManagement_Header}}<br>
-              {{Section_Document_CurrencyManagement_BuildTable}}<br>
-              {{Section_Document_CurrencyManagement_Healthcheck}}  <br><br>
-        </div>
-        <div class="Snow-Platform-Users" data-field="section_2" style="font-family: Avenir Next LT Pro Regular (Body)">
-          {{Section_Document_SnowPlatformUsers_Header}}<br>
-          {{Section_Document_SnowPlatformUsers_BuildTable}}<br>
-          {{Section_Document_SnowPlatformUsers_Healthcheck}}<br><br>
-        </div>
-        <div style="
-         width: 100%;
-         border-collapse: collapse;
-         font-family: Arial, sans-serif;
-         font-size: 14px;
-         text-align: left;
-         padding-top: 10px;
-         ">
-         {{Section_Document_SnowProductUtilisation_Table}}
-         <div style="
-        width: 100%;
-        border-collapse: collapse;
-        font-family: Arial, sans-serif;
-        font-size: 14px;
-        padding-top: 10px;
-        ">
-        {{Section_Document_SnowApplicationsLicensesAgreements_Header}}
-{{Section_Document_SnowApplicationsLicensesAgreements_AppTable}}
-
-            </div>
-            {{Section_Document_SnowApplicationsLicensesAgreements_LicenseTable}}
-
-        </div>
-        <div class="Snow-Agent-Overview" data-field="section_2" style="font-family: Avenir Next LT Pro Regular (Body)">
-          {{Section_Document_SnowAgentOverview_Header}}<br>
-          {{Section_Document_SnowInventoryOverview_HealthcheckTable}}<br>
+                  <table style="
+                                width: 100%;
+                                border-collapse: collapse;
+          font-size: 14px;
+          ">
+                    {{Section_Document_TableOfContents_Rows}}
           
-{{Section_Document_SnowAgentsOverview_Healthcheck}}
-
-        </div>
-        <div class="Snow-Agent-Overview" data-field="section_2" style="font-family: Avenir Next LT Pro Regular (Body)">
-          {{Section_Document_SnowAgentOverview_BuildTable}}
+                  </table>
+                </div>
+                <div class="Introduction" data-field="section_2">
+                  <h1 class="Introduction-title" data-field="section_2_title" style="padding-bottom: 10px">
+                    Introduction
+                  </h1>
+                  <h1 class="Introduction-header" data-field="section_2_title" style="padding-bottom: 10px">
+                    {{Document_Header}}
+                    <br>
+                  </h1>
+                  <p data-field="Introduction-content" style="padding-bottom: 10px">
+                    {{Document_Introduction}}
+                  </p>
+                </div>
+                <div class="Customer-Overview" data-field="section_2">
+                  {{Section_Document_CustomerOverview}}
+                </div>
+                <div class="Project-Checklist" data-field="section_2">
+                  {{Section_Document_ProjectChecklist_Header}}<br>
+                  {{Section_Document_ProjectChecklist_Table}}<br>
+                  {{Section_Document_ProjectChecklist_Comments}}<br>
+                  {{Section_Document_ProjectChecklist_SignOff}}<br><br>
+                </div>
+                {{Section_Document_Recommendations_Advice}}<br><br>
           
-        </div>
-        <div class="Snow-Agent-Record" data-field="section_2" style="
-     font-family: Avenir Next LT Pro Regular (Body);
-     margin-top: 16px;
-     ">
-      {{Section_Document_SnowAgentRecord_BuildTable}}<br>
-        </div>
-        <div class="SIM-Configuration" data-field="section_2" style="
-         font-family: Avenir Next LT Pro Regular (Body);
-         margin-top: 16px;
-         ">
-            {{Section_Document_SIMConfiguration_Header}}
-            {{Section_Document_SIMConfiguration_BuildTable}}
-        </div>
-        <div class="SIM-Connector-Configuration" data-field="section_2" style="
-         font-family: Avenir Next LT Pro Regular (Body);
-         margin-top: 16px;
-         ">
-            {{Section_Document_SIMConnectorConfiguration_BuildTable}}
-            {{Section_Document_SIMConnectorConfiguration_Healthcheck}}
-
-        </div>
-        <div class="SUS-Configuration" data-field="section_2" style="
-         font-family: Avenir Next LT Pro Regular (Body);
-         margin-top: 16px;
-         ">
-         {{Section_Document_SUSConfiguration_Header}}
-
-            {{Section_Document_SUSConfiguration_BuildTable}}
-
-        </div>
-    </td>
-</tr>
-</tbody>
-</table>
-</div>
-</div>
-</body>
-</html>
+                <div class="Server-List" data-field="section_2" style="page-break-before: always; break-before: page">
+                  {{Section_Document_ServerList_Header}}<br>
+                  {{Section_Document_ServerList_BuildTable}}<br>
+                  {{Section_Document_ServerList_Healthcheck}}<br><br>
+                </div>
+                <div class="Snow-Platform-Configurations" data-field="section_2"
+                  style="font-family: Avenir Next LT Pro Regular (Body)">
+                  {{Section_Document_SnowPlatformConfigurations_Header}}<br>
+                  {{Section_Document_SnowPlatformConfigurations_BuildTable}}<br>
+                  {{Section_Document_SnowPlatformConfigurations_Healthcheck}}<br><br>
+                </div>
+                <div class="Snow-Atlas-Platform-Configurations" data-field="section_2"
+                  style="font-family: Avenir Next LT Pro Regular (Body)">
+                  {{Section_Document_SnowAtlasPlatformConfigurations_Header}}<br>
+                  {{Section_Document_SnowAtlasPlatformConfigurations_BuildTable}}<br>
+                  {{Section_Document_SnowAtlasPlatformConfigurations_Healthcheck}}<br><br>
+          
+                  <div class="Snow-Currency" data-field="section_2" style="font-family: Avenir Next LT Pro Regular (Body)">
+                    {{Section_Document_CurrencyManagement_Header}}<br>
+                    {{Section_Document_CurrencyManagement_BuildTable}}<br>
+                    {{Section_Document_CurrencyManagement_Healthcheck}} <br><br>
+                  </div>
+                  <div class="Snow-Platform-Users" data-field="section_2" style="font-family: Avenir Next LT Pro Regular (Body)">
+                    {{Section_Document_SnowPlatformUsers_Header}}<br>
+                    {{Section_Document_SnowPlatformUsers_BuildTable}}<br>
+                    {{Section_Document_SnowPlatformUsers_Healthcheck}}<br><br>
+                  </div>
+                  <div style="
+                   width: 100%;
+                   border-collapse: collapse;
+                   font-family: Arial, sans-serif;
+                   font-size: 14px;
+                   text-align: left;
+                   padding-top: 10px;
+                   ">
+                    {{Section_Document_SnowProductUtilisation_Table}}
+                    <div style="
+                  width: 100%;
+                  border-collapse: collapse;
+                  font-family: Arial, sans-serif;
+                  font-size: 14px;
+                  padding-top: 10px;
+                  ">
+                      {{Section_Document_SnowApplicationsLicensesAgreements_Header}}
+                      {{Section_Document_SnowApplicationsLicensesAgreements_AppTable}}
+          
+                    </div>
+                    {{Section_Document_SnowApplicationsLicensesAgreements_LicenseTable}}
+          
+                  </div>
+                  <div class="Snow-Agent-Overview" data-field="section_2" style="font-family: Avenir Next LT Pro Regular (Body)">
+                    {{Section_Document_SnowAgentOverview_Header}}<br>
+                    {{Section_Document_SnowInventoryOverview_HealthcheckTable}}<br>
+          
+                    {{Section_Document_SnowAgentsOverview_Healthcheck}}
+          
+                  </div>
+                  <div class="Snow-Agent-Overview" data-field="section_2" style="font-family: Avenir Next LT Pro Regular (Body)">
+                    {{Section_Document_SnowAgentOverview_BuildTable}}
+          
+                  </div>
+                  <div class="Snow-Agent-Record" data-field="section_2" style="
+               font-family: Avenir Next LT Pro Regular (Body);
+               margin-top: 16px;
+               ">
+                    {{Section_Document_SnowAgentRecord_BuildTable}}<br>
+                  </div>
+                  <div class="SIM-Configuration" data-field="section_2" style="
+                   font-family: Avenir Next LT Pro Regular (Body);
+                   margin-top: 16px;
+                   ">
+                    {{Section_Document_SIMConfiguration_Header}}
+                    {{Section_Document_SIMConfiguration_BuildTable}}
+                  </div>
+                  <div class="SIM-Connector-Configuration" data-field="section_2" style="
+                   font-family: Avenir Next LT Pro Regular (Body);
+                   margin-top: 16px;
+                   ">
+                    {{Section_Document_SIMConnectorConfiguration_BuildTable}}
+                    {{Section_Document_SIMConnectorConfiguration_Healthcheck}}
+          
+                  </div>
+                  <div class="SUS-Configuration" data-field="section_2" style="
+                   font-family: Avenir Next LT Pro Regular (Body);
+                   margin-top: 16px;
+                   ">
+                    {{Section_Document_SUSConfiguration_Header}}
+          
+                    {{Section_Document_SUSConfiguration_BuildTable}}
+          
+                  </div>
+              </td>
+            </tr>
+          </tbody>
+          </table>
+          </div>
+          </div>
+          </body>
+          
+          </html>
