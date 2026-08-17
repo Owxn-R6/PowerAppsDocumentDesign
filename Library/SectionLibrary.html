@@ -144,6 +144,16 @@
       </tr>
       </table>
 
+<!--{{Rows_CustomerOverview_Products}}-->
+    <tr>
+      <td style="padding: 6px; border: 1px solid Black">
+        {{ProductName}}
+      </td>
+      <td style="border: 1px solid Black; text-align: center;">{{Product_State}}</td>
+    </tr>
+
+{{Rows_ProjectChecklist_Tasks}}
+
       <!--{{Section_Document_ProjectChecklist_Header}}-->
         <h1 class="Project-Checklist-title" data-field="section_2_title" style="padding-bottom: 10px">
             Project Checklist
@@ -207,21 +217,7 @@
                 Completed
               </th>
             </tr>
-            <tr>
-              <td style="padding: 6px; border: 1px solid Black">
-                {{Document_Task}}
-              </td>
-              <td style="
-                     background-color: #fff59d;
-                     text-align: center;
-                     border: 1px solid Black;
-                     ">
-               {{Document_TaskVersion}}
-              </td>
-              <td style="text-align: center; border: 1px solid Black">
-                🗹 
-              </td>
-            </tr>
+
           </table>
         </div>
         <!--{{Section_Document_ProjectChecklist_Comments}}-->
@@ -663,6 +659,20 @@
                 Server Specifications and Versions
             </th>
         </tr>
+        {{Rows_Server_Healthcheck}}
+
+		<tr>
+            <th colspan="3" style="
+                  color: black;
+                  padding: 10px;
+                  text-align: center;
+                  font-size: 16px;
+                  font-weight: bold;
+                  border-right: 1px solid Black;
+                  ">
+                {{Document_ServerName}}
+            </th>
+        </tr>
         <tr>
             <td style="
                   width: 20px;
@@ -682,7 +692,7 @@
                      font-weight: bold;
                      display: block;
                      margin-bottom: 2px;
-                     ">{{Document_ServerName}} version</span> <span style="
+                     ">{{Document_ServerPurpose}} version</span> <span style="
                      font-size: 11px;
                      color: #555555;
                      display: block;

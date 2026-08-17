@@ -1,0 +1,37 @@
+replace(
+replace(
+replace(
+replace(
+replace(
+  outputs('Compose_Rows_Server_Buildtable'),
+  '{{Document_ServerName}}',
+
+if(empty(items('Apply_to_each_Server')?['oh_servername']),
+items('Apply_to_each_Server')?['oh_serverpurpose@OData.Community.Display.V1.FormattedValue'],
+items('Apply_to_each_Server')?['oh_servername'])
+  
+),
+'{{Document_ApplicationVersion}}',
+
+if(empty(items('Apply_to_each_Server')?['oh_applicationversion']),
+'X',
+items('Apply_to_each_Server')?['oh_applicationversion'
+)
+),
+ '{{Document_OperatingSystem}}',
+
+
+items('Apply_to_each_Server')?['oh_operatingsystem']
+),
+'{{Document_vCPU}}',
+
+
+items('Apply_to_each_Server')?['oh_cpu']
+
+
+),
+'{{Document_RAM}}',
+
+
+items('Apply_to_each_Server')?['oh_ram']
+)
