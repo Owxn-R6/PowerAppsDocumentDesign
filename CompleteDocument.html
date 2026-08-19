@@ -991,6 +991,20 @@ font-size: 14px;
                 Server Specifications and Versions
             </th>
         </tr>
+        {{Rows_Server_Healthcheck}}
+        <tr>
+            <th colspan="3" style="
+                  color: black;
+                  padding: 10px;
+                  text-align: center;
+                  font-size: 14px;
+                  font-weight: bold;
+                  border-right: 1px solid Black;
+                  ">
+                {{Document_ServerName}}
+            </th>
+        </tr>
+
         <tr>
             <td style="
                   width: 20px;
@@ -1010,7 +1024,7 @@ font-size: 14px;
                      font-weight: bold;
                      display: block;
                      margin-bottom: 2px;
-                     ">{{Document_ServerName}} version</span> <span style="
+                     ">{{Document_ServerPurpose}} version</span> <span style="
                      font-size: 11px;
                      color: #555555;
                      display: block;
@@ -1027,6 +1041,7 @@ font-size: 14px;
                 {{Document_ServerApplicationVersion}}
             </td>
         </tr>
+          {{Rows_CurrentServer_VersionComment}}
         <tr>
             <td colspan="3" style="
                   background-color: white;
@@ -1040,6 +1055,8 @@ font-size: 14px;
                 <br/> {{Document_ServerVersionComment}}
             </td>
         </tr>
+
+
         <tr>
             <td style="
                   width: 20px;
@@ -1075,6 +1092,7 @@ font-size: 14px;
                 {{Document_ServerSpecifications}}
             </td>
         </tr>
+        {{Rows_CurrentServer_VersionComment}}
                 <tr>
             <td colspan="3" style="
                   background-color: white;
@@ -1088,6 +1106,7 @@ font-size: 14px;
                 <br/> {{Document_ServerSpecificationsComment}}
             </td>
         </tr>
+        
     </table>
 </div>
 <div class="Snow-Platform-Configurations" data-field="section_2" style="font-family: Avenir Next LT Pro Regular (Body)">
